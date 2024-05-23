@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.Pasari"
+             Title="Păsări">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="pasari.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Păsările sunt unele dintre cele mai fascinante și diversificate creaturi care împânzesc cerul și pământul. Cu peste 10,000 de specii cunoscute, ele ocupă aproape fiecare colț al globului, de la înghețurile polare până la pădurile tropicale luxuriante și deșerturile aride. Aceste creaturi își trăiesc viețile cu un spectru larg de comportamente și adaptări, transformându-le în subiecte de interes pentru oameni de știință, pasionați de natură și simpli observatori." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Adaptări și Caracteristici" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Păsările sunt cunoscute pentru adaptările lor extraordinare la mediul lor de viață. De exemplu, ciocurile lor variază considerabil în formă și dimensiune, adaptându-se pentru a se hrăni cu o gamă diversă de alimente, inclusiv semințe, insecte, pești și chiar alte păsări. Aripile lor sunt perfect adaptate pentru zbor, cu structuri complexe care le oferă puterea și manevrabilitatea necesară pentru a naviga prin aer." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Multe specii de păsări sunt cunoscute pentru cântecele lor melodioase și variate. Aceste cântece servesc adesea la atragerea partenerilor sau la stabilirea teritoriului. De asemenea, penele lor colorate și modelele distinctive contribuie la comunicarea inter-speciilor și la camuflajul în medii diverse." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Comportament și Biologie" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Păsările sunt adesea socotite pentru comportamentul lor social complex. Multe specii formează perechi de viață lungă și sunt implicate în îngrijirea puiilor pentru o perioadă extinsă de timp. În plus, migrația este un aspect crucial al vieții multor păsări, cu rute elaborate și destinații care se întind pe mii de kilometri." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Cât despre biologie, sistemul lor respirator este unul dintre cele mai eficiente din regnul animal, permițându-le să zboare la înălțimi extreme și să trăiască în medii cu niveluri scăzute de oxigen. De asemenea, păsările sunt cunoscute pentru inteligența lor, cu anumite specii care demonstrează abilități complexe de învățare și rezolvare a problemelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Impactul Asupra Oamenilor și Mediului" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Păsările au avut întotdeauna un impact semnificativ asupra vieții umane și a ecosistemelor în care trăiesc. Ele servesc ca indicatori ai sănătății mediului înconjurător, reflectând schimbările în habitate și poluare. De asemenea, păsările sunt esențiale pentru echilibrul ecologic, contribuind la controlul populațiilor de insecte și la dispersia semințelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe lângă aceste aspecte, păsările au influențat cultura umană de-a lungul istoriei, fiind subiecte ale artei, mitologiei și literaturii. Ele au inspirat oamenii să zboare și să exploreze, și au devenit simboluri ale libertății și a spiritului aventurier." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, păsările sunt creaturi remarcabile, adaptate la o varietate impresionantă de medii și moduri de viață. Prin diversitatea lor, comportamentul lor fascinant și impactul lor asupra lumii, ele continuă să captiveze și să inspire oamenii de pe întregul glob." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooPasari"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

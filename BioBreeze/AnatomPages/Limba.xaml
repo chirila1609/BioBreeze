@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Limba"
+             Title="Limba">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="limba.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Limba umană este un organ complex și esențial al sistemului respirator și al aparatului digestiv, cu multiple funcții vitale, printre care gustarea, masticarea, înghițirea și vorbirea. Este situată în cavitatea orală și este responsabilă pentru producerea sunetelor folosite în comunicare, precum și pentru gustul și textura alimentelor." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Structura limbii umane este alcătuită din mai multe elemente, inclusiv mușchii, papilele gustative, papilele linguale, glandele salivare și mucoasa orală. Mușchii limbii permit mișcarea acesteia în interiorul cavitatei orale, ceea ce facilitează procesul de masticare și înghițire. Papilele gustative sunt situate pe suprafața limbii și sunt responsabile pentru detectarea gusturilor diferite, cum ar fi dulce, sărat, acru și amar. Papilele linguale sunt mici proeminențe situate pe suprafața limbii care contribuie la textura sa și la percepția gusturilor. Glandele salivare produc salivă, care ajută la umectarea și lubrifierea alimentelor și la începerea procesului de digestie în cavitatea orală. Mucoasa orală este stratul de țesut care acoperă interiorul cavității orale și protejează limba și alte structuri împotriva leziunilor și infecțiilor." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Una dintre cele mai importante funcții ale limbii este vorbirea. Prin mișcarea și poziționarea diferitelor părți ale limbii, precum și prin controlul fluxului de aer și rezonanța în cavitățile nazale și bucale, sunetele sunt produse și modulate pentru a forma cuvinte și propoziții. Limba joacă, de asemenea, un rol crucial în procesul de înghițire, ajutând la direcționarea alimentelor către faringe și apoi spre esofag pentru a fi transportate în stomac." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe lângă funcțiile sale fizice, limba umană are și o semnificație culturală și socială profundă. Prin intermediul limbii, oamenii pot exprima gânduri, sentimente, idei și informații, facilitând comunicarea și interacțiunea între indivizi și comunități. Limbajul este un aspect fundamental al identității umane și este esențial pentru dezvoltarea și perpetuarea culturii și civilizației umane." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, limba umană este un organ complex și multifuncțional, având atât roluri fiziologice vitale, cum ar fi gustarea, masticarea și înghițirea, cât și roluri sociale și culturale, cum ar fi vorbirea și comunicarea. Structura și funcționarea sa reflectă interacțiunea complexă dintre aspectele biologice, psihologice, sociale și culturale ale existenței umane." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieLimba"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

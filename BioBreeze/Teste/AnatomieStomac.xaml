@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomieStomac"
+             Title="AnatomieStomac">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Care este funcția principală a stomacului în sistemul digestiv?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Absorbția nutrienților" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Descompunerea carbohidraților" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Descompunerea și prelucrarea alimentelor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
+                <Label Text="d) Filtrarea toxinelor" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Care substanță esențială se găsește în sucul gastric și ajută la descompunerea proteinelor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Acid citric" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Acid acetic" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Acid clorhidric" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
+                <Label Text="d) Acid sulfuric" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Ce substanță este eliberată în intestinul subțire după ce alimentele sunt prelucrate în stomac?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Chil" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Suc pancreatic" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Salivă" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
+                <Label Text="d) Bilă" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Care este rolul mucoasei din stomac?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Protejează pereții stomacului de acizi" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Stimulează secreția de enzime digestive" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Absorbția nutrienților" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
+                <Label Text="d) Reglează senzația de foame" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Ce semnale trimite stomacul către creier pentru a indica că suntem sătui?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Senzația de sete" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Senzația de frig" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Senzația de greață" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
+                <Label Text="d) Senzația de sațietate" />
+            </StackLayout>
+
+            <!-- Submit Button -->
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+
+            <!-- Score Label -->
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

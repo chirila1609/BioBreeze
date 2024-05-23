@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.SistemulDigestiv"
+             Title="Sistemul Digestiv">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="sd.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Sistemul digestiv este unul dintre cele mai complexe și esențiale sisteme din corpul uman. Rolul său principal este de a descompune alimentele consumate în nutrienți absorbabili și de a elimina deșeurile reziduale." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Procesul digestiv începe în gură, unde alimentele sunt sfărâmate de dinți și amestecate cu saliva, care conține enzime care încep descompunerea carbohidraților. Apoi, alimentele trec prin esofag în stomac, unde sunt descompuse și digerate de acidul gastric și enzimele digestive. Din stomac, hrana parțial digerată ajunge în intestinul subțire, unde majoritatea nutrienților sunt absorbiți în sânge prin pereții intestinali și transportați către restul corpului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Intestinul subțire este format din trei părți: duodenul, jejunul și ileonul. În duoden, sucurile pancreatice și biliare sunt eliberate pentru a descompune grăsimile și proteinele. În timp ce hrana trece prin jejun și ileon, nutrienții sunt absorbiți înainte ca deșeurile nedigerate să ajungă în intestinul gros." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Intestinul gros este responsabil pentru absorbția apei și a electroliților din alimente, transformând deșeurile în fecale și pregătindu-le pentru eliminare. Acestea călătoresc în rect și sunt eliminate prin anus în timpul defecației." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Sistemul digestiv este orchestrat de o serie de organe, inclusiv ficatul, vezica biliară și pancreasul, care eliberează substanțe chimice vitale pentru procesul de digestie. O alimentație echilibrată și sănătoasă, bogată în fibre, nutrienți și apă, este esențială pentru menținerea sănătății sistemului digestiv. Orice disfuncționalitate a acestui sistem poate duce la probleme de sănătate precum indigestia, refluxul gastroesofagian, sindromul de colon iritabil sau chiar boli mai grave precum cancerul de colon. Prin urmare, este crucial să avem grijă de sistemul nostru digestiv și să acordăm atenție alimentației și stilului de viață sănătos." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieSD"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

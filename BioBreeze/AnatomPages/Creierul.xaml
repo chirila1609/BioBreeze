@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Creierul"
+             Title="Creierul">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="creierul.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Creierul este un organ incredibil de complex care servește ca centru de comandă al corpului uman. Este responsabil pentru procesarea informațiilor senzoriale, coordonarea mișcărilor, reglarea funcțiilor corporale și chiar pentru guvernarea emoțiilor și a gândurilor." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Structurat în diferite regiuni, fiecare cu funcții specializate, creierul poate fi împărțit în trei părți principale: creierul anterior, creierul mijlociu și creierul posterior." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontAttributes="Bold" FontSize="20" Text="1. Creierul anterior:"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Cea mai mare și mai complexă parte a creierului, creierul anterior este format din cortexul cerebral, talamus și hipotalamus. Cortexul cerebral este împărțit în două emisfere și este responsabil pentru funcțiile cognitive superioare precum gândirea, percepția și luarea deciziilor. Este împărțit în patru loji: loja frontală, parietală, temporală și occipitală, fiecare având roluri distincte în procesarea diferitelor tipuri de informații. Talamusul acționează ca o stație de releu pentru informațiile senzoriale, în timp ce hipotalamusul reglează funcțiile corporale de bază precum foamea, setea și temperatura corpului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontAttributes="Bold" FontSize="20" Text="2. Creierul mijlociu:"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Situat între creierul anterior și creierul posterior, creierul mijlociu este implicat în funcții precum mișcarea motorie, procesarea auditivă și vizuală și reglarea ciclurilor de somn și veghe." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontAttributes="Bold" FontSize="20" Text="3. Creierul posterior:"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Creierul posterior cuprinde cerebelul, puntea și bulbul rahidian. Cerebelul este responsabil în principal pentru coordonarea mișcării, echilibrului și posturii. Puntea servește ca un pod care leagă diferite părți ale creierului, în timp ce bulbul rahidian controlează funcțiile vitale precum bătăile inimii, respirația și digestia." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Creierul este alcătuit din miliarde de celule nervoase numite neuroni, care comunică între ele prin impulsuri electrice și semnale chimice. Acești neuroni formează rețele intricate care permit procesarea și transmiterea informațiilor în întregul creier și corp. În plus, creierul este susținut de celule gliale, care oferă suport structural, izolație și nutriție neuronoilor." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieBrain"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

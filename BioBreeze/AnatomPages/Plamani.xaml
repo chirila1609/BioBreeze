@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Plamani"
+             Title="Plamani">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="plamani.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Structura plămânilor: " FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Bronhiile și bronhiile terminale: " FontAttributes="Bold" FontSize="15" />
+                        <Span FontSize="15" Text="Plămânii sunt alcătuiți dintr-un sistem complex de tuburi numite bronhii și bronhiole, care se ramifică pentru a ajunge în toate zonele plămânilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Alveolele: " FontAttributes="Bold" FontSize="15"/>
+                        <Span FontSize="15" Text="Aceste mici saci de aer sunt situate la capătul bronhiilor și bronhiiolelor și reprezintă locul principal de schimb de gaze. Aici, oxigenul este preluat din aer și dioxidul de carbon este eliminat." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Capilarele sanguine: " FontAttributes="Bold" FontSize="15"/>
+                        <Span FontSize="15" Text="Alveolele sunt înconjurate de o rețea densă de capilare sanguine, ceea ce facilitează schimbul rapid de gaze între aerul respirat și sânge." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Funcția plămânilor: " FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Respirația: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Plămânii permit procesul de respirație, în care oxigenul este preluat din aer și introdus în sânge, în timp ce dioxidul de carbon este eliminat din sânge și excretat în aerul expirat." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Reglarea pH-ului:" FontAttributes="Bold"  />
+                        <Span FontSize="15" Text="Plămânii joacă un rol important în menținerea echilibrului acido-bazic în organism prin eliminarea dioxidului de carbon, un produs de excreție care poate afecta pH-ul sanguin." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Protecția împotriva infecțiilor: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Plămânii sunt, de asemenea, echipați cu mecanisme de apărare, cum ar fi mucoasa și sistemul imunitar local, care îi protejează împotriva agenților patogeni și particulelor străine inhalate." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomiePL"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.hun.GeneticaHun"
+             Title="GENETIKAI">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="genetica.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="
+
+A genetika a tudomány azon ága, amely az élőlények biológiai jellemzőinek öröklődését és változatosságát vizsgálja. Azt vizsgálja, hogy a genetikai információk hogyan jutnak el a szülőktől az utódokhoz, és ez hogyan befolyásolja az élőlények fejlődését és működését. A DNS vagy dezoxiribonukleinsav az öröklődés alapvető molekulája, amely az élő szervezetek kialakulásához és működéséhez szükséges genetikai utasításokat tartalmazza. Olyan folyamatokon keresztül, mint a replikáció, transzkripció és transzláció, a genetikai információ átvitele és értelmezése történik, hogy fehérjéket termeljen és szabályozza a sejtaktivitást. A genetika központi szerepet játszik az élet sokféleségének megértésében és olyan gyakorlati alkalmazások fejlesztésében, mint a genetikai orvoslás, a mezőgazdaság és a biodiverzitás megőrzése." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Öröklődés és változékonyság" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EV"/>
+            <Button Text="DNS" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ADN"/>
+            <Button Text="gének" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_G"/>
+            <Button Text="Kromoszómák" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Cromo"/>
+            <Button Text="Gametes" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Gameti"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

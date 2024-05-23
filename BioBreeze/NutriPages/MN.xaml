@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.NutriPages.MN"
+             Title="Nutriția mixotrofă">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Nutriția mixotrofă reprezintă o modalitate unică prin care unele organisme, inclusiv anumite plante, își obțin hrana din mai multe surse, combinând caracteristici ale fotosintezei cu capturarea și digestia unor organisme sau substanțe organice." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Plantele carnivore sunt exemplul iconic al nutriției mixotrofe în regnul vegetal. Deși majoritatea plantelor își obțin substanțele nutritive din fotosinteză, plantele carnivore au dezvoltat adaptări pentru a suplimenta această sursă de hrană cu substanțe provenite din animale mici, cum ar fi insectele, nevertebratele sau alte organisme mici." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Unul dintre cele mai cunoscute exemple de plante carnivore este Nepenthes, cunoscută sub numele de planta gură-de-tun, care își atrage prada în cupele sale pline cu un lichid digestiv. Alte exemple includ Drosera (sundew), care are frunze acoperite cu tentacule lipicioase pentru a captura insecte, și Sarracenia (pitcher plant), care are un tub lung și în formă de trompă pentru a atrage și digera prada." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Adaptările acestor plante pentru nutriția mixotrofă includ structuri specializate pentru capturarea și digestia prăzii, cum ar fi glandele digestive, enzimele specifice și mecanisme pentru a evita auto-digestia. Cu toate că plantele carnivore obțin substanțe nutritive din pradă, fotosinteza continuă să fie o componentă esențială a metabolismului lor, asigurându-le o sursă suplimentară de energie și substanțe nutritive." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, nutriția mixotrofă, exemplificată de plantele carnivore, demonstrează adaptările ingenioase ale organismelor pentru a supraviețui în medii cu resurse limitate și oferă o perspectivă fascinantă asupra diversității și complexității vieții pe Pământ." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MN"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

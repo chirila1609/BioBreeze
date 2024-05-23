@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.NutriMN"
+             Title="NutriMN">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Care este definitia nutriției mixotrofe?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Obținerea hranei din mai multe surse" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Obținerea hranei doar prin fotosinteză" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Obținerea hranei numai din pradă" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Care este un exemplu iconic de plantă carnivoră menționată în text?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Rosa canina (măceș)" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Nepenthes (planta gură-de-tun)" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Ficus (smochin)" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Cum își atrag prada plantele carnivore, precum Drosera?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Cu flori colorate" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Cu frunze acoperite cu tentacule lipicioase" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Cu fructe zemoase" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Ce funcție are enzima specifică în digestia prăzii la plantele carnivore?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) De a atrage prada" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) De a asigura fotosinteza" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) De a descompune substanțele organice" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Care este rolul fotosintezei în metabolismul plantelor carnivore?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Asigură o sursă suplimentară de energie și &#x0a;substanțe nutritive" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Este singura sursă de energie și substanțe nutritive" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Nu are niciun rol în metabolismul acestor plante" />
+            </StackLayout>
+
+            <!-- Submit Button -->
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+
+            <!-- Score Label -->
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

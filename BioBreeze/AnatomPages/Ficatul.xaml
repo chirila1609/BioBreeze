@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Ficatul"
+             Title="Ficatul">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="ficat.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Ficatul este un organ vital și complex, situat în partea dreaptă a abdomenului, sub coaste. Este esențial pentru funcționarea normală a corpului uman, îndeplinind o varietate de funcții critice pentru sănătatea noastră." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Primul lucru remarcabil despre ficat este capacitatea sa de a desfășura o gamă largă de funcții. Este un centru metabolic, responsabil pentru metabolizarea carbohidraților, grăsimilor și proteinelor din alimente, transformându-le în substanțe utilizabile de către corp. De asemenea, ficatul joacă un rol crucial în detoxifierea corpului, eliminând substanțele nocive sau toxice, cum ar fi alcoolul sau medicamentele." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Un alt aspect impresionant al ficatului este capacitatea sa de a produce bila, un lichid care ajută la digestia grăsimilor. Bila este stocată în vezica biliară și eliberată în intestinul subțire atunci când este nevoie să se descompună grăsimile din alimente." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe lângă aceste funcții metabolice și digestive, ficatul are și un rol important în sistemul imunitar al organismului. Acționează ca o barieră împotriva infecțiilor, neutralizând bacteriile și alte agenți patogeni care ar putea pătrunde în corp prin intestinul subțire." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mai mult decât atât, ficatul are un rol esențial în producerea unor substanțe vitale pentru coagularea sângelui. Fără această funcție, corpul ar fi expus unui risc ridicat de sângerare excesivă în caz de leziuni sau răni." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Cu toate aceste funcții cruciale, ficatul este un organ remarcabil în capacitatea sa de regenerare. Are capacitatea de a se vindeca și a-și restabili funcția chiar și după leziuni grave sau boli. Cu toate acestea, abuzul de alcool, expunerea la toxine sau bolile hepatice pot afecta negativ capacitatea de regenerare a ficatului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, ficatul este unul dintre cele mai vitale organe din corpul uman, îndeplinind o varietate de funcții esențiale pentru sănătatea noastră generală. Îngrijirea și protejarea acestui organ sunt deosebit de importante pentru menținerea unei vieți sănătoase și echilibrate." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieF"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

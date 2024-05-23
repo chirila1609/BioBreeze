@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.ZooTAnimale"
+             Title="ZooTAnimale">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Care este funcția principală a țesutului epitelial în organismele animale?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Susținere structurală" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Generarea de mișcare" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Formarea unei bariere protective" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Care dintre următoarele nu este un tip de țesut conjunctiv?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Țesut conjunctiv moale" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Țesut conjunctiv dur" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Țesut conjunctiv fibros" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Unde se găsește în mod predominant țesutul muscular cardiac?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) În mușchii scheletici" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) În organele interne, cum ar fi intestinele" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) În inimă" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Care este principalul rol al țesutului nervos în organismele animale?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Contracția musculară" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Transmiterea semnalelor electrice" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Formarea unei bariere protective" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Care dintre următoarele nu este un tip de țesut muscular?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Țesut muscular scheletic" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Țesut muscular neted" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Țesut muscular articulat" />
+            </StackLayout>
+
+            <!-- Submit Button -->
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+
+            <!-- Score Label -->
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

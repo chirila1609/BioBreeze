@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.hun.NutritieHun"
+             Title="Táplálás">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="nutritie1.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Üdvözöljük a Táplálkozás: Fedezze fel az egészséges és kiegyensúlyozott étrend titkait" FontAttributes="Bold" />
+                        <Span Text="&#x0a;&#x0a;A táplálkozás az a tudomány, amely az élelmiszereket vizsgálja, és azt, hogy az hogyan hat egészségünkre és jólétünkre. Ez egy utazás a táplálkozás alapvető szerepének megértése felé az egészséges és kiegyensúlyozott élet fenntartásában. Ebben a részben az egészséges táplálkozás titkait fedezi fel, megismerheti az élelmiszercsoportokat, a táplálkozási szükségleteket. a test és hogyan alakíthat ki kiegyensúlyozott és fenntartható étkezési szokásokat. Felfedezi a vitaminok, ásványi anyagok és más alapvető tápanyagok fontosságát, és azt, hogy ezek hogyan támogatják az általános egészséget. Az interaktív leckéken, gyakorlati információkon és hasznos tippeken keresztül eligazodhat a táplálkozási információk útvesztőjében, tanulhat hogyan hozz okos ételválasztást és élvezd az egészséges és energikus életet. Függetlenül attól, hogy Ön szülő, aki aggódik a gyermekek táplálkozásáért, vagy egy felnőtt, aki szeretne életmódját javítani, a Táplálkozás lapunk elvezeti Önt az egészséges, kiegyensúlyozott étrend felé vezető úton!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Szaprofita heterotróf táplálkozás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
+            <Button Text="Heterotróf parazita táplálkozás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
+            <Button Text="Mixotróf táplálkozás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MNutri"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

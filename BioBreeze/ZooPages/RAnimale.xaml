@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.RAnimale"
+             Title="Respirația la animale">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Respirația în lumea animală este o funcție vitală esențială pentru supraviețuirea fiecărui organism. Această proces se desfășoară în moduri variate, adaptate la mediul și nevoile specifice ale fiecărei specii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Majoritatea animalelor terestre, inclusiv mamiferele, reptilele și unele nevertebrate, utilizează un sistem de plămâni sau alte organe specializate pentru a obține oxigenul necesar și a elimina dioxidul de carbon rezidual. De exemplu, mamiferele au plămâni cu alveole, structuri microscopice care facilitează schimbul de gaze între aerul inspirat și sângele circulant în sistemul lor circulator." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe de altă parte, unele creaturi acvatice, precum peștii și crustaceele, folosesc branhii pentru a extrage oxigenul din apă. Branhiile sunt adesea formate din lamele subțiri sau filamentare care cresc în număr și sunt bine vascularizate pentru a permite absorbția maximă de oxigen și eliminarea eficientă a dioxidului de carbon." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În contrast, unele organisme mici, cum ar fi protozoarele și unele nevertebrate simple, pot realiza schimburile de gaze prin difuzie directă prin membrana lor celulară, deoarece dimensiunile lor reduse permit o cantitate adecvată de oxigen să pătrundă în celulele lor fără a avea nevoie de sisteme respiratorii specializate." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Un alt exemplu interesant este cel al păsărilor, care au un sistem respirator unic numit flux contracurent. Acest sistem implică faptul că aerul este direcționat printr-un flux unidirecțional în plămânii păsărilor, ceea ce optimizează schimbul de gaze și le permite să supraviețuiască la altitudini ridicate și în condiții de zbor extenuant." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, diversitatea respirației în lumea animală este remarcabilă, fiecare specie adaptându-și mecanismele de respirație în funcție de mediul său specific și cerințele sale metabolice. Acesta este un exemplu frapant al adaptării creatoare a vieții pentru a supraviețui și a prospera într-o gamă largă de medii și condiții." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooRAnimale"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.NutriPages.HSN"
+             Title="Nutriția heterotrofă saprofită">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Nutriția heterotrofă saprofită este un proces prin care organismele obțin substanțele nutritive necesare pentru supraviețuire din materiale organice moarte sau în descompunere. Această formă de nutriție este tipică pentru o gamă largă de organisme, inclusiv bacterii, fungi și unele organisme protozoare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Organismele saprofite sunt esențiale pentru ecosisteme, deoarece joacă un rol crucial în reciclarea materialelor organice și în degradarea materialelor care altfel ar rămâne stagnante și neproductive. Ele descompun substanțele organice complexe în componente mai simple, care pot fi apoi reutilizate de alte organisme din ecosistem." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Printre cele mai cunoscute organisme saprofite se numără fungi precum ciupercile și bacteriile care trăiesc în sol sau în medii în care există materiale organice în descompunere, cum ar fi frunzele căzute, lemnul mort sau alte resturi vegetale și animale." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Aceste organisme saprofite secreta enzime care descompun materialele organice în componente mai simple, cum ar fi carbohidrații, proteinele și grăsimile. Ulterior, aceste componente sunt absorbite de către organismul saprofit pentru a fi utilizate drept sursă de energie și nutrienți pentru creștere și reproducere." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Deși uneori sunt percepute într-o lumină negativă datorită asocierea cu descompunerea și putrezirea, organismele saprofite sunt esențiale pentru menținerea echilibrului ecologic în natură. Ele contribuie la ciclurile biogeochimice care reciclează substanțele nutritive esențiale și îmbunătățesc fertilitatea solului, facilitând astfel viața plantelor și a altor organisme din ecosistem." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, nutriția heterotrofă saprofită este un proces vital în natură, prin care organismele saprofite joacă un rol esențial în reciclarea materialelor organice și menținerea echilibrului ecologic în ecosistemele terestre și acvatice." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSN"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

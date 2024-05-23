@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.SistemulNervos"
+             Title="Sistemul nervos">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="sistemulnervos.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Sistemul nervos uman este unul dintre cele mai complexe si fascinante sisteme din corpul nostru. Responsabil pentru controlul si coordonarea tuturor activitatilor noastre, acesta este compus din doua componente principale: sistemul nervos central (SNC) si sistemul nervos periferic (SNP)." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Sistemul nervos central este format din creier si maduva spinarii. Creierul este centrul de comanda al corpului nostru, controland fiecare actiune si reactie. Maduva spinarii este o extensie a creierului si este responsabila pentru transmiterea informatiilor de la creier la restul corpului si invers."/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Sistemul nervos periferic include toate celelalte parti ale sistemului nervos, cum ar fi nervii si ganglionii nervosi, care conecteaza SNC-ul la restul corpului. Aceste componente periferice sunt responsabile pentru transmiterea informatiilor senzoriale de la organele de simt catre creier si pentru transmiterea comenzilor motorii de la creier catre muschi si glande."/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Sistemul nervos functioneaza prin intermediul a milioane de celule numite neuroni. Neuronii sunt celule speciale care pot transmite rapid semnale electrochimice prin intermediul axonilor lor lungi. Aceste semnale permit comunicarea rapida intre diferite parti ale corpului si permit corpului nostru sa reactioneze la stimulii din mediu."/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe langa aceasta functie de comunicare rapida, sistemul nervos are si multe alte functii importante. De exemplu, este implicat in controlul functiilor vitale precum respiratia, ritmul cardiac si digestia. De asemenea, este implicat in procesele cognitive precum gandirea, memoria si invatarea."/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieSN"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

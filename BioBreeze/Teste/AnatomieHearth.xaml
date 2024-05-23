@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomieHearth"
+             Title="Test inimă">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            <Label Text="1. Care parte a inimii primește sânge dezoxigenat din corp și îl pompează către plămâni pentru oxigenare?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Atrii" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Ventricule" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Pericard" />
+            </StackLayout>
+
+            <Label Text="2. Ce grup de celule controlează acțiunea de pompare a inimii, generând impulsuri electrice?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Nodul sinusal (SA)" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Talamus" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Cortexul cerebral" />
+            </StackLayout>
+
+            <Label Text="3. Cum este protejată și susținută inima?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Prin coaste" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Prin stern" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Prin pericard" />
+            </StackLayout>
+
+            <Label Text="4. Care este dimensiunea aproximativă a inimii umane?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Dimensiunea unei mâini" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Dimensiunea unui pumn" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Dimensiunea unui ou" />
+            </StackLayout>
+
+            <Label Text="5. Care arteră furnizează sângele oxigenat către mușchiul inimii însuși?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Arterele coronariene" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Artera aortică" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Artera pulmonară" />
+            </StackLayout>
+
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

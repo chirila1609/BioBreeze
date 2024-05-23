@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.hun.ZoologieHun"
+             Title="Állattan">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="zoologie1.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Üdvözöljük a Zoology: Fedezze fel az állatok világának csodáit" FontAttributes="Bold" />
+                        <Span Text="&#x0a;&#x0a;Az állattan az állatok életének tanulmányozása, lenyűgöző sokféleségük és viselkedésük feltárása. Ez egy utazás a Földet benépesítő lények csodálatos világába, a kis mikroszkopikus élőlényektől a nagy emlősökig és hüllőkig.&#x0a;&#x0a;Ebben a részben elmélyedhet az állatok lenyűgöző világában, és megismerheti élőhelyeik, alkalmazkodásaik és kölcsönhatásaik összetett ökoszisztémákban. Felfedezheti az állatok széles kategóriáit, a tengeri gerinctelenektől a szárazföldi emlősökig, és megértheti, hogyan befolyásolják környezetüket, és hogyan befolyásolja őket az.&#x0a;&#x0a;Interaktív leckéken, lebilincselő videókon és kihívást jelentő kvízeken keresztül bejárhatja a állatvilágot, az élővilág titkait, rejtélyeit fedezve fel. Legyen Ön a természet szerelmese vagy kezdő kutató, az Állattan lapunk az Ön kapuja egy felejthetetlen kalandhoz az állatok világába!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Gerinces állatok" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Verte"/>
+            <Button Text="Gerinctelen állatok" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Neverte"/>
+            <Button Text="Szivacsok és coelenterálok" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SsiC"/>
+            <Button Text="Férgek" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Viermi"/>
+            <Button Text="puhatestűek" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Moluste"/>
+            <Button Text="ízeltlábúak" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Artropode"/>
+            <Button Text="Hal" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Peste"/>
+            <Button Text="Kétéltűek" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Amfibieni"/>
+            <Button Text="hüllők" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Reptile"/>
+            <Button Text="Madarak" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Pasari"/>
+            <Button Text="Emlősök" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Mamifere"/>
+            <Button Text="Állati szövetek" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TAnimal"/>
+            <Button Text="Állatok takarmányozása" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HAnimal"/>
+            <Button Text="Légzés állatokban" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RAnimal"/>
+            <Button Text="Keringés állatokban" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CAnimal"/>
+            <Button Text="Kiválasztás állatokban" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EAnimal"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

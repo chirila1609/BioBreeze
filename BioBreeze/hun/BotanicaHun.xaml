@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.hun.BotanicaHun"
+             Title="NÖVÉNYTANI">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="botanica1.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Üdvözöljük a Botanikában: Fedezze fel a növényvilág csodáit" FontAttributes="Bold" />
+                        <Span Text="&#x0a;&#x0a;A botanika a növények és a növényvilág tanulmányozása, lenyűgöző betekintést nyújtva azok sokféleségébe és funkcióiba. Ez egy utazás a növények élővilágába, a legkisebb algáktól és gombáktól a legmagasabb fákig és egzotikus növényekig.&#x0a;&#x0a;Ebben a részben a növényvilág titkait és csodáit fedezi fel, tanulhat a növények szerkezetéről, növekedési és szaporodási folyamatairól, valamint az ökoszisztémánkban betöltött döntő szerepükről. Felfedezi a különféle növényfajtákat a víztől a sivatagig, és megérti, hogyan alkalmazkodnak a környezetükhöz. Interaktív leckéken, lebilincselő videókon és kihívást jelentő teszteken keresztül beutazhatja a növényvilágot, és felfedezheti a növények szépsége és jelentősége mindennapi életünkben. Akár a természet szerelmese, akár a kertészkedés szerelmese, a Botanika lapunk meghívja Önt, hogy fedezze fel és értékelje a növényvilág csodáit!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Növényi szövetek" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TVege"/>
+            <Button Text="Növények etetése" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HVege"/>
+            <Button Text="Légzés a növényekben" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RVege"/>
+            <Button Text="Keringés a növényekben" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CVege"/>
+            <Button Text="Kiválasztás a növényekben" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EVege"/>
+            <Button Text="Szaporodás virágos növényekben" MaximumWidthRequest="350" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RFVege"/>
+            <Button Text="Spórás és vegetatív szaporodás növényekben" MaximumWidthRequest="450" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ISVVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

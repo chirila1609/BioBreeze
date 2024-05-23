@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.Mamifere"
+             Title="Mamifere">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="mamifere.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Mamiferele sunt o clasă distinctă de animale vertebrate care se remarcă prin prezența glandelor mamare, care produc laptele pentru hrănirea puiilor. Cu peste 5.400 de specii cunoscute, mamiferele sunt prezente pe toate continentele și în majoritatea mediilor, de la cele mai reci zone polare până la cele mai fierbinți pustii. Această diversitate incredibilă reflectă capacitatea adaptativă a acestor creaturi remarcabile." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Structura corpului mamiferelor variază considerabil în funcție de mediul în care trăiesc și de modul lor de viață. De exemplu, mamiferele marine, cum ar fi balenele și delfinii, au evoluat pentru a se adapta la viața în apă, dezvoltând corpuri hidrodinamice și sistemul respirator adaptat la mediul acvatic. În schimb, mamiferele terestre au o gamă variată de adaptații, inclusiv gheare pentru săpare (cum ar fi la tăușoare), cozi prehensile pentru agățat (cum ar fi la maimuțe) și gâturi lungi pentru pășunat (cum ar fi la girafele)." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="O trăsătură comună a mamiferelor este prezența părului sau a blănii pe corp, care servește la termoreglare și protecție împotriva mediului înconjurător. Aceste creaturi au și o circulație sanguină bine dezvoltată și un sistem nervos complex, ceea ce le permite să răspundă rapid la schimbările din mediu și să interacționeze cu acesta în moduri variate." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Un aspect remarcabil al mamiferelor este comportamentul lor social și complexitatea relațiilor sociale. De la formele simple de asociere între perechi de parteneri, cum ar fi la unele specii de lilieci, până la societăți extrem de elaborate, cum ar fi la elefanți și balene, mamiferele demonstrează că interacțiunea socială poate fi esențială pentru supraviețuirea și succesul lor în mediul înconjurător." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe lângă diversitatea comportamentală și morfologică, mamiferele sunt de o importanță imensă pentru ecosistemele terestre și marine. Ele ocupă roluri cheie în lanțurile trofice, de la prădători de vârf până la erbivore și decompozitori, contribuind astfel la menținerea echilibrului și sănătății ecosistemelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, mamiferele sunt printre cele mai diverse și fascinante grupuri de animale de pe Pământ. Capacitatea lor de a se adapta la o varietate de medii și condiții, combinată cu comportamentul lor social și impactul lor asupra ecosistemelor, le fac subiecte de studiu fascinante și esențiale pentru înțelegerea și conservarea biodiversității planetei noastre." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooMamifere"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

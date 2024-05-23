@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomiePiele"
+             Title="AnatomiePiele">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test despre Pielea Umană" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Care este principalul rol al pielii umane?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Protecția împotriva agenților externi și reglarea temperaturii corpului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Absorbția nutrienților din mediul înconjurător" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Funcționarea ca organ de respirație" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
+                <Label Text="d) Transmiterea semnalelor nervoase către creier" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Ce strat al pielii este responsabil pentru producerea melaninei?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Epidermul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Dermul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Hipodermul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
+                <Label Text="d) Straturile de grăsime subcutanată" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Care dintre următoarele nu este o funcție a pielii umane?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Transmiterea semnalelor nervoase" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Protecția împotriva pierderii de apă" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Reglarea temperaturii corpului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
+                <Label Text="d) Absorbția oxigenului din aer" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Ce role îndeplinesc glandele sudoripare și sebacee din piele?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Hidratarea pielii și producerea de vitamină D" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Reglarea temperaturii și eliminarea deșeurilor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Producerea de melanină și elastină" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
+                <Label Text="d) Transmiterea semnalelor nervoase și senzațiile tactile" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Care strat al pielii conține celulele responsabile pentru formarea stratului exterior protector?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Epidermul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Dermul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Hipodermul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
+                <Label Text="d) Straturile de grăsime subcutanată" />
+            </StackLayout>
+
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

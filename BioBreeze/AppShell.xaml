@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BioBreeze.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BioBreeze"
+    Shell.FlyoutBehavior="Flyout"
+    Title="BioBreeze"
+    Shell.TabBarIsVisible="False">
+
+    <Shell.FlyoutHeader>
+        <Image Source="logo.png"
+       MaximumWidthRequest="800"
+       MaximumHeightRequest="300"
+      />
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Label Text="Chirilă Mihnea-Ștefan&#x0a;Colegiul National Octav Onicescu"></Label>
+    </Shell.FlyoutFooter>
+    
+    <FlyoutItem Title="Acasă" FlyoutDisplayOptions="AsMultipleItems" >
+        <ShellContent
+            Title="Acasă"
+            ContentTemplate="{DataTemplate local:Acasa}"
+            Route="Acasa" 
+            Icon="home.png"/>
+
+        <ShellContent
+            Title="Despre"
+            ContentTemplate="{DataTemplate local:Despre}"
+            Route="Despre" 
+            Icon="info.png"/>
+
+        <ShellContent
+            Title="Clasa a V-a"
+            ContentTemplate="{DataTemplate local:Pages.gim1}"
+            Route="gim1" 
+            Icon="gim1.png"/>
+
+        <ShellContent
+            Title="Clasa a VI-a"
+            ContentTemplate="{DataTemplate local:Pages.gim2}"
+            Route="gim2" 
+            Icon="gim2.png"/>
+
+        <ShellContent
+            Title="Clasa a VII-a"
+            ContentTemplate="{DataTemplate local:Pages.gim3}"
+            Route="gim3" 
+            Icon="gim3.png"/>
+
+        <ShellContent
+            Title="Clasa a VIII-a"
+            ContentTemplate="{DataTemplate local:Pages.gim4}"
+            Route="gim4" 
+            Icon="gim4.png"/>
+
+        <ShellContent
+            Title="Bacalaureat"
+            ContentTemplate="{DataTemplate local:Bacalaureat}"
+            Route="Bacalaureat" 
+            Icon="bac.png"/>
+        
+        <ShellContent
+            Title="Profil"
+            ContentTemplate="{DataTemplate local:Profil}"
+            Route="Profil" 
+            Icon="profil.png"/>
+
+    </FlyoutItem>
+
+</Shell>

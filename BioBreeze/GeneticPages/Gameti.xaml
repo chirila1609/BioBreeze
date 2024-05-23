@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.GeneticPages.Gameti"
+             Title="Gameți">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Gametii sunt celule specializate implicate în reproducerea sexuală la organisme multicelulare. Aceste celule sunt esențiale pentru procesul de reproducere, deoarece conțin jumătate din materialul genetic al organismului și sunt implicate în formarea noilor indivizi." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Există două tipuri principale de gameti: spermatozoizii la masculi și ovulele la femele. Spermatozoizii sunt celule mici și mobile, produse de testiculele organismelor masculine. Aceștia sunt specializați în transportul materialului genetic masculin către ovulul feminin. Ovulele, pe de altă parte, sunt cele mai mari celule din corpul uman și sunt produse de ovarele organismelor feminine. Acestea conțin materialul genetic feminin și oferă mediul optim pentru dezvoltarea embrionului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Procesul de formare a gametilor este cunoscut sub numele de gametogeneză și implică mai multe etape complexe de diviziune celulară și diferențiere. La om, gametogeneza începe la pubertate și continuă de-a lungul vieții fertile a individului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="La unirea unui spermatozoid cu un ovul într-un proces numit fertilizare, cele două gameti se combină pentru a forma un zigot unic, care conține materialul genetic complet al noului organism. Acest zigot va începe să se divizeze și să se dezvolte, formând ulterior un embrion care va crește și se va dezvolta într-un organism adult." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, gametii sunt esențiali pentru reproducerea sexuală la majoritatea organismelor multicelulare și joacă un rol crucial în transferul materialului genetic de la o generație la alta." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenGameti"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

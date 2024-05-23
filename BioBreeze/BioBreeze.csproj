@@ -1,0 +1,593 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+
+		<!-- Note for MacCatalyst:
+		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
+		When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
+		The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
+		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
+		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>BioBreeze</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Display name -->
+		<ApplicationTitle>BioBreeze</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.TYTH.biobreeze</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<WindowsPackageType Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">None</WindowsPackageType>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<NeutralLanguage>en</NeutralLanguage>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#ffffff" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\adn.png" />
+	  <None Remove="Resources\Images\adn1.png" />
+	  <None Remove="Resources\Images\amfibieni.png" />
+	  <None Remove="Resources\Images\anatomie.png" />
+	  <None Remove="Resources\Images\anatomie1.png" />
+	  <None Remove="Resources\Images\artropode.png" />
+	  <None Remove="Resources\Images\artropode1.png" />
+	  <None Remove="Resources\Images\bac.png" />
+	  <None Remove="Resources\Images\bacalaureat.png" />
+	  <None Remove="Resources\Images\botanica.png" />
+	  <None Remove="Resources\Images\botanica1.png" />
+	  <None Remove="Resources\Images\brat.png" />
+	  <None Remove="Resources\Images\cincinu.png" />
+	  <None Remove="Resources\Images\cinciok.png" />
+	  <None Remove="Resources\Images\cincizeronu.png" />
+	  <None Remove="Resources\Images\cincizerook.png" />
+	  <None Remove="Resources\Images\clasavi.png" />
+	  <None Remove="Resources\Images\clasavii.png" />
+	  <None Remove="Resources\Images\clasaviii.png" />
+	  <None Remove="Resources\Images\coaste.png" />
+	  <None Remove="Resources\Images\colvert.png" />
+	  <None Remove="Resources\Images\cplante.png" />
+	  <None Remove="Resources\Images\creierul.png" />
+	  <None Remove="Resources\Images\csange.png" />
+	  <None Remove="Resources\Images\doicincinu.png" />
+	  <None Remove="Resources\Images\doicinciok.png" />
+	  <None Remove="Resources\Images\dpbd.png" />
+	  <None Remove="Resources\Images\dpbu.png" />
+	  <None Remove="Resources\Images\dpd.png" />
+	  <None Remove="Resources\Images\dpt.png" />
+	  <None Remove="Resources\Images\dpu.png" />
+	  <None Remove="Resources\Images\eplante.png" />
+	  <None Remove="Resources\Images\ficat.png" />
+	  <None Remove="Resources\Images\flyoutb.png" />
+	  <None Remove="Resources\Images\genetica.png" />
+	  <None Remove="Resources\Images\genetica1.png" />
+	  <None Remove="Resources\Images\gim1.png" />
+	  <None Remove="Resources\Images\gim2.png" />
+	  <None Remove="Resources\Images\gim3.png" />
+	  <None Remove="Resources\Images\gim4.png" />
+	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\hungary.png" />
+	  <None Remove="Resources\Images\info.png" />
+	  <None Remove="Resources\Images\inima.png" />
+	  <None Remove="Resources\Images\limba.png" />
+	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\mabdo.png" />
+	  <None Remove="Resources\Images\mamifere.png" />
+	  <None Remove="Resources\Images\mbrat.png" />
+	  <None Remove="Resources\Images\meduza.png" />
+	  <None Remove="Resources\Images\mfata.png" />
+	  <None Remove="Resources\Images\mgat.png" />
+	  <None Remove="Resources\Images\mincheietura.png" />
+	  <None Remove="Resources\Images\moluste.png" />
+	  <None Remove="Resources\Images\moluste1.png" />
+	  <None Remove="Resources\Images\mpicior.png" />
+	  <None Remove="Resources\Images\mspate.png" />
+	  <None Remove="Resources\Images\msponge.jpg" />
+	  <None Remove="Resources\Images\mumar.png" />
+	  <None Remove="Resources\Images\muschii.png" />
+	  <None Remove="Resources\Images\nasul.png" />
+	  <None Remove="Resources\Images\nevertebrate.png" />
+	  <None Remove="Resources\Images\nutritie.png" />
+	  <None Remove="Resources\Images\nutritie1.png" />
+	  <None Remove="Resources\Images\ochi.jpg" />
+	  <None Remove="Resources\Images\ochi1.png" />
+	  <None Remove="Resources\Images\pasari.png" />
+	  <None Remove="Resources\Images\peste.png" />
+	  <None Remove="Resources\Images\peste1.png" />
+	  <None Remove="Resources\Images\picioare.png" />
+	  <None Remove="Resources\Images\piele.png" />
+	  <None Remove="Resources\Images\plamani.png" />
+	  <None Remove="Resources\Images\profil.png" />
+	  <None Remove="Resources\Images\reptile.png" />
+	  <None Remove="Resources\Images\rplante.png" />
+	  <None Remove="Resources\Images\RPlanteF.png" />
+	  <None Remove="Resources\Images\SC.jpg" />
+	  <None Remove="Resources\Images\schelete.png" />
+	  <None Remove="Resources\Images\sd.png" />
+	  <None Remove="Resources\Images\SistemulNervos.png" />
+	  <None Remove="Resources\Images\skull.gif" />
+	  <None Remove="Resources\Images\spori.png" />
+	  <None Remove="Resources\Images\sr.png" />
+	  <None Remove="Resources\Images\srepfem.png" />
+	  <None Remove="Resources\Images\srepm.png" />
+	  <None Remove="Resources\Images\stomacul.png" />
+	  <None Remove="Resources\Images\talpa.png" />
+	  <None Remove="Resources\Images\tesutanimal.png" />
+	  <None Remove="Resources\Images\TVege.png" />
+	  <None Remove="Resources\Images\ukrain.png" />
+	  <None Remove="Resources\Images\ununu.png" />
+	  <None Remove="Resources\Images\unuok.png" />
+	  <None Remove="Resources\Images\urechea.png" />
+	  <None Remove="Resources\Images\vertebrate.png" />
+	  <None Remove="Resources\Images\viermi.png" />
+	  <None Remove="Resources\Images\zecenu.png" />
+	  <None Remove="Resources\Images\zeceok.png" />
+	  <None Remove="Resources\Images\zoologie.png" />
+	  <None Remove="Resources\Images\zoologie1.png" />
+	  <None Remove="Resources\Images\zoov.png" />
+	  <None Remove="Resources\Raw\adn.mp3" />
+	  <None Remove="Resources\Raw\amfibieni.mp3" />
+	  <None Remove="Resources\Raw\artropode.mp3" />
+	  <None Remove="Resources\Raw\canimale.mp3" />
+	  <None Remove="Resources\Raw\creierul.mp3" />
+	  <None Remove="Resources\Raw\cromozomii.mp3" />
+	  <None Remove="Resources\Raw\cvege.mp3" />
+	  <None Remove="Resources\Raw\eanimale.mp3" />
+	  <None Remove="Resources\Raw\ev.mp3" />
+	  <None Remove="Resources\Raw\evege.mp3" />
+	  <None Remove="Resources\Raw\ficatul.mp3" />
+	  <None Remove="Resources\Raw\g.mp3" />
+	  <None Remove="Resources\Raw\gameti.mp3" />
+	  <None Remove="Resources\Raw\hanimale.mp3" />
+	  <None Remove="Resources\Raw\hpn.mp3" />
+	  <None Remove="Resources\Raw\hsn.mp3" />
+	  <None Remove="Resources\Raw\hvege.mp3" />
+	  <None Remove="Resources\Raw\inima.mp3" />
+	  <None Remove="Resources\Raw\isvvege.mp3" />
+	  <None Remove="Resources\Raw\limba.mp3" />
+	  <None Remove="Resources\Raw\mamifere.mp3" />
+	  <None Remove="Resources\Raw\mn.mp3" />
+	  <None Remove="Resources\Raw\moluste.mp3" />
+	  <None Remove="Resources\Raw\muschii.mp3" />
+	  <None Remove="Resources\Raw\nasul.mp3" />
+	  <None Remove="Resources\Raw\nevertebrate.mp3" />
+	  <None Remove="Resources\Raw\ochiul.mp3" />
+	  <None Remove="Resources\Raw\pasari.mp3" />
+	  <None Remove="Resources\Raw\peste.mp3" />
+	  <None Remove="Resources\Raw\piele.mp3" />
+	  <None Remove="Resources\Raw\plamani.mp3" />
+	  <None Remove="Resources\Raw\ranimale.mp3" />
+	  <None Remove="Resources\Raw\reptile.mp3" />
+	  <None Remove="Resources\Raw\rfvege.mp3" />
+	  <None Remove="Resources\Raw\rvege.mp3" />
+	  <None Remove="Resources\Raw\sistemulcirculator.mp3" />
+	  <None Remove="Resources\Raw\sistemuldigestiv.mp3" />
+	  <None Remove="Resources\Raw\sistemulnervos.mp3" />
+	  <None Remove="Resources\Raw\sistemulreproductiv.mp3" />
+	  <None Remove="Resources\Raw\sistemulrespirator.mp3" />
+	  <None Remove="Resources\Raw\skeleton.mp3" />
+	  <None Remove="Resources\Raw\ssic.mp3" />
+	  <None Remove="Resources\Raw\stomacul.mp3" />
+	  <None Remove="Resources\Raw\tanimale.mp3" />
+	  <None Remove="Resources\Raw\tvege.mp3" />
+	  <None Remove="Resources\Raw\urechea.mp3" />
+	  <None Remove="Resources\Raw\vertebrate.mp3" />
+	  <None Remove="Resources\Raw\viermi.mp3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Plugin.Maui.Audio" Version="2.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Acasa.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Anatomie.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Creierul.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Ficatul.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Inima.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Limba.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Muscle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Nasul.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Ochiul.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Piele.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Plamani.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\SistemulCirculator.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\SistemulDigestiv.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\SistemulNervos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\SistemulReproductiv.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\SistemulRespirator.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Skeleton.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Stomacul.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AnatomPages\Urechea.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Bacalaureat.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Botanica.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\CVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\EVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\HVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\ISVVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\RFVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\RVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BotanicPages\TVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Despre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Genetica.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GeneticPages\ADN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GeneticPages\Cromozomii.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GeneticPages\EV.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GeneticPages\G.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GeneticPages\Gameti.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hun\AcasaHun.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hun\AnatomieHun.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hun\BotanicaHun.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hun\GeneticaHun.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hun\NutritieHun.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hun\ZoologieHun.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NutriPages\HPN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NutriPages\HSN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NutriPages\MN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Nutritie.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\gim1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\gim2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\gim3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\gim4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Profil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TesteBac\2024.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieBrain.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieF.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieHearth.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieLimba.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieMuscle.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieNasul.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieOchi.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomiePiele.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomiePL.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieSC.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieSchele.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieSD.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieSN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieSR.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieSRep.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieStomac.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\AnatomieUreche.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotCVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotEVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotHVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotISVVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotRFVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotRVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\BotTVege.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\GenADN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\GenCromozomii.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\GenEV.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\GenG.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\GenGameti.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\NutriHPN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\NutriHSN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\NutriMN.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooAmfibieni.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooArtropode.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooCAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooEAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooHAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooMamifere.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooMoluste.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooNeverte.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooPasari.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooPeste.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooRAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooReptile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooSsiC.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooTAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooVerte.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Teste\ZooViermi.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ukr\AcasaUkr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ukr\AnatomieUkr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ukr\BotanicaUkr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ukr\GeneticaUkr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ukr\NutritieUkr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ukr\ZoologieUkr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Zoologie.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Amfibieni.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Artropode.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\CAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\EAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\HAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Mamifere.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Moluste.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Nevertebrate.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Pasari.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Peste.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\RAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Reptile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\SsiC.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\TAnimale.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Vertebrate.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ZooPages\Viermi.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+</Project>

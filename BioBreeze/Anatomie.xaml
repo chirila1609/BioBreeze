@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Anatomie"
+             Title="Anatomie">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="anatomie1.png" MaximumWidthRequest="720"/>
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontSize="20" Text="Bine ați venit la Anatomie: Explorați minunile din interior&#x0a;" FontAttributes="Bold" />
+                            <Span FontSize="15" Text="
+
+Anatomia este studiul structurii și organizării organismelor vii. Este ca o călătorie prin harta complexă a corpului uman, explorând organele, țesuturile și celulele sale, și înțelegând cum lucrează împreună pentru a ne menține în viață și funcționând.
+
+În această secțiune, porniți într-o aventură în adâncurile corpului uman. Descoperiți secretele anatomiei noastre, de la oasele care oferă structură la mușchii care permit mișcarea, și de la inima care pompează sânge vital la creierul care ne alimentează gândurile și acțiunile.
+
+Prin lecții interactive, ilustrații vibrante și chestionare captivante, învățați despre diferitele sisteme ale corpului - scheletic, muscular, circulator și nervos - și cum interacționează pentru a menține sănătatea și bunăstarea noastră.
+
+Indiferent dacă sunteți un student curios sau un viitor savant, fila noastră de Anatomie este poarta către o lume a descoperirilor. Haideți să ne aventurăm și să explorăm minunile din interior!" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Text="Scheletul uman" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Skeleton"/>
+                <Button Text="Mușchi corpului" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Muscle"/>
+                <Button Text="Sistemul nervos" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SN"/>
+                <Button Text="Sistemul circulator" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SC"/>
+                <Button Text="Sistemul respirator" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SR"/>
+                <Button Text="Sistemul digestiv" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SD"/>
+                <Button Text="Sistemul reproductiv" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SRep"/>
+                <Button Text="Creierul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Brain"/>
+                <Button Text="Inima" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Heart"/>
+                <Button Text="Stomacul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Stom"/>
+                <Button Text="Plămânii" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_PL"/>
+                <Button Text="Ficatul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_F"/>
+                <Button Text="Ochiul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_O"/>
+                <Button Text="Urechea" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_U"/>
+                <Button Text="Nasul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_N"/>
+                <Button Text="Limba" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_L"/>
+                <Button Text="Piele" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_P"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

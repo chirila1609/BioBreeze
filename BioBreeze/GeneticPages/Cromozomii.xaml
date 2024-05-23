@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.GeneticPages.Cromozomii"
+             Title="Cromozomii">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Cromozomii sunt structuri esențiale ale celulelor care conțin materialul genetic și care joacă un rol crucial în transmiterea informației genetice de la o generație la alta în cadrul organismelor vii. Acestea sunt prezente în nucleul celular și sunt vizibile în timpul diviziunii celulare, în special în timpul diviziunii celulare sexuale (meioză) și a diviziunii celulare asexuate (mitoză)." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Fiecare specie are un număr specific de cromozomi, care este caracteristic pentru acea specie. Cromozomii sunt formați dintr-o moleculă lungă de acid dezoxiribonucleic (ADN), care este împachetată strâns în jurul unor proteine numite histone. Structura compactă a cromozomilor permite organizarea și păstrarea informației genetice într-un mod eficient." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Principalele funcții ale cromozomilor sunt:" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Transmiterea ereditară a informației genetice: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Cromozomii sunt responsabili pentru transmiterea caracteristicilor ereditare de la părinți la descendenți. Această transmitere are loc prin intermediul gametelor (spermă și ovule) în timpul reproducției sexuate." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Controlul proceselor celulare: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Cromozomii conțin gene care codifică proteine esențiale pentru funcționarea celulei. Aceste gene controlează procesele celulare, cum ar fi metabolismul, diviziunea celulară și răspunsurile la mediu." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Variabilitatea genetică: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Cromozomii sunt sursa principală a variabilității genetice în cadrul unei populații. Fenomene precum recombinarea genetică și mutațiile contribuie la diversitatea genetică a indivizilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În funcție de structura și numărul lor, cromozomii pot fi împărțiți în două tipuri principale: autosomi și cromozomi sexuali. Autosomii sunt cromozomii care nu determină sexul organismului și sunt prezentați în perechi omoloage în celulele somatice. Cromozomii sexuali determină sexul și pot varia în funcție de specie." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Studiul cromozomilor este esențial în înțelegerea eredității și a diversității genetice a vieții pe Pământ. Tehnici precum cariotiparea și hibridizarea in situ sunt utilizate pentru analiza structurii și funcției cromozomilor în diferite organisme." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Prin urmare, cromozomii sunt componente fundamentale ale celulelor și sunt esențiali pentru diversitatea și perpetuarea vieții pe Terra." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenCromozomii"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

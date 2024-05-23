@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.BotanicPages.RFVege"
+             Title="Reproducerea la plantele cu flori">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="rplantef.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Reproducerea la plantele cu flori, cunoscută și sub denumirea de angiosperme, este un proces complex și fascinant ce constă în transmiterea materialului genetic de la o generație la alta și în dezvoltarea unor noi indivizi. Acest proces esențial este esențial pentru menținerea biodiversității și pentru asigurarea continuității speciilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Angiospermele sunt plante vasculare care produc flori, structuri reproductive specializate în care are loc fertilizarea. Reproducerea la plantele cu flori implică două etape majore: polenizarea și fertilizarea." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Polenizarea este primul pas în reproducerea plantelor cu flori și implică transferul polenului de la staminele (partea masculină a florii) către pistil (partea feminină a florii) sau către alte flori. Acest proces poate fi realizat fie de vânt (polenizare anemofilă), fie de polenizatori, cum ar fi insectele, păsările sau alte animale (polenizare zoofilă). Adaptările florilor, cum ar fi culorile vibrante, mirosul și nectarul, sunt adesea evoluate pentru a atrage acești polenizatori și a facilita polenizarea." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Fertilizarea are loc atunci când un tub polinic transportă polenul de la stamină până la ovarul din pistil. Aici, un spermă masculin fertilizează un ovul, formând un zigot, care este prima etapă a dezvoltării unui embrion. Odată fertilizat, ovul se transformă într-un sămânță, iar ovarul se dezvoltă în fruct. Sămânța conține materialul genetic al plantei și este înconjurată de un strat protector numit tegument." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="După fertilizare, fructul și sămânța rezultată își continuă dezvoltarea. Fructul protejează și susține sămânța în timp ce se formează și maturizează. Odată ce fructul ajunge la maturitate, poate fi dispersat de diferite mecanisme, cum ar fi vântul, apa sau animalele. Sămânța poate ajunge într-un nou mediu, unde poate germina și începe un nou ciclu de viață." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Reproducerea la plantele cu flori este un proces complex și diversificat, adaptat la o varietate de medii și condiții de viață. Această adaptabilitate și diversitate sunt esențiale pentru succesul și supraviețuirea speciilor de plante în ecosistemele lor naturale." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotRFVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

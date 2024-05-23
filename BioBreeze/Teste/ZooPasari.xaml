@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.ZooPasari"
+             Title="ZooPasari">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Care este una dintre adaptările remarcabile ale păsărilor pentru a se hrăni?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Gheare puternice" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Ciocuri variate" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Cozi lungi" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Ce servește adesea la atragerea partenerilor sau la stabilirea teritoriului în rândul păsărilor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Aripile colorate" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Ciocurile lungi" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Cântecele melodioase" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Care este un aspect crucial al vieții multor păsări?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Hibernarea" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Migrarea" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Hibernarea și migrarea" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Ce sistem al păsărilor le permite să zboare la înălțimi extreme?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Sistemul circulator" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Sistemul respirator" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Sistemul digestiv" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Ce rol important au păsările în ecosisteme?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Controlul populațiilor de plante" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Controlul populațiilor de insecte și dispersia&#x0a; semințelor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Protecția altor specii de animale" />
+            </StackLayout>
+
+            <!-- Submit Button -->
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+
+            <!-- Score Label -->
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

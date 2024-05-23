@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.GeneticPages.EV"
+             Title="Ereditatea și variabilitatea">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Ereditatea și variabilitatea sunt două concepte fundamentale în biologie, care stau la baza evoluției și diversității vieții pe Pământ. Ereditatea se referă la transmiterea trăsăturilor genetice de la părinți la urmași prin intermediul materialului genetic, ADN-ul (acidul dezoxiribonucleic). ADN-ul poartă informația genetică într-un cod specific de nucleotide și este responsabil pentru moștenirea caracteristicilor biologice de la o generație la alta." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Variabilitatea, pe de altă parte, se referă la variațiile individuale în cadrul unei populații sau specii. Această variație poate fi observată într-o gamă largă de trăsături, incluzând aspectul fizic, comportamentul, și adaptările la mediu. Variabilitatea este rezultatul combinației între ereditate și influențele mediului înconjurător." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Procesele de ereditate și variabilitate sunt esențiale pentru evoluție. Mutatiile genetice, recombinarea genetică și selecția naturală sunt mecanisme cheie care determină variabilitatea genetică în cadrul unei populații și, în cele din urmă, conduc la adaptarea la mediu și apariția de noi specii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, ereditatea și variabilitatea sunt elemente centrale în înțelegerea evoluției vieții pe Pământ. Aceste concepte sunt fundamentale pentru biologie și au o importanță majoră în cercetările științifice, contribuind la elucidarea originii și diversității formelor de viață din întreaga lume." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenEV"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

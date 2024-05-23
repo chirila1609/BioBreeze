@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Inima"
+             Title="Inima">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="inima.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Inima umană este un organ remarcabil care servește ca element central al sistemului circulator, pom-pând sânge în întregul corp pentru a livra oxigen și substanțe nutritive celulelor și țesuturilor, eliminând în același timp produsele de degradare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Plasată puțin în partea stângă a pieptului, inima are aproximativ dimensiunea unui pumn și este formată dintr-un țesut muscular specializat numit mușchi cardiac. Este împărțită în patru camere: două atrii (camere superioare) și două ventricule (camere inferioare). Partea dreaptă a inimii primește sânge dezoxigenat din corp și îl pompează către plămâni pentru oxigenare, în timp ce partea stângă primește sânge oxigenat din plămâni și îl pompează către restul corpului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Acțiunea de pompare a inimii este controlată de impulsuri electrice generate de o mică grupare de celule numită nodul sinusal (SA), adesea numită pace-makerul natural al inimii. Aceste impulsuri determină mușchiul inimii să se contracte în mod coordonat, creând bătăile ritmice ale inimii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Inima este susținută și protejată de o membrană dublă numită pericard. Sângele este furnizat mușchiului inimii însuși printr-o rețea de vase de sânge cunoscută sub numele de artere coronariene. Aceste artere se desprind de la aorta, cea mai mare arteră a corpului, și încercuiesc inima, asigurându-se că primește oxigenul și substanțele nutritive de care are nevoie pentru a funcționa corect." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Diferiți factori pot afecta sănătatea inimii, inclusiv dieta, exercițiul fizic, genetica și alegerile de stil de viață. Afecțiuni precum boala coronariană, insuficiența cardiacă și aritmiile pot afecta capacitatea inimii de a pompa sânge eficient, ducând la complicații grave." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Menținerea unui stil de viață sănătos, inclusiv adoptarea unei diete echilibrate, exercițiul regulat, gestionarea stresului, evitarea tutunului și limitarea consumului de alcool, poate ajuta la reducerea riscului de boli de inimă și la promovarea sănătății generale a inimii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Consultările regulate cu un furnizor de servicii medicale, inclusiv monitorizarea tensiunii arteriale, a nivelurilor de colesterol și a altor factori de risc cardiovascular, sunt esențiale pentru detectarea și gestionarea timpurie a problemelor legate de inimă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Inima umană nu este doar un organ vital pentru menținerea vieții, ci și un simbol al iubirii, curajului și rezilienței, inspirând uimire și admirație de-a lungul istoriei și în diferite culturi. Înțelegerea structurii și funcționării sale este crucială pentru menținerea sănătății și stării de bine cardiovasculară." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieHeart"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

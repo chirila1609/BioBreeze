@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ukr.ZoologieUkr"
+             Title="Зоологія">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="zoologie1.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ласкаво просимо до зоології: відкрийте для себе чудеса тваринного світу" FontAttributes="Bold" />
+                        <Span Text="&#x0a;&#x0a;Зоологія — це наука про життя тварин, яка вивчає їхнє захоплююче різноманіття та поведінку. Це подорож у дивовижний світ істот, які населяють землю, від маленьких мікроскопічних організмів до великих ссавців і рептилій.&#x0a;&#x0a;У цьому розділі ви поринете в захоплюючий світ тварин, дізнаючись про їх середовища проживання, адаптації та їх взаємодію в складних екосистемах. Ви досліджуватимете широкі категорії тварин, від морських безхребетних до наземних ссавців, і зрозумієте, як вони впливають на навколишнє середовище та зазнають його впливу.&#x0a;&#x0a;Через інтерактивні уроки, цікаві відео та складні вікторини ви подорожуватимете крізь царство тварин, відкриваючи таємниці та таємниці живого світу. Незалежно від того, любите ви природи чи дослідник-початківець, наша вкладка «Зоологія» — це ваш шлях до незабутньої пригоди у світ тварин!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Хребетні тварини" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Verte"/>
+            <Button Text="Безхребетні тварини" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Neverte"/>
+            <Button Text="Губки та кишковопорожнинні" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SsiC"/>
+            <Button Text="Черви" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Viermi"/>
+            <Button Text="молюски" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Moluste"/>
+            <Button Text="членистоногі" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Artropode"/>
+            <Button Text="риба" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Peste"/>
+            <Button Text="Амфібії" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Amfibieni"/>
+            <Button Text="рептилії" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Reptile"/>
+            <Button Text="Птахи" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Pasari"/>
+            <Button Text="ссавці" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Mamifere"/>
+            <Button Text="Тканини тварин" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TAnimal"/>
+            <Button Text="Годівля тварин" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HAnimal"/>
+            <Button Text="Дихання у тварин" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RAnimal"/>
+            <Button Text="Кровообіг у тварин" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CAnimal"/>
+            <Button Text="Виділення у тварин" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EAnimal"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

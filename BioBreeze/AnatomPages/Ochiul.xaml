@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Ochiul"
+             Title="Ochiul">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="ochi.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ochiul Uman" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Ochiul uman este un organ complex și fascinant responsabil pentru percepția vizuală. Este esențial nu numai pentru funcționarea cotidiană, ci și pentru experiența noastră senzorială și emoțională a lumii din jurul nostru." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="ochi1.png"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Structura Ochilor Umani" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Ochiul uman este alcătuit din mai multe componente esențiale:" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Cornee: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Este partea transparentă și convexă a ochiului care acoperă irisul și pupila. Corneea ajută la focalizarea luminii către retina." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Iris: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Este membrana colorată a ochiului care controlează dimensiunea pupilei și, prin urmare, cantitatea de lumină care pătrunde în ochi." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Pupila: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Este deschiderea circulară din mijlocul irisului prin care lumina intră în ochi." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="4. Retină: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Este stratul sensibil la lumină al ochiului care convertește lumina în semnale electrice, transmițând informațiile vizuale către creier prin nervul optic." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="5. Nervul optic: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Este calea prin care semnalele vizuale sunt transmise de la retina la creier pentru interpretare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="6. Cristalin: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Este o lentilă transparentă care se află în spatele irisului și care ajută la focalizarea luminii pe retina." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Funcționarea Ochilor Umani" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Procesul de vedere implică mai multe etape complexe:" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Focalizarea: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Lumina care intră în ochi este refractată de cornee și cristalin pentru a fi focalizată pe retina. Acest proces este esențial pentru a asigura claritatea imaginii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Conversia în semnale electrice: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Celulele fotosensibile din retina, numite bastonașe și conuri, convertește lumina în semnale electrice. Bastonașele sunt implicate în percepția luminii și a contrastului, în timp ce conurile sunt responsabile pentru percepția culorilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Transmiterea semnalelor către creier: " FontAttributes="Bold"/>
+                        <Span FontSize="15" Text="Semnalele electrice generate în retina sunt transmise de-a lungul nervului optic către creier, mai precis către cortexul vizual, unde sunt interpretate și transformate în imagini conștiente." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Importanța Ochilor Umani" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Ochiul uman este esențial pentru explorarea și înțelegerea lumii din jurul nostru. Capacitatea sa de a percepe culori, forme și mișcare ne permite să navigăm în mediul înconjurător și să interacționăm cu el în mod eficient. Ochiul uman este, de asemenea, un instrument valoros pentru exprimarea emoțiilor și comunicarea non-verbală, deoarece multe informații sunt transmise prin contactul vizual." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Îngrijirea adecvată a ochilor este crucială pentru menținerea sănătății lor pe termen lung. Vizitele regulate la oftalmolog, protejarea ochilor împotriva expunerii excesive la lumină ultravioletă și utilizarea corectă a ochelarilor sau a lentilelor de contact sunt câteva dintre modalitățile în care putem îngriji și proteja acest organ deosebit de important." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, ochiul uman reprezintă o minune a naturii, cu o complexitate și un potențial remarcabil. Capacitatea sa de a percepe lumea înconjurătoare este fundamentală pentru experiența umană și merită să fie protejată și valorizată." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieOCHI"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

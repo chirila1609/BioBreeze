@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomieUreche"
+             Title="AnatomieUreche">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test despre Urechea Umană" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Ce parte a urechii umane colectează și direcționează sunetele către canalul auditiv extern?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Membrana timpanului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Pavilionul urechii" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Trompa lui Eustachio" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
+                <Label Text="d) Osiculele auditive" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Care dintre următoarele este o structură subțire și flexibilă care vibrează în funcție de intensitatea sunetelor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Trompa lui Eustachio" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Cochilia" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Membrana timpanului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
+                <Label Text="d) Osiculele auditive" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Ce parte a urechii umane este responsabilă pentru convertirea vibrațiilor sonore în semnale nervoase pe care creierul le poate interpreta?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Cochilia" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Pavilionul urechii" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Trompa lui Eustachio" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
+                <Label Text="d) Membrana timpanului" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Care dintre următoarele componente ale urechii umane reglează echilibrul și poziția corpului?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Osiculele auditive" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Trompa lui Eustachio" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Vestibulul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
+                <Label Text="d) Cochilia" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Ce rol are urechea umană în sistemul nostru de comunicare și orientare în lumea înconjurătoare?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Percepția și interpretarea sunetelor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Reglarea temperaturii corpului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Transmiterea semnalelor vizuale către creier" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
+                <Label Text="d) Controlul respirației" />
+            </StackLayout>
+
+            <!-- Finalize Button -->
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+
+            <!-- Score Label -->
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

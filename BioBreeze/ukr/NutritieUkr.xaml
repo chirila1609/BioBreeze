@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ukr.NutritieUkr"
+             Title="Харчування">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="nutritie1.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ласкаво просимо до розділу «Харчування»: розкрийте секрети здорового та збалансованого харчування" FontAttributes="Bold" />
+                        <Span Text="&#x0a;&#x0a;Харчування – це наука, яка вивчає їжу та її вплив на наше здоров’я та самопочуття. Це подорож до розуміння важливої ​​ролі харчування в підтримці здорового та збалансованого життя.&#x0a;&#x0a;У цьому розділі ви дослідите секрети здорового харчування, дізнаєтеся про групи продуктів, потреби в харчуванні тіло та як ви можете створити збалансовані та стійкі харчові звички. Ви відкриєте для себе важливість вітамінів, мінералів та інших основних поживних речовин і те, як вони підтримують загальний стан здоров’я.&#x0a;&#x0a;Завдяки інтерактивним урокам, практичній інформації та корисним порадам ви будете орієнтуватися в лабіринті інформації про харчування, навчатися як робити розумний вибір їжі та насолоджуватися здоровим та енергійним життям. Незалежно від того, чи ви батько, який турбується про харчування дітей, чи дорослий, який хоче покращити свій спосіб життя, наша вкладка «Харчування» допоможе вам на шляху до здорового, збалансованого харчування!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Сапрофітне гетеротрофне живлення" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
+            <Button Text="Гетеротрофне паразитарне живлення" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
+            <Button Text="Міксотрофне живлення" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MNutri"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

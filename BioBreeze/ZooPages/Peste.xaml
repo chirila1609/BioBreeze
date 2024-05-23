@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.Peste"
+             Title="Pește">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="peste.png"/>
+            <Image Source="peste1.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Pestii reprezintă un grup variat și fascinant de animale acvatice ce fac parte din subregatul vertebratelor. Aceștia sunt adaptabili la o mare diversitate de medii acvatice, de la râuri și lacuri până la oceane și recife de corali." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Există peste 30.000 de specii cunoscute de pesti, împărțite într-o gamă largă de familii și ordinuri. Acestea variază enorm în formă, mărime, culoare și comportament. De exemplu, pestii oscilează de la mici și transparenti, cum ar fi meduzele, până la giganticii rechini albi care domină oceanele." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Maiestria pestilor în mediul lor acvatic este evidențiată prin varietatea adaptărilor lor anatomice și comportamentale. Multe specii de pesti au solzi care le protejează corpul, înotătoare pentru deplasare și branhii pentru a extrage oxigenul din apa din jur. Altele au evoluat pentru a supraviețui în condiții extreme, cum ar fi adâncimile întunecate ale oceanelor sau în apele sărate ale marilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pestii sunt esențiali pentru echilibrul ecosistemelor acvatice. Ei servesc ca hrana pentru alte creaturi, ajută la menținerea curățeniei în apa prin consumul de alge și resturi organice și contribuie la dispersia nutrienților prin excremente. De asemenea, pestii sunt o resursă valoroasă pentru oameni, fiind o sursă importantă de hrană și venituri pentru comunitățile pescărești din întreaga lume." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Cu toate acestea, multe specii de pesti sunt amenințate de suprapescuit, degradarea habitatelor și schimbările climatice. Protejarea și conservarea acestor creaturi sunt cruciale pentru menținerea echilibrului ecologic al ecosistemelor acvatice și pentru sustenabilitatea resurselor piscicole pentru generațiile viitoare." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooPeste"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

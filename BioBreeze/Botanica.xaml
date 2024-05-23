@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Botanica"
+             Title="Botanică">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="botanica1.png" MaximumWidthRequest="720"/>
+            <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Bine ați venit în Botanică: Explorați Minunile Lumii Vegetale" FontAttributes="Bold" />
+                    <Span Text="&#x0a;&#x0a;Botanica este studiul plantelor și al vieții vegetale, oferind o privire fascinantă asupra diversității și funcțiilor acestora. Este o călătorie în lumea plină de viață a plantelor, de la cele mai mici alge și ciuperci până la cei mai înalți arbori și plante exotice.&#x0a;&#x0a;În această secțiune, veți explora secretele și minunile lumii vegetale, învățând despre structura plantelor, procesele lor de creștere și reproducere, și rolul crucial pe care îl joacă în ecosistemele noastre. Veți descoperi diferitele tipuri de plante, de la cele acvatice la cele deșertice, și veți înțelege modul în care acestea se adaptează la mediul lor înconjurător.&#x0a;&#x0a;Prin lecții interactive, videoclipuri captivante și teste provocatoare, veți călători prin regnul vegetal, descoperind frumusețea și importanța plantelor în viața noastră de zi cu zi. Indiferent dacă sunteți un pasionat al naturii sau un iubitor de grădinărit, fila noastră de Botanică vă invită să explorați și să apreciați minunile lumii vegetale!" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+            <Button Text="Țesuturi vegetale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TVege"/>
+            <Button Text="Hrănirea la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HVege"/>
+            <Button Text="Respirația la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RVege"/>
+            <Button Text="Circulația la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CVege"/>
+            <Button Text="Excreția la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EVege"/>
+            <Button Text="Reproducerea la plantele cu flori" MaximumWidthRequest="350" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RFVege"/>
+            <Button Text="Inmultirea prin spori si vegetativa la plante" MaximumWidthRequest="450" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ISVVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

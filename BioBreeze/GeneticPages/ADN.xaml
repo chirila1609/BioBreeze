@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.GeneticPages.ADN"
+             Title="ADN">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="adn.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Acidul dezoxiribonucleic, cunoscut sub acronimul ADN, este o moleculă complexă și fascinantă care servește drept material genetic în majoritatea organismelor vii. Descoperit în anul 1869 de către chimistul elvețian Friedrich Miescher, ADN-ul reprezintă unul dintre pilonii fundamentali ai biologiei moleculare și geneticii moderne." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="adn1.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Structura sa în formă de dublu helix, elucidată în anii 1950 de către James Watson și Francis Crick, este o realizare-cheie în știința biologică. Dubla helix constă din două lanțuri de nucleotide care se încolăcesc în jurul unuia altuia, formând o scară în spirală. Nucleotidele sunt compuse dintr-un zahăr (deoxiriboză), un grup fosfat și o bază azotată. Bazele azotate sunt adenina (A), citozina (C), guanina (G) și timina (T). Acest model structural oferă ADN-ului stabilitate și capacitatea de a stoca și transmite informații genetice într-un mod eficient." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Funcția principală a ADN-ului este de a codifica instrucțiunile necesare pentru dezvoltarea, funcționarea și moștenirea caracteristicilor organismelor vii. Aceste instrucțiuni sunt transmise sub formă de secvențe specifice de bază azotate, care determină secvența de aminoacizi în proteinele organismului. Proteinele sunt molecule esențiale pentru structura și funcționarea celulară, fiind implicate într-o varietate de procese biologice, cum ar fi metabolismul, replicarea celulară și răspunsul imun." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="ADN-ul este subiectul unor cercetări intense în diverse domenii științifice, cum ar fi biologia moleculară, genetică, medicina și biotehnologia. În medicină, înțelegerea ADN-ului și a mutațiilor sale asociate cu diferite boli a deschis noi posibilități în diagnosticare, tratament și chiar prevenirea unor afecțiuni genetice ereditare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, ADN-ul este o moleculă esențială pentru viață și este responsabil pentru diversitatea și ereditatea caracteristicilor organismelor vii. Cunoașterea sa adâncă și exploatarea în diverse domenii ale științei au revoluționat înțelegerea noastră despre viață și au deschis drumuri noi pentru inovație și progres în domeniul biologic." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenADN"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

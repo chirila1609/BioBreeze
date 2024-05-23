@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ukr.AnatomieUkr"
+             Title="Анатомія">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="anatomie1.png" MaximumWidthRequest="720"/>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="20" Text="Ласкаво просимо до анатомії: досліджуйте чудеса всередині&#x0a;" FontAttributes="Bold" />
+                        <Span FontSize="15" Text="
+
+Анатомія — наука про будову та організацію живих організмів. Це схоже на подорож складною картою людського тіла, дослідження його органів, тканин і клітин і розуміння того, як вони працюють разом, щоб підтримувати нас живими та функціонувати.
+
+У цьому розділі вирушайте в пригоду в глибини людського тіла. Відкрийте таємниці нашої анатомії: від кісток, які забезпечують структуру, до м’язів, які забезпечують рух, і від серця, яке перекачує життєво важливу кров, до мозку, який живить наші думки та дії.
+
+Завдяки інтерактивним урокам, яскравим ілюстраціям і захоплюючим тестам дізнайтеся про різні системи організму — скелетну, м’язову, кровоносну та нервову — і про те, як вони взаємодіють, щоб підтримувати наше здоров’я та благополуччя.
+
+Незалежно від того, допитливий ви студент чи починаючий вчений, наша вкладка «Анатомія» — це ваші ворота у світ відкриттів. Давайте вирушаймо на вулицю та досліджуємо чудеса всередині!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Скелет людини" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Skeleton"/>
+            <Button Text="М'язи тіла" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Muscle"/>
+            <Button Text="Нервова система" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SN"/>
+            <Button Text="Серцево-судинна система" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SC"/>
+            <Button Text="Дихальна система" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SR"/>
+            <Button Text="Травна система" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SD"/>
+            <Button Text="Репродуктивна система" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SRep"/>
+            <Button Text="МОЗОК" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Brain"/>
+            <Button Text="серце" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Heart"/>
+            <Button Text="Шлунок" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Stom"/>
+            <Button Text="легені" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_PL"/>
+            <Button Text="печінка" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_F"/>
+            <Button Text="око" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_O"/>
+            <Button Text="вухо" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_U"/>
+            <Button Text="ніс" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_N"/>
+            <Button Text="Мова" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_L"/>
+            <Button Text="Шкіра" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_P"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.TAnimale"
+             Title="Țesuturi animale">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="tesutanimal.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="În regnul animal, țesuturile sunt structuri esențiale care formează baza organismelor multicelulare. Acestea sunt grupuri organizate de celule care își unesc funcțiile pentru a îndeplini anumite scopuri în organism. Există patru tipuri principale de țesuturi animale:" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Țesutul epitelial:" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Țesutul epitelial acoperă suprafețele exterioare ale organismului și liniază suprafețele interioare ale cavităților și organelor. Este caracterizat prin celule strâns aliniate care formează o barieră protectoare împotriva substanțelor străine și a daunelor mecanice. Acesta poate fi stratificat sau simplu și poate fi găsit în organe precum pielea, membranele mucoase și tractul digestiv." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Țesutul conjunctiv:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Țesutul conjunctiv este un țesut de susținere care leagă și protejează alte țesuturi și organe în corpul animal. Include o varietate de tipuri, cum ar fi țesutul conjunctiv moale (care include grăsimea și tendoanele), țesutul conjunctiv fibros (care formează ligamentele și fasciile) și țesutul conjunctiv osos (care formează oasele). De asemenea, este responsabil pentru producerea matricei extracelulare, care oferă susținere structurală și furnizează substanțe nutritive celulelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Țesutul muscular:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Țesutul muscular este specializat în contracție și generarea de mișcare. Există trei tipuri principale de țesut muscular: țesut muscular scheletic (care este atașat de oase și controlează mișcarea voluntară), țesut muscular neted (care este prezent în organele interne și controlează mișcările involuntare ale organelor) și țesut muscular cardiac (care formează inima și controlează mișcarea inimii)." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="4. Țesutul nervos:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Țesutul nervos este format din celule specializate numite neuroni, care conduc semnalele electrice prin corpul animal. Aceste semnale permit organismului să răspundă la stimuli externi și interni și să coordoneze activitățile sale. În plus față de neuroni, țesutul nervos include celule de suport numite celule gliale, care își ajută în funcționarea și protecția neuronilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, țesuturile animale sunt fundamentale pentru funcționarea organismelor multicelulare, oferind structură, susținere, protecție și capacitatea de a răspunde la mediu. Fiecare tip de țesut are rolul său specific și contribuie la sănătatea și funcționarea adecvată a organismului animal." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooTAnimale"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

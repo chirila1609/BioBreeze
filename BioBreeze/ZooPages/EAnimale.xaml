@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.EAnimale"
+             Title="Excreția la animale">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Excreția este procesul prin care organismele îndepărtează substanțele deșeurilor din corp, inclusiv produsele reziduale ale metabolismului. La animale, excreția este crucială pentru menținerea echilibrului intern și eliminarea substanțelor toxice acumulate în timpul proceselor metabolice. Există o varietate de sisteme și mecanisme adaptate la diferite medii și necesități biologice." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Sisteme de excreție la animale:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Excreția la nevertebrate: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Nevertebratele, cum ar fi insectele și moluștele, folosesc o gamă diversă de organe pentru excreție. De exemplu, insectele folosesc tuburi Malpighi și intestine pentru eliminarea deșeurilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Excreția la vertebrate: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="La vertebrate, sistemele de excreție sunt mai complexe și includ rinichii, plămânii, pielea și glandele salivare. Rinichii sunt organele principale de excreție la majoritatea vertebratelor și filtrează sângele pentru a elimina deșeurile în urină." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Adaptări ale sistemelor de excreție:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Adaptări la mediu: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Animalele care trăiesc în medii uscate sau cu resurse limitate de apă, cum ar fi reptilele și unele mamifere deșertice, au dezvoltat sisteme de excreție concentrate pentru a conserva apă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Excreția la animale marine: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Organismele marine, cum ar fi peștii și rechinii, trebuie să facă față excreției deșeurilor într-un mediu cu concentrații diferite de săruri și alte substanțe chimice. Rinichii și glandele speciale de excreție sunt adaptate pentru a gestiona aceste condiții." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, excreția la animale este un proces esențial pentru menținerea homeostaziei și supraviețuirea în diferite medii. Variația în sistemele și adaptările pentru excreție reflectă diversitatea și complexitatea lumii naturale." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooEAnimale"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

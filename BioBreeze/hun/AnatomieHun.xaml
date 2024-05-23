@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.hun.AnatomieHun"
+             Title="Anatómia">
+    
+        <ScrollView>
+            <StackLayout>
+                <Image Source="anatomie1.png" MaximumWidthRequest="720"/>
+                <Label HorizontalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                        <Span FontSize="20" Text="Üdvözöljük az anatómiában: Fedezze fel a benne rejlő csodákat&#x0a;" FontAttributes="Bold" />
+                            <Span FontSize="15" Text="Az anatómia az élő szervezetek szerkezetének és szerveződésének tanulmányozása. Olyan ez, mint egy utazás az emberi test összetett térképén, feltárva szerveit, szöveteit és sejtjeit, és megérteni, hogyan működnek együtt életben és működésünkben.
+
+Ebben a részben vágj bele egy kalandba az emberi test mélységeibe. Fedezze fel anatómiánk titkait, a szerkezetet adó csontoktól a mozgást lehetővé tevő izmokig, és a szívtől, amely létfontosságú vért pumpál az agyba, amely a gondolatainkat és tetteinket vezérli.
+
+Interaktív leckéken, élénk illusztrációkon és lebilincselő vetélkedőkön keresztül megismerheti a test különböző rendszereit – a vázrendszert, az izmokat, a keringési rendszert és az idegrendszert –, valamint azt, hogy ezek hogyan hatnak egymásra egészségünk és jólétünk megőrzése érdekében.
+
+Akár kíváncsi diák, akár tudósra törekvő, az Anatómia lapunk az Ön kapuja a felfedezések világába. Merészkedjünk ki és fedezzük fel a benne rejlő csodákat!" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            <Button Text="Emberi csontváz" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Skeleton"/>
+                <Button Text="Mușchi corpului" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Muscle"/>
+            <Button Text="Idegrendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SN"/>
+            <Button Text="Keringési rendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SC"/>
+            <Button Text="Légzőrendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SR"/>
+            <Button Text="Emésztőrendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SD"/>
+            <Button Text="Szaporító rendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SRep"/>
+            <Button Text="AGY" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Brain"/>
+            <Button Text="Szív" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Heart"/>
+            <Button Text="A gyomor" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Stom"/>
+            <Button Text="Tüdő" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_PL"/>
+            <Button Text="máj" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_F"/>
+            <Button Text="szem" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_O"/>
+            <Button Text="fül" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_U"/>
+            <Button Text="Orr" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_N"/>
+            <Button Text="Nyelv" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_L"/>
+            <Button Text="bőr" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_P"/>
+            </StackLayout>
+        </ScrollView>
+</ContentPage>

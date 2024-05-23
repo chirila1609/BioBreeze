@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Pages.gim2"
+             Title="Clasa a VI-a">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="clasavi.png" MaximumWidthRequest="720"/>
+            <Label Text="Bine ați venit la clasa a VI-a!" HorizontalOptions="Center"/>
+            <Button Text="Tesuturi animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TA"/>
+            <Button Text="Hranirea la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HA"/>
+            <Button Text="Respiratia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RA"/>
+            <Button Text="Circulatia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CA"/>
+            <Button Text="Excretia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EA"/>
+            <Button Text="Tesuturi vegetale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TV"/>
+            <Button Text="Hranirea la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HP"/>
+            <Button Text="Respiratia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RP"/>
+            <Button Text="Circulatia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CP"/>
+            <Button Text="Excretia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EP"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

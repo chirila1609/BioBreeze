@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Nasul"
+             Title="Nasul">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="nasul.png" MaximumWidthRequest="720"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                    <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+                </Grid>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontSize="15" Text="Nasul uman este un organ complex și esențial al sistemului respirator, având multiple funcții, printre care respirația, detectarea mirosurilor și filtrarea particulelor din aerul inhalat. Situat în partea superioară a feței, nasul servește ca un canal de aer și ca un receptor de informații olfactive." />
+                            <Span Text="&#x0a;" />
+                            <Span Text="&#x0a;" />
+                            <Span FontSize="15" Text="Structura nasului este formată din mai multe componente, inclusiv cavitatea nazală, septul nazal, cornetele nazale și sinusurile paranazale. Cavitatea nazală este spațiul interior al nasului, care este tapetat cu mucoasă și în care aerul este încălzit, umidificat și curățat înainte de a ajunge în plămâni. Septul nazal este o perete subțire de țesut care separă cavitatea nazală în două părți simetrice. Cornetele nazale sunt proeminențe osoase acoperite de mucoasă care ajută la direcționarea și filtrarea aerului în timpul respirației. Sinusurile paranazale sunt cavități umplute cu aer care se găsesc în oasele din jurul nasului și servesc la reducerea greutății capului și la producerea de mucus." />
+                            <Span Text="&#x0a;" />
+                            <Span Text="&#x0a;" />
+                            <Span FontSize="15" Text="Una dintre cele mai importante funcții ale nasului este detectarea mirosurilor. Membrana olfactivă situată în partea superioară a cavității nazale conține receptorii olfactivi care sunt sensibili la substanțele chimice din aer. Aceste receptorii transmit informații către creier, permițând individului să perceapă și să identifice mirosurile din mediul înconjurător." />
+                            <Span Text="&#x0a;" />
+                            <Span Text="&#x0a;" />
+                            <Span FontSize="15" Text="Pe lângă funcția sa de detectare a mirosurilor, nasul uman joacă și un rol important în filtrarea particulelor din aerul inhalat. Firele de păr și mucoasa din cavitatea nazală capturează particulele străine și microorganismele din aer, împiedicându-le să ajungă în plămâni și protejând astfel sistemul respirator împotriva infecțiilor și alergiilor." />
+                            <Span Text="&#x0a;" />
+                            <Span Text="&#x0a;" />
+                            <Span FontSize="15" Text="În concluzie, nasul uman este un organ esențial pentru respirație, olfacție și protecție împotriva particulelor străine din aer. Structura și funcționarea sa complexe îl fac un element indispensabil al corpului uman și ilustrează interconectarea dintre funcțiile de bază ale organismului și capacitatea sa de a interacționa cu mediul înconjurător." />
+                            <Span Text="&#x0a;" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieNasul"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

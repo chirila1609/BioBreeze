@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.BotanicPages.TVege"
+             Title="Țesuturi vegetale">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="tvege.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="În structura complexă a plantelor, țesuturile vegetale reprezintă o parte esențială, asigurând suport structural, transportul substanțelor și creșterea organismului. Acestea sunt clasificate în două categorii principale: țesuturi meristemice și țesuturi permanente." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Țesuturi Meristemice" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Țesuturile meristemice sunt responsabile pentru creșterea primară și secundară a plantelor, precum și pentru producerea de celule noi. Acestea sunt împărțite în:" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="a. Meristem Primar:" FontAttributes="Bold" />
+                        <Span Text="-Meristem apical: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Situat în vârful rădăcinii și al tulpinii, acesta promovează creșterea longitudinală." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Meristem intercalar: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Prezent la nivelul nodurilor din tulpină, acesta asigură creșterea în lungime a segmentelor intercalare ale plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Meristem lateral: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Se găsește sub cortexul tulpinii și al rădăcinii, contribuind la creșterea în grosime a plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="b. Meristem Secundar sau Cambiu:" FontAttributes="Bold" />
+                        <Span Text="-Cambiu vascular: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Produce țesut vascular secundar, xilem și floem, care permit creșterea în grosime a plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Cambiu cortical: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Produce țesutul cortical secundar, crescând grosimea cortexului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Țesuturi Permanente" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Țesuturile permanente sunt formate din celule mature și îndeplinesc funcții specializate în cadrul plantei. Acestea includ:" />
+                        <Span Text="a. Țesuturi de Protecție:" FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Epidermă: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Stratul exterior al plantelor, format din celule care protejează împotriva pierderii de apă și a invaziei de organisme patogene." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Peridermă: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Înlocuiește epiderma la plantele perene, asigurând protecție împotriva stresului mecanic și a infecțiilor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="b. Țesuturi de Conducție:" FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Xilem: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Transportă apă și substanțe minerale de la rădăcini către alte părți ale plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Floem: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Transportă substanțe organice sintetizate, precum zahărul, de la frunze și alte organe fotosintetice către alte părți ale plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="c. Țesuturi de Suport:" FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Colenchim: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Asigură susținerea și flexibilitatea țesuturilor în creștere." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Sclerenchim: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Furnizează rigiditate și protecție împotriva stresului mecanic." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="d. Țesuturi de Stocare:" FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="-Parenchim de stocare: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Depozitează substanțe nutritive, cum ar fi amidonul și uleiurile, în rădăcini, tulpini și semințe." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Aceste țesuturi complexe formează o rețea funcțională care susține vitalitatea plantelor, asigurându-le adaptabilitatea și capacitatea de a supraviețui în medii variate." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotTVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

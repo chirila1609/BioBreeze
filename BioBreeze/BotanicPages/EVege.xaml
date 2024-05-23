@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.BotanicPages.EVege"
+             Title="Excreția la plante">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="eplante.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Excreția la plante reprezintă un proces fundamental prin care organismele vegetale elimină substanțe deșeurilor și excesul de substanțe din corpul lor. Acest proces este crucial pentru menținerea echilibrului intern și pentru asigurarea sănătății și creșterii optime a plantelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Principalul mecanism de excreție la plante este reprezentat de transpirație și de eliminarea substanțelor prin glandele speciale. Transpirația constă în pierderea de apă sub formă de vapori prin stomatele situate pe suprafața frunzelor. Acest proces are loc în timpul fotosintezei și ajută la răcirea plantei și la absorbția eficientă a substanțelor nutritive și a apei din sol." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe lângă transpirație, plantele excretă și substanțe deșeu prin rădăcini. În sol, rădăcinile eliberează substanțe chimice reziduale și substanțe toxice care ar putea afecta sănătatea lor sau a altor plante din apropiere. Acest proces este esențial pentru curățarea solului și menținerea unui mediu propice pentru creșterea plantelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Unele plante dezvoltă glande speciale pentru excreție, cum ar fi glandele de sare la plantele halofile, care le permit să elimine excesul de sare din corpul lor în medii saline. De asemenea, anumite plante medicinale produc uleiuri esențiale sau alte substanțe chimice pentru a se proteja împotriva dăunătorilor sau pentru a atrage polenizatori, iar aceste substanțe pot fi considerate forme de excreție." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, excreția la plante este un proces esențial pentru menținerea echilibrului intern și pentru asigurarea sănătății și creșterii optime a acestora. Prin transpirație, eliminare prin rădăcini și alte mecanisme specifice, plantele își gestionează eficient deșeurile și excesul de substanțe, contribuind astfel la sănătatea ecosistemelor în care se dezvoltă." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotEVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.CAnimale"
+             Title="Circulația la animale">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="csange.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Circulația sângelui este un proces vital în organismele animale, furnizând substanțe nutritive și oxigen în întregul corp și eliminând deșeurile metabolice. Acest proces este realizat prin intermediul unui sistem complex de vase de sânge și inimi care variază în funcție de tipul de animal." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Sistemul Circulator la Vertebrate" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Majoritatea vertebratelor, inclusiv mamiferele, păsările, reptilele și peștii, prezintă un sistem circulator închis, în care sângele este pompat printr-un circuit închis de vase de sânge. Acest sistem este compus din două tipuri principale de vase de sânge: artere și vene. Arterele transportă sângele de la inimă la țesuturi, în timp ce venele îl transportă înapoi la inimă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Inima la vertebrate poate fi un organ simplu, cum ar fi inima la pești, care constă dintr-o cameră simplă de pompare, sau un organ mai complex, cum ar fi inima umană, care are patru camere distincte. Inima funcționează ca o pompă, contractându-se și pompează sângele în jurul corpului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Sistemul Circulator la Nevertebrate" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În contrast, nevertebratele, cum ar fi insectele și moluștele, au adesea un sistem circulator deschis, în care sângele este pompat direct în cavitățile corpului, numite hemoceli. Sângele transportă substanțe nutritive și oxigen direct la țesuturi și apoi este colectat în vase speciale numite sinuse, unde este filtrat și trimis înapoi în inimă pentru reciclare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Adaptări și Varietăți" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Circulația sângelui la animale s-a adaptat în moduri variate pentru a satisface cerințele specifice ale fiecărui mediu și stil de viață. De exemplu, la animalele care trăiesc la altitudini mari sau în apă rece, sângele poate avea niveluri mai ridicate de hemoglobină pentru a transporta mai mult oxigen. La animalele care trăiesc în medii extreme, cum ar fi păsările migratoare, inima și vasele de sânge pot fi adaptate pentru a face față stresului suplimentar." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Concluzie" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Circulația sângelui este o caracteristică esențială a vieții animale și este esențială pentru funcționarea corectă a organismelor. Varietatea de sisteme circulatorii întâlnite în regnul animal reflectă diversitatea adaptărilor la medii și moduri de viață diferite. Studiul circulației la animale aduce o înțelegere mai profundă a complexității biologice și a modului în care organismele se adaptează la mediul lor." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooCAnimale"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomieOchi"
+             Title="AnatomieOchi">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test despre Ochiul Uman" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <!-- Question 1 -->
+            <Label Text="1. Care este una dintre funcțiile principale ale corneei?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Controlul dimensiunii pupilei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Transmiterea semnalelor vizuale către creier" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Acoperirea irisului și a pupilei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
+                <Label Text="d) Conversia luminii în semnale electrice" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Ce se întâmplă în alveolele plămânilor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Este procesată lumina" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Se realizează schimbul rapid de gaze între aer și sânge" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Se formează cristalinul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
+                <Label Text="d) Se produc semnale electrice" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Ce parte a ochiului ajută la focalizarea luminii pe retina?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Irisul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Pupila" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Retina" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
+                <Label Text="d) Cristalinul" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Care dintre următoarele este adevărat despre nervul optic?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Controlează dimensiunea pupilei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Este responsabil pentru acoperirea irisului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Transmite semnalele vizuale de la retina la creier" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
+                <Label Text="d) Ajută la conversia luminii în semnale electrice" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Care este una dintre funcțiile principale ale plămânilor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Controlul temperaturii corpului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Digestia alimentelor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Respirația" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
+                <Label Text="d) Eliminarea toxinelor din sânge" />
+            </StackLayout>
+
+            <!-- Question 6 -->
+            <Label Text="6. Ce parte a ochiului reglează dimensiunea pupilei pentru a controla cantitatea de lumină care intră?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionA" GroupName="Question6" />
+                <Label Text="a) Corneea" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionB" GroupName="Question6" />
+                <Label Text="b) Irisul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionC" GroupName="Question6" />
+                <Label Text="c) Retina" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionD" GroupName="Question6" />
+                <Label Text="d) Cristalinul" />
+            </StackLayout>
+
+            <!-- Question 7 -->
+            <Label Text="7. Care este rolul capilarelor sanguine în jurul alveolelor plămânilor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionA" GroupName="Question7" />
+                <Label Text="a) Elimină dioxidul de carbon" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionB" GroupName="Question7" />
+                <Label Text="b) Facilitează schimbul rapid de gaze între aer și sânge" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionC" GroupName="Question7" />
+                <Label Text="c) Protejează împotriva infecțiilor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionD" GroupName="Question7" />
+                <Label Text="d) Produc semnale electrice" />
+            </StackLayout>
+
+            <!-- Question 8 -->
+            <Label Text="8. Ce parte a ochiului convertește lumina în semnale electrice și le transmite către creier?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionA" GroupName="Question8" />
+                <Label Text="a) Corneea" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionB" GroupName="Question8" />
+                <Label Text="b) Irisul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionC" GroupName="Question8" />
+                <Label Text="c) Pupila" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionD" GroupName="Question8" />
+                <Label Text="d) Retina" />
+            </StackLayout>
+
+            <!-- Question 9 -->
+            <Label Text="9. Care este una dintre funcțiile principale ale cristalinului?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionA" GroupName="Question9" />
+                <Label Text="a) Transmiterea semnalelor vizuale către creier" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionB" GroupName="Question9" />
+                <Label Text="b) Acoperirea irisului și a pupilei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionC" GroupName="Question9" />
+                <Label Text="c) Ajută la focalizarea luminii pe retina" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionD" GroupName="Question9" />
+                <Label Text="d) Controlul dimensiunii pupilei" />
+            </StackLayout>
+
+            <!-- Question 10 -->
+            <Label Text="10. Ce parte a ochiului este responsabilă pentru acoperirea irisului și a pupilei?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question10OptionA" GroupName="Question10" />
+                <Label Text="a) Corneea" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question10OptionB" GroupName="Question10" />
+                <Label Text="b) Irisul" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question10OptionC" GroupName="Question10" />
+                <Label Text="c) Pupila" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question10OptionD" GroupName="Question10" />
+                <Label Text="d) Retina" />
+            </StackLayout>
+
+            <!-- Finalize Button -->
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+
+            <!-- Score Label -->
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

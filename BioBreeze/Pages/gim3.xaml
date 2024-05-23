@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Pages.gim3"
+             Title="Clasa a VII-a">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="clasavii.png" MaximumWidthRequest="720"/>
+            <Label Text="Bine ați venit la clasa a VII-a!" HorizontalOptions="Center"/>
+            <Button Text="Sistemul Nervos" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SN"/>
+            <Button Text="Ochiul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_O"/>
+            <Button Text="Urechea" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_U"/>
+            <Button Text="Nasul" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_N"/>
+            <Button Text="Limba" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_L"/>
+            <Button Text="Pielea" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_P"/>
+            <Button Text="Reproducerea la plantele cu flori" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RF"/>
+            <Button Text="Inmulțirea prin spori și vegetativă la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ISVVege"/>
+            <Button Text="Sistemul reproductiv la om" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SistemulReproductiv"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

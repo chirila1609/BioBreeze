@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.Moluste"
+             Title="Moluște">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="moluste.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Moluștele: Mici Creaturi Cu O Mare Diversitate" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Moluștele reprezintă un grup divers și fascinant de animale din regnul Animalia, clasificate în încrengătura Molusca. Aceste creaturi sunt cunoscute pentru adaptabilitatea lor uimitoare și diversitatea lor de forme, dimensiuni și medii de viață. Cu peste 100.000 de specii identificate până în prezent, moluștele ocupă o varietate de habitate, de la adâncimile oceanului la zonele umede ale pământului." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="moluste1.png"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Anatomia Moluștelor" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Majoritatea moluștelor prezintă o anatomie caracteristică, incluzând un corp moale acoperit de o cochilie. Această cochilie poate varia în formă și consistență, de la cochilii solide și robuste la cochilii subțiri și fragile. Multe moluște au un organ muscular numit „picior” care le ajută să se miște, să sape sau să se prindă de suprafețe. În plus față de picior, majoritatea moluștelor au și un organ intern numit mantie, care secretă cochilia și poate avea funcții diverse, precum respirația și excreția." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Diversitatea Moluștelor" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Moluștele prezintă o gamă incredibilă de forme și funcții. De la melci terestri care se deplasează încet pe frunzele umede ale pădurii până la calmari și caracatițe care trăiesc în adâncurile oceanului, diversitatea acestor creaturi este remarcabilă. Unele moluște sunt adaptate pentru sărături, altele pentru apă dulce, iar altele pentru viața marină. Există moluște care se hrănesc de pe fundul mării cu detritus, iar altele care sunt prădătoare eficiente." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Importanța Ecologică și Economică" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Moluștele joacă un rol crucial în ecosistemele marine și terestre. Ele servesc ca hrană pentru o varietate de alte animale, contribuie la reciclarea materiei organice și pot acționa ca indicatori ai sănătății ecosistemelor. De asemenea, unele moluște au o importanță economică semnificativă, fiind pescuite pentru consumul uman sau pentru colectarea cochiliilor pentru diverse scopuri, precum bijuteriile sau materialele de construcție." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, moluștele reprezintă un grup remarcabil de animale, cu o diversitate uimitoare și o importanță ecologică și economică considerabilă. Studierea și înțelegerea lor sunt esențiale pentru protejarea și conservarea diversității naturale a lumii noastre." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooMoluste"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

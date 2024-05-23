@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.GeneticPages.G"
+             Title="Gene">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Genele reprezintă unitățile fundamentale ale eredității și sunt responsabile de transmiterea trăsăturilor de la părinți la urmași. Acestea sunt segmente de ADN (acid dezoxiribonucleic) localizate pe cromozomi și conțin informația genetică necesară pentru sinteza proteinelor și pentru funcționarea corectă a organismului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Structura și Funcția Genele sunt compuse din secvențe specifice de nucleotide, denumite bază azotate, care sunt adenină (A), citozină (C), guanină (G) și timină (T). Secvența acestor baze nucleotidice determină instrucțiunile genetice pentru sinteza proteinelor. În general, genele sunt formate din exoni (segmente de ADN care sunt transcrise în ARN mesager și ulterior traduse în proteine) și introni (segmente non-coding care sunt înlăturate în timpul procesului de transcripție)." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Funcția principală a genelor constă în controlul proceselor biologice, cum ar fi creșterea, dezvoltarea și metabolismul. Acestea influențează trăsăturile fizice și comportamentale ale organismelor, precum și susceptibilitatea la anumite boli sau afecțiuni. Unele gene acționează ca instrucțiuni pentru producerea anumitor proteine, în timp ce altele reglează activitatea altor gene sau sunt implicate în procese de reglare a expresiei genice." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Moștenirea și Variabilitatea Genetică Moștenirea genetică se realizează prin transmiterea genelor de la părinți la descendenți prin intermediul gametelor (ovule și spermatozoizi) în timpul reproducției sexuate. Variabilitatea genetică, rezultată din diferite combinații de gene, contribuie la diversitatea organismelor și la adaptabilitatea acestora la mediu." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mutatiile genetice, care sunt modificări în secvența de ADN, pot apărea spontan sau pot fi cauzate de factori externi, cum ar fi radiațiile sau substanțele chimice. Unele mutații pot avea efecte negative și pot duce la boli genetice, în timp ce altele pot conferi avantaje în anumite medii sau pot fi neutre din punct de vedere al fenotipului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Impactul Geneticii în Medicină și Biotehnologie Studiul geneticii este crucial pentru înțelegerea bolilor genetice, precum și pentru dezvoltarea unor tratamente personalizate și terapii genice. Biotehnologia utilizează cunoștințele din domeniul genetic pentru a manipula și a modifica genele în scopuri terapeutice sau pentru a produce organisme modificate genetic în agricultură și în industria alimentară." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, genele reprezintă pilonii de bază ai eredității și sunt esențiale pentru diversitatea și funcționarea adecvată a vieții pe Pământ. Înțelegerea lor profundă are implicații profunde în medicină, agricultură și alte domenii ale științei și tehnologiei." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenG"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

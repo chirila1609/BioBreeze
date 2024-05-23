@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.BotanicPages.RVege"
+             Title="Respirația la plante ">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="rplante.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Respirația la plante reprezintă un proces esențial prin care plantele își obțin energia necesară pentru supraviețuire și creștere. Deși asociem adesea respirația cu organismele care au plămâni sau branhi, plantele efectuează un proces de respirație similar, dar diferit în detalii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Procesul de Respirație" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Respirația la plante implică absorbția oxigenului și eliminarea dioxidului de carbon, într-un proces invers fotosintezei. În timpul respirației, plantele descompun moleculele organice complexe, precum zaharurile, pentru a obține energie, lăsând oxigenul și dioxidul de carbon ca produse secundare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Organele Implicate" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Principalul organ implicat în respirația la plante este stomacul, o structură microscopica găsită în frunze și tulpini. Stomatele sunt mici deschideri care permit schimbul de gaze între plante și mediul înconjurător. Oxigenul este absorbit prin stomate în timpul respirației, iar dioxidul de carbon este eliminat prin aceleași deschideri." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Adaptări la Mediu" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Plantele au evoluat diverse adaptări pentru a-și gestiona eficient respirația în diverse medii. De exemplu, plantele deșertului pot avea stomate închise ziua pentru a reduce pierderea de apă, deschizându-le noaptea pentru a permite respirația. În același timp, plantele acvatice pot folosi alte structuri, cum ar fi aerenești sau lenticeluri, pentru a absorbi oxigenul din apă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Importanța Respirației pentru Plante" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Respirația este vitală pentru plante, deoarece le furnizează energia necesară pentru a-și desfășura activitățile metabolice și pentru a crește. Fără un proces adecvat de respirație, plantele ar fi incapabile să producă energie și ar muri." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, respirația este un proces esențial pentru plante, permițându-le să obțină energia necesară pentru a supraviețui și a crește. Prin intermediul acestui proces, plantele demonstrează o adaptabilitate remarcabilă la medii variate și sunt parte integrantă a ecosistemelor terestre și acvatice." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotRVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

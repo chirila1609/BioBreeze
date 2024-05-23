@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ukr.GeneticaUkr"
+             Title="ГЕНЕТИЧНИЙ">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="genetica.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="
+
+Генетика — це галузь науки, яка вивчає успадкування та мінливість біологічних ознак серед організмів. Він досліджує, як генетична інформація передається від батьків до нащадків і як це впливає на розвиток і функціонування організмів. ДНК, або дезоксирибонуклеїнова кислота, є основною молекулою спадковості, яка містить генетичні інструкції для формування та функціонування живих організмів. За допомогою таких процесів, як реплікація, транскрипція та трансляція, генетична інформація передається та інтерпретується для виробництва білків і регулювання клітинної активності. Генетика є центральною для розуміння різноманітності життя та розробки практичних застосувань, таких як генетична медицина, сільське господарство та збереження біорізноманіття." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Спадковість і мінливість" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EV"/>
+            <Button Text="ДНК" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ADN"/>
+            <Button Text="гени" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_G"/>
+            <Button Text="Хромосоми" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Cromo"/>
+            <Button Text="Гамети" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Gameti"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

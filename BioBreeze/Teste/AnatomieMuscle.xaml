@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomieMuscle"
+             Title="AnatomieMuscle">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="1. Care dintre următorii mușchi permit mișcarea capului în diverse direcții?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) Mușchii gâtului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) Mușchii spatelui" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) Mușchii coapsei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
+                <Label Text="d) Mușchii fesieri" />
+            </StackLayout>
+
+            <!-- Question 2 -->
+            <Label Text="2. Care este principalul rol al mușchilor spatelui?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) Flexia și extensia piciorului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) Menținerea posturii corecte a corpului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) Susținerea arcului piciorului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
+                <Label Text="d) Rotirea coapsei" />
+            </StackLayout>
+
+            <!-- Question 3 -->
+            <Label Text="3. Care dintre următorii mușchi ajută la ridicarea și coborârea brațelor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) Mușchii abdomenului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) Mușchii umărului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) Mușchii încheieturii" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
+                <Label Text="d) Mușchii picioarelor" />
+            </StackLayout>
+
+            <!-- Question 4 -->
+            <Label Text="4. Care dintre următorii mușchi sunt responsabili pentru mișcarea și controlul brațelor?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) Mușchii tălpii" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) Mușchii gambei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
+                <Label Text="c) Mușchii brațului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
+                <Label Text="d) Mușchii încheieturii" />
+            </StackLayout>
+
+            <!-- Question 5 -->
+            <Label Text="5. Ce ajută mușchii încheieturii să controleze?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) Mișcările picioarelor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) Mișcările mâinilor și degetelor" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
+                <Label Text="c) Flexia și extensia coapsei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
+                <Label Text="d) Rotirea trunchiului" />
+            </StackLayout>
+
+            <!-- Question 6 -->
+            <Label Text="6. Care dintre următorii mușchi ne permit să prindem obiecte și să facem mișcări precise cu mâinile?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionA" GroupName="Question6" />
+                <Label Text="a) Mușchii gâtului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionB" GroupName="Question6" />
+                <Label Text="b) Mușchii mâinii" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionC" GroupName="Question6" />
+                <Label Text="c) Mușchii spatelui" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question6OptionD" GroupName="Question6" />
+                <Label Text="d) Mușchii abdomenului" />
+            </StackLayout>
+
+            <!-- Question 7 -->
+            <Label Text="7. Care este rolul principal al mușchilor abdomenului?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionA" GroupName="Question7" />
+                <Label Text="a) Menținerea posturii corecte a corpului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionB" GroupName="Question7" />
+                <Label Text="b) Flexia și extensia gleznei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionC" GroupName="Question7" />
+                <Label Text="c) Rotirea coapsei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question7OptionD" GroupName="Question7" />
+                <Label Text="d) Susținerea arcului piciorului" />
+            </StackLayout>
+
+            <!-- Question 8 -->
+            <Label Text="8. Care dintre următorii mușchi sunt responsabili pentru susținerea bolta piciorului?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionA" GroupName="Question8" />
+                <Label Text="a) Mușchii coapsei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionB" GroupName="Question8" />
+                <Label Text="b) Mușchii gambei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionC" GroupName="Question8" />
+                <Label Text="c) Mușchii fesieri" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question8OptionD" GroupName="Question8" />
+                <Label Text="d) Mușchii tălpii" />
+            </StackLayout>
+
+            <!-- Question 9 -->
+            <Label Text="9. Care este principalul rol al mușchilor fesieri?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionA" GroupName="Question9" />
+                <Label Text="a) Flexia și extensia piciorului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionB" GroupName="Question9" />
+                <Label Text="b) Rotirea coapsei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionC" GroupName="Question9" />
+                <Label Text="c) Susținerea arcului piciorului" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question9OptionD" GroupName="Question9" />
+                <Label Text="d) Menținerea echilibrului în timpul mersului" />
+            </StackLayout>
+
+            <!-- Question 10 -->
+            <Label Text="10. Ce ajută mușchii tibiei și mușchii gemeni să facă?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question10OptionA" GroupName="Question10" />
+                <Label Text="a) Flexia și extensia gleznei" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question10OptionB" GroupName="Question10" />
+                <Label Text="b) Flexia și extensia coapsei" />
+            </StackLayout>
+            <Button Text="Finalizează" Clicked="OnSubmitClicked" />
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

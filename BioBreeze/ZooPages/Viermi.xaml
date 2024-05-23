@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.Viermi"
+             Title="Viermi">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="viermi.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Viermi" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Viermii, o categorie diversă de organisme cu corpuri cilindrice sau în formă de șarpe, reprezintă un grup vast și variat în lumea animală. Aceste organisme sunt răspândite într-o gamă largă de medii, de la pământul umed al pădurilor tropicale la adâncimile abisale ale oceanelor. Cu toate că termenul vierme este adesea asociat cu imagini neplăcute sau chiar periculoase, multe specii de viermi sunt vitale pentru ecosisteme și au un impact semnificativ în domenii precum agricultura, medicina și ecologia." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Clasificare și Diversitate" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Viermii se împart în mai multe categorii taxonomice, inclusiv nematode (viermi cilindrici), platelminți (viermi plați), anelide (viermi segmentați), și altele. Aceștia variază în dimensiune, formă și habitat. De exemplu, nematodele, sau viermii cilindrici, sunt printre cele mai numeroase organisme de pe planetă, fiind găsite în sol, apă și chiar în organismele complexe, inclusiv în corpul uman." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Rolul Ecologic" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Multe specii de viermi joacă un rol crucial în menținerea sănătății ecosistemelor. De exemplu, viermii pământului, sau lombricii, sunt cunoscuți pentru capacitatea lor de a îmbunătăți fertilitatea solului prin procesul de compostare și aerisire a terenului. În plus, nematodele sunt implicate în ciclurile nutrienților și pot influența structura și funcționarea ecosistemelor terestre și marine." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Importanța Medicală și Economică" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În ciuda diversității și beneficiilor lor ecologice, unele specii de viermi pot fi dăunătoare. De exemplu, anumite nematode și platelminți sunt paraziți care pot afecta animalele domestice și sălbatice, precum și omul. Aceste infecții pot provoca boli grave și pot avea un impact semnificativ asupra agriculturii și sănătății umane." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Cercetare și Conservare" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Cunoașterea și înțelegerea viermilor sunt subiecte de interes în domenii precum biologia, ecologia și medicina. Cercetările asupra ecologiilor lor și a interacțiunilor cu alte organisme sunt cruciale pentru conservarea biodiversității și pentru gestionarea resurselor naturale. În plus, studiile asupra adaptărilor lor la medii extreme și capacitatea lor de a supraviețui în condiții dificile pot oferi perspective importante asupra evoluției și supraviețuirii vieții pe Pământ." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooViermi"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

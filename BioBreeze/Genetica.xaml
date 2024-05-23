@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Genetica"
+             Title="Genetică">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="genetica.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="
+
+Genetica este ramura științei care studiază moștenirea și variația trăsăturilor biologice între organisme. Ea explorează modul în care informația genetică este transmisă de la părinți la urmași și cum aceasta influențează dezvoltarea și funcționarea organismelor. ADN-ul, sau acidul dezoxiribonucleic, este molecula de bază a eredității, care conține instrucțiunile genetice pentru formarea și funcționarea organismelor vii. Prin intermediul proceselor precum replicarea, transcripția și traducerea, informația genetică este transmisă și interpretată pentru a produce proteine și a regla activitatea celulară. Genetica este esențială în înțelegerea diversității vieții și în dezvoltarea unor aplicații practice, cum ar fi medicina genetică, agricultura și conservarea biodiversității." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Ereditatea si variabilitatea" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EV"/>
+            <Button Text="ADN" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ADN"/>
+            <Button Text="Genele" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_G"/>
+            <Button Text="Cromozomii" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Cromo"/>
+            <Button Text="Gameți" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Gameti"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

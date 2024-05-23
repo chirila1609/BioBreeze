@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Skeleton"
+             Title="Scheletul uman">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="schelete.png" HorizontalOptions="Center" VerticalOptions="Center" MaximumHeightRequest="861" MaximumWidthRequest="1161" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Gândește-te la scheletul tău ca la o capodoperă arhitecturală a corpului tău, proiectată în mod intricat pentru a oferi suport, protecție și mobilitate. Fiecare os are forma și scopul său unic, lucrând împreună ca o echipă perfect sincronizată." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="skull.gif" IsAnimationPlaying="True" WidthRequest="320" HeightRequest="320"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Craniul: " FontAttributes="Bold" />
+                        <Span Text="Să începem de sus, cu craniul, fortăreața corpului tău pentru creier. Știai că nu este doar un os mare? De fapt, este alcătuit din 22 de oase care se potrivesc perfect împreună, formând un coif protector în jurul celui mai vital organ al tău." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="colvert.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Coloana vertebrală: " FontAttributes="Bold" />
+                        <Span Text="Urmează coloana vertebrală, sau coloana vertebrală. Este ca scheletul corpului tău (literalmente!). Formată din 33 de vertebre așezate una peste alta, coloana vertebrală oferă stabilitate și flexibilitate, permițându-ți să stai drept, să te apleci și să te rotești în toate direcțiile posibile." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="coaste.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Coaste: " FontAttributes="Bold" />
+                        <Span Text="Trecând la zona pieptului, găsim coastele, formând o structură în formă de cușcă în jurul inimii și plămânilor tăi. Există în total 12 perechi de coaste, dintre care primele 7 sunt atașate direct de stern (osul pieptului) și celelalte 5 perechi se mișcă liber. Ele se dilată și se contractă la fiecare respirație, ajutându-te să respiri adânc și protejând organele prețioase." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Brațe și Picioare: " FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="brat.png" MaximumWidthRequest="720"/>
+            <Image Source="picioare.png"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Hai să vorbim acum despre membrele tale, mișcătorii și agitatorii corpului tău! Brațele tale sunt dotate cu humerusul în partea superioară a brațului, conectat la radius și ulna în antebraț, și un aranjament complex de oase carpale, metacarpiene și falange în mână. La fel și picioarele tale se laudă cu femurul în coapsă, urmat de tibia și fibula în partea inferioară a piciorului, și oasele tarsale, metatarsale și falangele în picior. Aceste oase lucrează împreună pentru a susține greutatea corpului, pentru a facilita mișcarea și pentru a permite activități precum scrisul, practicarea sporturilor și dansul." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mâini și Talpă: " FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="talpa.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="În final, hai să ne concentrăm asupra extremităților tale, instrumentele tale de încredere pentru interacțiunea cu lumea. Mâinile tale sunt echipate cu aranjamente intricate de oase, permițând mișcări precise, abilități motorii fine și capacitatea de a manipula obiecte cu ușurință. De asemenea, picioarele tale sunt minuni de inginerie, oferind stabilitate, echilibru și propulsie în timp ce navighezi prin diverse terenuri și medii." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieSchele"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

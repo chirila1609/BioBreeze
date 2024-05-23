@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Urechea"
+             Title="Urechea">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="urechea.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Urechea umană este un organ complex și esențial al sistemului auditiv, responsabil pentru percepția sunetelor din mediul înconjurător. Este formată din trei părți distincte: urechea externă, urechea medie și urechea internă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Urechea externă cuprinde pavilionul urechii și canalul auditiv extern. Pavilionul urechii colectează și direcționează sunetele către canalul auditiv, care se încheie la membrana timpanului, o structură subțire și flexibilă care vibrează în funcție de intensitatea sunetelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Urechea medie este alcătuită dintr-o serie de oase mici numite osicule auditive: ciocanul, nicovala și scară. Aceste osicule amplifică și transmit vibrațiile membranei timpanului către urechea internă. De asemenea, urechea medie este conectată la trompa lui Eustachio, care ajută la egalizarea presiunii aerului între urechea medie și exterior." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Urechea internă, sau labirintul, este situată în osul temporal și este responsabilă pentru convertirea vibrațiilor sonore în semnale nervoase pe care creierul le poate interpreta. Labirintul este compus dintr-o serie de canale și structuri delicate, inclusiv cochilia și vestibulul. Cochilia conține celule senzoriale specializate numite celule ciliare, care transformă vibrațiile în semnale electrice trimise apoi către creier prin nervul auditiv. Vestibulul reglează echilibrul și poziția corpului." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Împreună, aceste trei componente ale urechii umane lucrează armonios pentru a permite percepția și interpretarea sunetelor din mediul înconjurător, jucând un rol vital în comunicare și orientare în lumea înconjurătoare." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieUreche"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

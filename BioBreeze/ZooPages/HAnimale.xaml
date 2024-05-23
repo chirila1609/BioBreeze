@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.HAnimale"
+             Title="Hrănirea la animale">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Hranirea animalelor este un aspect crucial în îngrijirea lor, având un impact direct asupra sănătății și bunăstării acestora. De-a lungul timpului, oamenii au dezvoltat cunoștințe și tehnici variate pentru a asigura necesarul nutritiv al animalelor domestice și sălbatice." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Principii generale:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Hranirea animalelor presupune echilibrul dintre necesitățile specifice ale fiecărui animal și disponibilitatea resurselor alimentare. Principiile de bază includ asigurarea unui aport adecvat de proteine, carbohidrați, grăsimi, vitamine și minerale în dieta zilnică a animalului. Aceste necesități variază în funcție de specie, vârstă, sex, stadiul de dezvoltare și nivelul de activitate." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Tipuri de hrănire:" FontAttributes="Bold" FontSize="20" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Hranirea naturală: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Unele animale, în special cele domestice, se hrănesc cu hrana pe care o găsesc în sălbăticie sau cu hrana produsă de om, cum ar fi iarbă, semințe, legume, fructe, carne și produse lactate." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Hranirea cu hrană procesată: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Multe animale domestice sunt hrănite cu alimente procesate, cum ar fi hrana uscată, conservele sau hrana umedă. Aceste alimente sunt formulate pentru a satisface nevoile nutriționale specifice ale fiecărei specii și sunt convenabile pentru proprietari." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Suplimente alimentare: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="În unele cazuri, animalele pot necesita suplimente pentru a completa deficitul de nutrienți din dieta lor principală. Acestea pot include vitamine, minerale sau alte substanțe nutritive esențiale pentru sănătatea animalului." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, hranirea animalelor este un proces complex care necesită cunoștințe și atenție pentru a asigura sănătatea și bunăstarea lor. Înțelegerea nevoilor individuale ale fiecărui animal și furnizarea unei diete echilibrate și adecvate sunt esențiale pentru a le asigura o viață sănătoasă și fericită." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooHAnimale"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

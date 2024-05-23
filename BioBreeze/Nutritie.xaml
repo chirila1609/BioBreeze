@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Nutritie"
+             Title="Nutriție">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="nutritie1.png" MaximumWidthRequest="720"/>
+            <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Bine ați venit în Nutriție: Descoperiți Secretele unei Alimentații Sănătoase și Echilibrate" FontAttributes="Bold" />
+                    <Span Text="&#x0a;&#x0a;Nutriția este știința care studiază alimentele și modul în care acestea afectează sănătatea și bunăstarea noastră. Este o călătorie către înțelegerea rolului esențial al nutriției în menținerea unei vieți sănătoase și echilibrate.&#x0a;&#x0a;În această secțiune, veți explora secretele unei alimentații sănătoase, învățând despre grupele alimentare, necesitățile nutriționale ale organismului și modul în care puteți crea obiceiuri alimentare echilibrate și sustenabile. Veți descoperi importanța vitaminelor, mineralelor și altor substanțe nutritive esențiale și modul în care acestea susțin sănătatea generală.&#x0a;&#x0a;Prin lecții interactive, informații practice și sfaturi utile, veți naviga prin labirintul informațiilor despre nutriție, învățând cum să faceți alegeri alimentare inteligente și să vă bucurați de o viață sănătoasă și plină de energie. Indiferent dacă sunteți un părinte preocupat de alimentația copiilor sau un adult care își dorește să își îmbunătățească stilul de viață, fila noastră de Nutriție vă va ghida pe drumul către o alimentație sănătoasă și echilibrată!" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+            <Button Text="Nutriția heterotrofă saprofită" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
+            <Button Text="Nutriția heterotrofă parazită" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
+            <Button Text="Nutriția mixotrofă" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MNutri"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

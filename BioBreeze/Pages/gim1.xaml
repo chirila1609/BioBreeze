@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Pages.gim1"
+             Title="Clasa a V-a">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="zoov.png" MaximumWidthRequest="720"/>
+            <Label Text="Bine ați venit la clasa a V-a!" HorizontalOptions="Center"/>
+            <Button Text="Animale vertebrate" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AV"/>
+        <Button Text="Animale nevertebrate" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ANV"/>
+        <Button Text="Spongieri și celenterate" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SC"/>
+        <Button Text="Viermi" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_V"/>
+        <Button Text="Moluște" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_M"/>
+        <Button Text="Artropode" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_A"/>
+        <Button Text="Pești" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_P"/>
+        <Button Text="Amfibieni" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AM"/>
+        <Button Text="Reptile" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_R"/>
+        <Button Text="Păsări" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_PA"/>
+        <Button Text="Mamifere" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MAM"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

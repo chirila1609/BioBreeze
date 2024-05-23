@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Muscle"
+             Title="Mușchii">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="muschii.png" HorizontalOptions="Center" VerticalOptions="Center" MaximumHeightRequest="861" MaximumWidthRequest="1161"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Introducere: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii sunt unul dintre cele mai importante sisteme din corpul nostru. Ei ne ajută să ne mișcăm și să ne menținem poziția corectă. Fără mușchi, nu am putea să facem lucruri simple precum să ne ridicăm sau să ne întindem mâinile." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mfata.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Feței: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii feței sunt responsabili pentru exprimarea noastră facială. Acești mușchi ne permit să zâmbim, să clipim și să ne arătăm emoțiile. De asemenea, ne ajută să mâncăm și să vorbim corect." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mgat.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Gâtului: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii gâtului sunt responsabili pentru mișcările capului. Acești mușchi ne permit să ne întoarcem capul în diferite direcții și să ne menținem capul drept." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mspate.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Spate: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii spatelui sunt esențiali pentru menținerea posturii corecte a corpului și pentru sprijinirea coloanei vertebrale. Ei ne permit să ne aplecăm, să ne întindem și să ne ridicăm fără să ne accidentăm." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mumar.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Umerilor: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii umărului sunt importanți pentru mișcarea și stabilizarea umărului. Acești mușchi sunt implicați în ridicarea și coborârea brațelor și în mișcările de rotație ale umărului." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mbrat.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Brațului: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii brațului sunt responsabili pentru mișcarea și controlul brațelor noastre. Ei ne permit să ne ridicăm brațele, să prindem obiecte și să facem mișcări precise." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mincheietura.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Încheieturii: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii încheieturii sunt importanți pentru controlul mișcărilor mâinilor și degetelor. Acești mușchi ne permit să prindem obiecte, să scriem și să facem gesturi precise." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Mâinii: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii mâinii sunt esențiali pentru mișcările fine și controlul degetelor. Acești mușchi ne permit să prindem obiecte mici, să facem gesturi și să executăm activități precum să scriem sau să desenăm." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mabdo.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Abdomenului: " FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Mușchii abdomenului sunt responsabili pentru menținerea stabilității trunchiului și a posturii corecte a corpului. Ei ne permit să ne mișcăm înainte și înapoi și să ne rotim trunchiul." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="mpicior.png" MaximumWidthRequest="720"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Mușchii Piciorului:" FontAttributes="Bold" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Picioarele noastre sunt susținute de o rețea complexă de mușchi care ne permit să ne mișcăm și să ne menținem echilibrul. Mușchii coapsei, cei mai mari și mai puternici mușchi din picioare, sunt responsabili pentru ridicarea și mișcarea în diverse direcții. Mușchii gambei, situați în partea inferioară a piciorului, sunt implicați în flexia și extensia piciorului, precum și în menținerea echilibrului. Mușchii fesieri, localizați în partea posterioară a pelvisului, ajută la extensia șoldului și rotirea coapsei. Mușchii tibiei și mușchii gemeni, din spatele gambei, sunt responsabili pentru flexia și extensia gleznei, precum și pentru menținerea echilibrului pe teren accidentat. În cele din urmă, mușchii tălpii, în partea de jos a piciorului, susțin arcul piciorului și permit flexia și extensia degetelor. Toți acești mușchi lucrează împreună pentru a ne ajuta să ne deplasăm, să alergăm și să ne bucurăm de mișcările noastre zilnice." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieMuscle"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

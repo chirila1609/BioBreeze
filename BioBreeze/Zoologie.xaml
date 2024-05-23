@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Zoologie"
+             Title="Zoologie">
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="zoologie1.png" MaximumWidthRequest="720"/>
+            <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Bine ați venit în Zoologie: Descoperiți Minunile Lumii Animale" FontAttributes="Bold" />
+                    <Span Text="&#x0a;&#x0a;Zoologia este studiul vieții animalelor, explorând diversitatea și comportamentul lor fascinant. Este o călătorie în lumea uimitoare a creaturilor care populează pământul, de la micile organisme microscopice până la mărețele mamifere și reptile.&#x0a;&#x0a;În această secțiune, veți pătrunde în lumea fascinantă a animalelor, învățând despre habitatele lor, adaptările unice și interacțiunile lor în ecosistemele complexe. Veți explora categorii largi de animale, de la nevertebratele marine la mamiferele terestre, și veți înțelege modul în care acestea influențează și sunt influențate de mediul lor înconjurător.&#x0a;&#x0a;Prin lecții interactive, videoclipuri captivante și teste provocatoare, veți călători prin regnul animal, descoperind secretele și misterele lumii vii. Indiferent dacă sunteți un pasionat al naturii sau un cercetător în devenire, fila noastră de Zoologie este poarta către o aventură de neuitat în lumea animalelor!" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Text="Animale vertebrate" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Verte"/>
+            <Button Text="Animale nevertebrate" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Neverte"/>
+            <Button Text="Spongieri și celenterate" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SsiC"/>
+            <Button Text="Viermi" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Viermi"/>
+            <Button Text="Moluște" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Moluste"/>
+            <Button Text="Artropode" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Artropode"/>
+            <Button Text="Pești" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Peste"/>
+            <Button Text="Amfibieni" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Amfibieni"/>
+            <Button Text="Reptile" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Reptile"/>
+            <Button Text="Păsări" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Pasari"/>
+            <Button Text="Mamifere" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Mamifere"/>
+            <Button Text="Țesuturile animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TAnimal"/>
+            <Button Text="Hrănirea la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HAnimal"/>
+            <Button Text="Respirația la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RAnimal"/>
+            <Button Text="Circulația la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CAnimal"/>
+            <Button Text="Excreția la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EAnimal"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.SsiC"
+             Title="Spongierii și celenteratele">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Spongierii și celenteratele sunt două grupuri fascinante de organisme acvatice care, deși diferite în multe aspecte, împărtășesc anumite caracteristici și contribuie la diversitatea vieții marine." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="msponge.png"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Spongierii, cunoscuți și sub numele de bureți de mare, sunt organisme simple, de obicei fixate pe substraturi dure în apele sărate și dulci. Acești invertebrați au o structură unică, alcătuită dintr-un schelet intern de fibre proteice numite spongina, îmbibat cu o rețea de canale prin care apa circulă. Spongierii sunt, de asemenea, cunoscuți pentru capacitatea lor de a filtra apa și de a se hrăni cu particule microscopice din mediul lor." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Image Source="meduza.png"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Pe de altă parte, celenteratele sunt organisme cu simetrie radială, printre care se numără meduzele, coraliile și anemonele de mare. Aceste creaturi fascinante au tentacule în jurul gurii, folosite pentru a captura prada și pentru apărare. Unul dintre trăsăturile distinctive ale celenteratelor este prezența cnidocitelor, celule specializate care conțin nematociste, structuri în formă de arpagic folosite pentru paralizarea prăzii sau pentru apărare." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Deși spongierii și celenteratele sunt organisme marine, ele ocupă nișe ecologice diferite și au strategii de viață distincte. Spongierii sunt adesea găsiți în adâncimi variabile și sunt esențiali pentru ecosistemele recifelor de corali, contribuind la ciclul substanțelor nutritive și oferind adăpost pentru multe alte organisme marine. Pe de altă parte, celenteratele, cum ar fi meduzele, pot fi întâlnite în toate oceanele lumii, de la suprafața apei până în adâncurile abisale." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Deși spongierii și celenteratele sunt în general organisme simple din punct de vedere structural, ele joacă un rol crucial în echilibrul și diversitatea ecosistemelor marine. Studiul acestor creaturi ne ajută să înțelegem mai bine evoluția vieții pe Pământ și impactul pe care îl avem asupra mediului lor fragil." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooSsiC"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

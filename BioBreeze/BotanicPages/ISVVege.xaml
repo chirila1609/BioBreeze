@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.BotanicPages.ISVVege"
+             Title="Inmulțirea prin spori și vegetativă la plante">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="spori.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Înmulțirea plantelor este un proces esențial în ciclul lor de viață și în conservarea biodiversității. Există două modalități principale prin care plantele se pot reproduce: prin sporulare și prin reproducere vegetativă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Înmulțirea prin sporulare:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Sporularea este un proces specific plantelor care se reproduc prin intermediul sporilor. Sporii sunt structuri de reproducere unicelulare sau multicelulare, rezistente la condiții adverse, care permit plantelor să colonizeze noi medii și să se răspândească în mod eficient. Acest proces este comun în lumea fungilor, briofitelor (muscate, alge roșii, și altele) și a unor grupuri de plante vasculare, precum ferigile și lichenii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Sporii sunt eliberați de plante în mediu, fie prin intermediul structurilor specializate precum sporangii sau sori, fie prin desprinderea unor părți ale plantelor, cum ar fi frunzele sau tulpinile. Odată ajunși în mediul potrivit, sporii germină și dezvoltă noi indivizi. Această formă de reproducere este esențială pentru diversificarea genetică și adaptarea plantelor la diverse condiții de mediu." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Înmulțirea vegetativă:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Înmulțirea vegetativă implică producerea unor noi plante din structuri vegetale specializate, precum fragmente de rădăcini, tulpini sau frunze. Acest proces este utilizat de mulți cultivatori pentru a produce plante identice cu plantele-mamă, păstrând astfel caracteristicile genetice și trăsăturile dorite." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Există mai multe metode de înmulțire vegetativă, inclusiv:" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="1. Rezecția: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Înlăturarea și replantarea unei părți dintr-o plantă, cum ar fi tulpina sau o ramură, pentru a dezvolta o nouă plantă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="2. Propagarea prin tăiere: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Tăierea unei părți dintr-o plantă și plasarea ei într-un mediu adecvat pentru a crește rădăcini și a forma o nouă plantă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="3. Împărțirea tufei: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Separarea unei plante în mai multe părți pentru a forma mai multe plante individuale, fiecare cu propriul sistem de rădăcini." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="4. Propagarea prin butași: " FontAttributes="Bold" />
+                        <Span FontSize="15" Text="Prelevarea unor fragmente de tulpini tinere și plantarea lor într-un mediu umed pentru a dezvolta rădăcini și a forma noi plante." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Înmulțirea vegetativă este utilizată în special în horticultură și agricultură pentru a produce plante cu caracteristici superioare și pentru a conserva speciile rare sau amenințate." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Atât sporularea, cât și înmulțirea vegetativă sunt procese esențiale în perpetuarea speciilor de plante și în conservarea diversității lor genetice. Înțelegerea și utilizarea acestor procese sunt cruciale pentru conservarea și gestionarea durabilă a ecosistemelor naturale și a culturilor agricole." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotISVVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

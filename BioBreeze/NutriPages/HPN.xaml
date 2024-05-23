@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.NutriPages.HPN"
+             Title="Nutriția heterotrofă parazitară">
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Nutriția heterotrofă parazitară este un mod de nutriție întâlnit la anumite organisme care se bazează pe consumul materiei organice produse de alte organisme vii pentru a-și obține substanțele nutritive necesare. În acest mod de nutriție, organisme numite paraziți se atașează de gazdele lor și utilizează resursele acestora pentru a supraviețui și a se reproduce." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Paraziții se adaptează adesea pentru a se specializa în utilizarea anumitor organisme gazdă sau chiar a unor părți specifice ale acestora. Aceste organisme sunt adesea bine adaptate pentru a se conecta la gazdele lor și pentru a evita sistemele de apărare ale acestora. De exemplu, unele plante parazite se pot conecta la rădăcinile altor plante pentru a suge substanțele nutritive de care au nevoie." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Un aspect important al nutriției heterotrofe parazitare este capacitatea paraziților de a manipula gazdele lor pentru a-și maximiza propriul succes reproductiv. Acest lucru poate include modificări ale comportamentului gazdelor sau chiar transformări anatomice pentru a oferi un mediu mai favorabil pentru paraziți." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Deși relația parazitară poate fi dăunătoare pentru gazdele implicate, uneori paraziții și gazdele lor dezvoltă o coevoluție complexă, în care gazdele dezvoltă strategii de apărare împotriva paraziților, iar aceștia din urmă dezvoltă modalități de a depăși aceste strategii." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Exemple de organisme cu nutriție heterotrofă parazitară includ diverse specii de fungi paraziți, protozoare și insecte, precum și plante parazite precum ciupercile din genul Orobanche sau Cuscuta." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, nutriția heterotrofă parazitară reprezintă un mod fascinant și adesea complex de supraviețuire în regnul biologic, cu implicații importante în ecologia și evoluția organismelor implicate." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPN"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

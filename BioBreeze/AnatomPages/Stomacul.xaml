@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Stomacul"
+             Title="Stomacul">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="stomacul.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Stomacul este o parte esențială a sistemului digestiv uman, o cameră musculară în formă de sac situată în partea superioară a abdomenului. Funcționând ca un rezervor pentru alimente și un loc crucial pentru începerea procesului de digestie, stomacul are multiple roluri în transformarea alimentelor în substanțe nutritive absorbabile." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Structura sa este adaptată pentru a descompune alimentele prin acțiunea sucurilor gastrice. Acestea conțin enzime și acid clorhidric, care descompun proteinele și ajută la sterilizarea alimentelor, protejând organismul de infecții." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe măsură ce alimentele sunt ingerate, stomacul le macină și le amestecă cu sucurile gastrice, transformându-le într-o substanță semilichidă cunoscută sub numele de chil. Acest chil este apoi eliberat treptat în intestinul subțire, unde continuă procesul de digestie și absorbție a nutrienților." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Stomacul este, de asemenea, dotat cu un strat protector de mucoasă care împiedică acidul să deterioreze pereții săi. Cu toate acestea, uneori, această mucoasă poate fi afectată, conducând la diverse afecțiuni cum ar fi ulcerul gastric." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pe lângă rolul său în digestie, stomacul joacă un rol important în reglarea senzației de foame și de sațietate, trimițând semnale către creier pentru a indica când este momentul să mâncăm sau să ne oprim din alimentație." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Astfel, stomacul este un organ esențial pentru procesul de digestie și nutriție al organismului uman, contribuind în mod crucial la menținerea sănătății și a echilibrului intern." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieStom"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

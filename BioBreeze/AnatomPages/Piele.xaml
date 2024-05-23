@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.AnatomPages.Piele"
+             Title="Piele">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="piele.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Pielea umană, cunoscută și sub numele de tegument, este cel mai mare organ al corpului uman și îndeplinește multiple funcții vitale pentru sănătate și bunăstare. Este un strat extern protector care acoperă întregul corp și oferă o barieră fizică împotriva agenților patogeni, substanțelor chimice și radiațiilor nocive din mediul înconjurător." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Structura pielii este complexă și constă din trei straturi principale: epidermul, dermul și hipodermul. Epidermul este stratul exterior al pielii și este compus în principal din celule keratinocite, care sunt responsabile pentru formarea stratului exterior protector și pentru regenerarea constantă a pielii. Acest strat conține, de asemenea, melanocite, care produc pigmentul melanină responsabil pentru culoarea pielii și pentru protejarea împotriva radiațiilor ultraviolete. Dermul este stratul intermediar al pielii și conține o rețea complexă de fibre de colagen și elastină, care oferă structură, rezistență și elasticitate pielii. Aici se găsesc și numeroase vase de sânge, nervi și glande sudoripare și sebacee. Hipodermul, sau stratul subcutanat, este stratul cel mai profund al pielii și este alcătuit în principal din țesut adipos care servește ca izolație termică și rezervă de energie, precum și ca amortizor pentru țesuturile și organele subiacente." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pielea are multiple funcții importante în organismul uman. În primul rând, servește ca barieră fizică care protejează organismul împotriva infecțiilor, traumatismelor și pierderii de apă. De asemenea, reglează temperatura corpului prin evaporarea transpirației și dilatarea sau constricția vaselor de sânge din derm în funcție de nevoile termice ale organismului. Pielea are și un rol esențial în senzațiile tactile și în percepția senzațiilor externe, datorită prezenței numeroșilor receptori nervoși în derm. În plus, glandele sudoripare și sebacee din piele contribuie la menținerea echilibrului hidric al corpului și la eliminarea deșeurilor și toxinelor prin transpirație." />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="În concluzie, pielea umană este un organ vital și multifuncțional, cu o structură complexă și cu numeroase roluri în menținerea sănătății și funcționării optime a organismului. Protecția împotriva agenților externi, reglarea temperaturii, senzațiile tactile și excreția sunt doar câteva dintre funcțiile esențiale ale pielii umane. Prin îngrijirea adecvată și protejarea ei împotriva factorilor nocivi, se poate asigura sănătatea și integritatea acestui organ vital." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomiePiele"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

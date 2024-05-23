@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.ZooPages.Amfibieni"
+             Title="Amfibieni">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="amfibieni.png"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Amfibienii reprezintă o clasă fascinantă de animale vertebrate care includ broaște, salamandre și tritoni. Aceste creaturi sunt cunoscute pentru capacitatea lor de a trăi atât pe uscat, cât și în apă, fiind adaptate la o varietate de medii acvatice și terestre." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="O caracteristică distinctivă a amfibienilor este ciclul lor de viață, care începe de obicei în apă. Majoritatea amfibienilor se reproduc prin ouă, care eclozează în larve, cunoscute sub numele de lăcustele. Aceste larve se dezvoltă apoi într-o formă intermediară, numită tânărul de metamorfoză, înainte de a deveni adulți." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Pielea amfibienilor este deosebit de importantă pentru ei, deoarece le permite să respire. Multe specii de amfibieni absorb oxigenul direct prin piele, pe lângă respirația pulmonară. Această piele delicată necesită o umiditate constantă, motiv pentru care majoritatea amfibienilor sunt întâlniți în apropierea surselor de apă." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="De-a lungul evoluției, amfibienii s-au adaptat la o varietate de habitate, de la păduri tropicale umede la deșerturi aride și zone montane reci. Cu toate acestea, multe specii de amfibieni se confruntă cu amenințări semnificative, inclusiv pierderea habitatului, poluarea și schimbările climatice. Ca urmare, conservarea acestor creaturi delicate este esențială pentru menținerea echilibrului ecologic al ecosistemelor lor și pentru protejarea diversității biologice a planetei noastre." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooAmfibieni"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

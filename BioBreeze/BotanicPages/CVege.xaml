@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.BotanicPages.CVege"
+             Title="Circulația la plante">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="cplante.png" MaximumWidthRequest="720"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
+                <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
+            </Grid>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="15" Text="Circulația la plante este un proces esențial pentru viața și dezvoltarea lor sănătoasă. Deși în mod tradițional asociată cu sistemele circulatorii ale organismelor animate, plantele au evoluat pentru a dezvolta mecanisme proprii de transport al substanțelor vitale prin corpul lor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Sistemul vascular la plante:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Principalul sistem responsabil de circulația la plante este sistemul vascular, care constă din două tipuri principale de țesuturi: xilem și floem. Xilemul este responsabil pentru transportul apei și substanțelor minerale de la rădăcini spre partea de sus a plantei, în timp ce floemul transportă substanțele organice, cum ar fi zaharurile, de la frunze spre alte părți ale plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Transpirația și transpirația gutată:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Transpirația este un proces crucial în circulația la plante, prin care apa este absorbită de rădăcini, urcă prin xilem și este eliberată în aer prin stomatele din frunze. Acest proces ajută la menținerea echilibrului apei și la răcirea plantei. Transpirația gutată este un fenomen suplimentar, prin care apa este eliminată prin porii specializați de pe suprafața frunzelor sau alte părți ale plantei." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Circulația de substanțe organice:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Floemul este responsabil pentru transportul substanțelor organice, precum zaharurile și alte substanțe nutritive, de la zonele de producție, cum ar fi frunzele, spre alte părți ale plantei, inclusiv rădăcinile, mugurii și fructele. Acest proces este vital pentru creșterea și dezvoltarea plantelor." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Adaptări la medii variate:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Plantele au dezvoltat o varietate de adaptări pentru a face față diferitelor medii și condiții de creștere. De exemplu, plantele din medii uscate au evoluat pentru a avea mecanisme eficiente de conservare a apei, cum ar fi stomatele închise în timpul zilei. În schimb, plantele din medii umede pot avea sisteme vasculare mai puțin dezvoltate, deoarece nu trebuie să transporte apă pe distanțe mari." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span Text="Concluzie:" FontAttributes="Bold" FontSize="20"/>
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Circulația la plante este un proces complex și esențial pentru supraviețuirea și prosperitatea lor într-o varietate de medii. Sistemele vasculare și mecanismele de transport al substanțelor nutritive sunt adaptate pentru a satisface nevoile specifice ale fiecărei specii și ale mediului în care acestea se dezvoltă." />
+                        <Span Text="&#x0a;" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotCVege"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

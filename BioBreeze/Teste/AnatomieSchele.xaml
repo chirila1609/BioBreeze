@@ -1,0 +1,59 @@
+<!-- AnatomieSchele.xaml -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Teste.AnatomieSchele">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            <Label Text="1. Din cate oase este alcatuit craniul?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
+                <Label Text="a) 20" />
+                <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
+                <Label Text="b) 18" />
+                <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
+                <Label Text="c) 22" />
+                <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
+                <Label Text="d) 24" />
+            </StackLayout>
+            <Label Text="2. Din cate vertebre este alcatuita coloana vertebrala?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
+                <Label Text="a) 22" />
+                <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
+                <Label Text="b) 33" />
+                <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
+                <Label Text="c) 36" />
+                <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
+                <Label Text="d) 24" />
+            </StackLayout>
+            <Label Text="3. Cate perechi de coaste exista in total?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
+                <Label Text="a) 12" />
+                <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
+                <Label Text="b) 7" />
+                <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
+                <Label Text="c) 15" />
+                <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
+                <Label Text="d) 10" />
+            </StackLayout>
+            <Label Text="4. Pe ce sunt asezate primele 7 coaste?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
+                <Label Text="a) stern" />
+                <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
+                <Label Text="b) libere" />
+            </StackLayout>
+            <Label Text="5. Pe ce sunt asezate urmatoarele coaste?" />
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
+                <Label Text="a) stern" />
+                <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
+                <Label Text="b) libere" />
+            </StackLayout>
+            <Button Text="Submit" Clicked="OnSubmitClicked" />
+            <Label x:Name="ScoreLabel" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
