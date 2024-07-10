@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.AnatomieSR"
-             Title="AnatomieSR">
+             Title="Test sistemul respirator">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Care sunt structurile care fac parte din căile respiratorii superioare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -26,7 +40,7 @@
                 <Label Text="d) Inimă și ficatul" />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Ce proces are loc în alveolele pulmonare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -45,7 +59,7 @@
                 <Label Text="d) Transportul de oxigen către celule" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Care este rolul principal al sistemului respirator?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -64,7 +78,7 @@
                 <Label Text="d) Controlul temperaturii corpului" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Ce substanță este preluată de sânge din alveolele pulmonare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -83,7 +97,7 @@
                 <Label Text="d) Hidrogen" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Care este importanța filtrării și umidificării aerului în sistemul respirator?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -102,10 +116,10 @@
                 <Label Text="d) Stimulează sistemul imunitar" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

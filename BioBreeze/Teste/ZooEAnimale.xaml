@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.ZooEAnimale"
-             Title="ZooEAnimale">
+             Title="Test excreție animale">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Care este rolul excreției în organismele animale?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -22,7 +36,7 @@
                 <Label Text="c) Reproducția" />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Care este unul dintre organele principale de excreție la majoritatea vertebratelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -37,7 +51,7 @@
                 <Label Text="c) Rinichii" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Ce sistem de excreție este utilizat de insecte și moluște?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -52,7 +66,7 @@
                 <Label Text="c) Tuburile Malpighi" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Cum se adaptează animalele deșertice la mediul lor uscat în ceea ce privește excreția?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -67,7 +81,7 @@
                 <Label Text="c) Prin eliminarea excesului de apă prin piele" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Ce organ specializat ajută peștii și rechinii să facă față excreției deșeurilor în mediul marin?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -82,10 +96,10 @@
                 <Label Text="c) Rinichii și glandele speciale de excreție" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

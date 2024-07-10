@@ -57,11 +57,23 @@
             Icon="gim4.png"/>
 
         <ShellContent
-            Title="Bacalaureat"
-            ContentTemplate="{DataTemplate local:Bacalaureat}"
-            Route="Bacalaureat" 
-            Icon="bac.png"/>
-        
+            Title="Simulări"
+            ContentTemplate="{DataTemplate local:Pages.Simulari}"
+            Route="Simulari" 
+            Icon="simu.png"/>
+
+        <ShellContent
+            Title="BioAI"
+            ContentTemplate="{DataTemplate local:AI}"
+            Route="AI" 
+            Icon="ia.png"/>
+
+        <ShellContent
+            Title="Modele 3D"
+            ContentTemplate="{DataTemplate local:modeled}"
+            Route="modeled" 
+            Icon="model.png"/>
+
         <ShellContent
             Title="Profil"
             ContentTemplate="{DataTemplate local:Profil}"

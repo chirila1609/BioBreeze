@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válassza ki a nyelvet / Виберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Хребетні тварини:</b></p>
+            <p>Хребетні тварини — це члени царства Animalia, які характеризуються наявністю хребта або його аналога. Цей хребет забезпечує підтримку і захист для центральної нервової системи, яка, як правило, складається з мозку і спинного мозку. Ці тварини є одними з найбільш різноманітних і добре адаптованих створінь на Землі.</p>
+            <p>Існує п'ять основних класів хребетних тварин:</p>
+            <p>1. Риби:</p>
+            <p>Ці створіння живуть в водному середовищі і є надзвичайно різноманітними, адаптуючись до різних місць існування, від глибоких океанів до гірських джерел.</p>
+            <p>2. Земноводні:</p>
+            <p>Земноводні відомі своєю здатністю жити як на суші, так і у воді. Більшість земноводних проходять через життєвий цикл, що включає метаморфозу з яйця у личинку і потім у дорослого.</p>
+            <p>3. Плазуни:</p>
+            <p>Плазуни — це хребетні, які регулюють свою температуру тіла головним чином за допомогою опікання до зовнішніх джерел тепла, таких як сонце. До них входять змії, черепахи, ящірки та крокодили.</p>
+            <p>4. Птахи:</p>
+            <p>Птахи — це хребетні тварини з тілом, покритим пір'ям, і з унікальною здатністю до польоту. Однак не всі птахи можуть літати; деякі види, такі як страуси та пінгвіни, не літають.</p>
+            <p>5. Ссавці:</p>
+            <p>Ссавці — це хребетні тварини з теплокровною кров'ю, які характеризуються наявністю молочних залоз, які виробляють молоко для годування дитинчат. До них входять широкий спектр тварин, від собак і котів до китів і слонів.</p>
+            <p>Кожен клас хребетних тварин має унікальні адаптації, які дозволяють їм виживати і процвітати в їх специфічних середовищах. Від спритності леопарда в джунглях до здатності кита жити на глибинах океану, різноманіття і складність світу хребетних тварин є по-справжньому захоплюючими.</p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Gerinces állatok:</b></p>
+            <p>A gerinces állatok az Animalia birodalom tagjai, amelyeket a gerinc vagy annak pótléka jellemez. Ez a gerinc támogatást és védelmet nyújt a központi idegrendszer számára, amely általában az agyból és a gerincvelőből áll. Ezek az állatok a Föld egyik legváltozatosabb és legjobban alkalmazkodott lényei.</p>
+            <p>Öt fő gerinces állatcsoport létezik:</p>
+            <p>1. Halak:</p>
+            <p>Ezek a lények vízi környezetben élnek, rendkívül változatosak és különböző élőhelyekhez alkalmazkodtak, a mély óceánoktól a hegyi forrásokig.</p>
+            <p>2. Kétéltűek:</p>
+            <p>A kétéltűek arról ismertek, hogy képesek élni mind szárazföldön, mind vízben. A legtöbb kétéltű átmegy egy életcikluson, amely magában foglalja a petéből lárva és felnőtté válás metamorfózisát.</p>
+            <p>3. Hüllők:</p>
+            <p>A hüllők olyan gerincesek, amelyek testhőmérsékletüket főként a külső hőforrásokkal, például a nappalival szabályozzák. Ide tartoznak a kígyók, teknősök, gyíkok és krokodilok.</p>
+            <p>4. Madarak:</p>
+            <p>A madarak olyan gerinces állatok, amelyek tollazattal borított testtel rendelkeznek, és egyedülálló repülési képességgel bírnak. Azonban nem mindegyik madár tud repülni; például az struccok és pingvinek nem repülnek.</p>
+            <p>5. Emlősök:</p>
+            <p>Az emlősök olyan melegvérű gerinces állatok, amelyeket a tejmirigyek jelenléte jellemzi, amelyek tejet termelnek a kölykök táplálására. Széles körű állatok tartoznak ide, kutyáktól macskákig, bálnákig és elefántokig.</p>
+            <p>Minden gerinces állatcsoportnak vannak egyedi alkalmazkodásai, amelyek lehetővé teszik számukra a túlélését és jólétét saját specifikus környezetükben. A leopárd ügyességétől a dzsungelben a bálna képességéig, hogy az óceán mélyén éljen, a gerinces állatok világának sokfélesége és bonyolultsága valóban lenyűgöző.</p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

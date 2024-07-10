@@ -28,4 +28,9 @@ public partial class GeneticaUkr : ContentPage
     {
         Navigation.PushAsync(new Gameti());
     }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
+    }
 }

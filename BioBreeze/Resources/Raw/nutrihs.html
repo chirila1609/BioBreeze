@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet / Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showHungarian()">Magyar</button>
+        <button onclick="showUkrainian()">Українська</button>
+    </div>
+
+    <div id="content">
+        <div id="hungarian" class="content">
+            <p><b>Szaprofita heterotróf táplálkozás:</b></p>
+            <p>A szaprofita heterotróf táplálkozás egy olyan folyamat, amely során a szervezetek az életben maradáshoz szükséges tápanyagokat elhalt vagy lebomló szerves anyagokból nyerik. Ez a táplálkozási forma jellemző számos szervezetre, beleértve a baktériumokat, gombákat és egyes protozoákat.</p>
+            <p>A szaprofita szervezetek elengedhetetlenek az ökoszisztémák számára, mivel létfontosságú szerepet játszanak a szerves anyagok újrahasznosításában és a lebomló anyagok lebontásában, amelyek egyébként stagnálnának és nem lennének termékenyek. Ezek a szervezetek a komplex szerves anyagokat egyszerűbb összetevőkre bontják, amelyeket más szervezetek újra felhasználhatnak az ökoszisztémában.</p>
+            <p>A legismertebb szaprofita szervezetek közé tartoznak a gombák, például a gombák és a talajban vagy olyan környezetekben élő baktériumok, ahol bomló szerves anyagok találhatók, mint a lehullott levelek, elhalt fa vagy más növényi és állati maradványok.</p>
+            <p>Ezek a szaprofita szervezetek enzimeket választanak ki, amelyek a szerves anyagokat egyszerűbb összetevőkre bontják, mint a szénhidrátok, fehérjék és zsírok. Ezt követően ezeket az összetevőket a szaprofita szervezet felszívja, hogy energiát és tápanyagokat nyerjen a növekedéshez és szaporodáshoz.</p>
+            <p>Bár néha negatív fényben tüntetik fel őket a bomlás és rothadás miatt, a szaprofita szervezetek létfontosságúak az ökológiai egyensúly fenntartásában a természetben. Hozzájárulnak a biogeokémiai ciklusokhoz, amelyek újrahasznosítják az alapvető tápanyagokat és javítják a talaj termékenységét, ezáltal elősegítve a növények és más szervezetek életét az ökoszisztémában.</p>
+            <p>Összefoglalva, a szaprofita heterotróf táplálkozás egy létfontosságú folyamat a természetben, amely során a szaprofita szervezetek elengedhetetlen szerepet játszanak a szerves anyagok újrahasznosításában és az ökológiai egyensúly fenntartásában a szárazföldi és vízi ökoszisztémákban.</p>
+        </div>
+        <div id="ukrainian" class="content">
+            <p><b>Гетеротрофне сапрофітне живлення:</b></p>
+            <p>Гетеротрофне сапрофітне живлення - це процес, за допомогою якого організми отримують необхідні для виживання поживні речовини з мертвих або розкладаючих органічних матеріалів. Ця форма живлення характерна для широкого кола організмів, включаючи бактерії, гриби та деякі найпростіші організми.</p>
+            <p>Сапрофітні організми є надзвичайно важливими для екосистем, оскільки вони відіграють ключову роль у рециркуляції органічних матеріалів і деградації матеріалів, які інакше залишалися б застійними та непродуктивними. Вони розкладають складні органічні речовини на більш прості компоненти, які потім можуть бути повторно використані іншими організмами в екосистемі.</p>
+            <p>Серед найбільш відомих сапрофітних організмів - гриби, такі як гриби, та бактерії, які живуть у ґрунті або в середовищах, де є розкладаючі органічні матеріали, наприклад, опале листя, мертва деревина чи інші рослинні та тваринні залишки.</p>
+            <p>Ці сапрофітні організми виділяють ферменти, які розкладають органічні матеріали на більш прості компоненти, такі як вуглеводи, білки та жири. Згодом ці компоненти поглинаються сапрофітним організмом, щоб використовуватися як джерело енергії та поживних речовин для росту та розмноження.</p>
+            <p>Хоча їх іноді сприймають у негативному світлі через асоціацію з розкладанням та гниттям, сапрофітні організми є життєво важливими для підтримання екологічного балансу в природі. Вони сприяють біогеохімічним циклам, які рециркулюють необхідні поживні речовини та покращують родючість ґрунту, сприяючи таким чином життю рослин та інших організмів в екосистемі.</p>
+            <p>Отже, гетеротрофне сапрофітне живлення є важливим процесом у природі, за допомогою якого сапрофітні організми відіграють ключову роль у рециркуляції органічних матеріалів та підтриманні екологічного балансу в наземних та водних екосистемах.</p>
+        </div>
+    </div>
+
+    <script>
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

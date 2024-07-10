@@ -12,7 +12,7 @@ public partial class AnatomieSC : ContentPage
         int score = 0;
         string feedback = "";
 
-        // Check answers and update score
+        
         if (Question1OptionC.IsChecked)
             score++;
         else
@@ -41,8 +41,13 @@ public partial class AnatomieSC : ContentPage
         if (score == 5)
             GlobalVariables.TestsPassed++;
 
-        // Display score
+        
         ScoreLabel.Text = $"Scorul tău este: {score} din 5\n" + feedback;
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 
 }

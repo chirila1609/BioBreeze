@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válassza ki a nyelvet / Виберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Риби:</b></p>
+            <p>Риби - різноманітна та захоплююча група водяних тварин, що належать до підтипу хребетних. Вони адаптовані до величезного різноманіття водних середовищ, від річок і озер до океанів і коралових рифів.</p>
+            <p>Існує понад 30,000 відомих видів риб, які належать до широкого спектру родин і орденів. Вони варіюються від малих і прозорих, таких як медузи, до гігантських великанів, таких як великі білі акули, які панують у світових океанах.</p>
+            <p>Майстерність риб у їхньому водному середовищі підкреслюється різноманіттям їх анатомічних і поведінкових адаптацій. Багато видів риб мають луску, що захищає їх тіло, плавці для переміщення та зябра для видобутку кисню з води. Інші адаптувалися для виживання в екстремальних умовах, таких як темрява глибин океанів або солоні води морів.</p>
+            <p>Риби є невід'ємними для екологічного балансу водних екосистем. Вони служать їжею для інших створінь, допомагають у підтримці чистоти води, споживаючи водорості та органічні залишки, і сприяють розподілу поживних речовин через відходи. Крім того, риби є цінним ресурсом для людей, що є важливим джерелом їжі та доходів для рибальських спільнот по всьому світу.</p>
+            <p>Однак багато видів риб знаходяться під загрозою через перенаселене рибальство, деградацію місць існування та зміни клімату. Збереження цих створінь є критичним для збереження екологічного балансу водних екосистем і стійкості рибних ресурсів для майбутніх поколінь.</p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Halak:</b></p>
+            <p>A halak egy változatos és lenyűgöző vízi állatcsoportot képviselnek, amelyek a gerincesek altípusába tartoznak. Ezek az állatok alkalmazkodtak a vízi környezet széles skálájához, folyóktól és tavaktól kezdve az óceánokig és a korallzátonyokig.</p>
+            <p>Több mint 30,000 ismert hal faj létezik, amelyek széles körű családokba és rendekbe tartoznak. Ezek nagymértékben változnak alakjukban, méretükben, színükben és viselkedésükben. Például a halak lehetnek kicsik és átlátszók, mint a medúzák, vagy hatalmas fehér cápák, amelyek uralkodnak az óceánokban.</p>
+            <p>A halak mestersége a vízi környezetben az anatómiai és viselkedési alkalmazkodásaik sokféleségén keresztül nyilvánul meg. Sok hal fajnak védőpikkelyei vannak testük védelmére, uszonyaik a mozgásra és kopoltyúik az oxigén kinyerésére szolgálnak a körülöttük lévő vízből. Mások a túlélésre alkalmazkodtak extrém körülmények között, például az óceánok sötét mélységeiben vagy a tengerek sós vizeiben.</p>
+            <p>A halak elengedhetetlenek a vízi ökoszisztémák egyensúlyának fenntartásához. Szolgálnak táplálékként más élőlények számára, segítenek a víz tisztaságának fenntartásában, algák és szerves maradványok fogyasztásával, és hozzájárulnak a tápanyagok eloszlásához a kiválasztott anyagok révén. Emellett a halak értékes erőforrást jelentenek az emberek számára, fontos élelmiszerforrás és jövedelemforrás a világ minden tájáról származó halászati közösségek számára.</p>
+            <p>Azonban sok hal fajt fenyegeti a túlzott halászat, a természetes élőhelyek degradációja és a klímaváltozás. Ezeknek az állatoknak a megőrzése kritikus fontosságú a vízi ökoszisztémák egyensúlyának fenntartásához és a halászati erőforrások fenntarthatóságához a jövő generációi számára.</p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

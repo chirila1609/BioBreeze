@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Reproduction Information</title>
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showHungarian()">Magyar</button>
+        <button onclick="showUkrainian()">Українська</button>
+    </div>
+
+    <div id="content">
+        <div id="hungarian" class="content">
+            <p><b>A növények szaporodása:</b></p>
+            <p>A növények szaporodása létfontosságú folyamat az életciklusukban és a biodiverzitás megőrzésében. A növények két fő módon szaporodhatnak: spórázás és vegetatív szaporodás útján.</p>
+            <p><b>Szaporodás spórázással:</b></p>
+            <p>A spórázás egy specifikus folyamat, amely a növények sajátja, és a spórák révén történik. A spórák egysejtű vagy többsejtű, ellenálló szerkezetek, amelyek lehetővé teszik a növények számára, hogy új környezeteket kolonizáljanak és hatékonyan terjedjenek. Ez a folyamat gyakori a gombák, moha- és zöldhínár-félék, valamint bizonyos éréses növények világában, mint például a páfrányok és a lichenek.</b></p>
+            <p>A spórák a növényekből szabadulnak fel a környezetbe, legyen az speciális struktúrákon keresztül, mint a sporangiumok vagy sori, vagy a növény részeinek, mint a levelek vagy szárak leválása. Miután eljutottak megfelelő környezetbe, a spórák kikelnek és új egyedeket fejlesztenek ki. Ez a szaporodási forma elengedhetetlen a genetikai sokféleség és a növények környezeti feltételekhez való alkalmazkodás szempontjából.</b></p>
+            <p><b>Vegetatív szaporodás:</b></p>
+            <p>A vegetatív szaporodás új növények termelését jelenti speciális növényi struktúrákból, mint például a gyökérdarabok, szárak vagy levelek. Ezt a folyamatot sok termesztő használja fel az anyanövényekkel azonos genetikai tulajdonságokkal rendelkező növények előállítására, megőrizve a kívánt genetikai jellemzőket és tulajdonságokat.</b></p>
+            <p>Több vegetatív szaporodási módszer létezik, ideértve:</p>
+            <p>1. <b>Metszés:</b> Egy növényrész, például egy szár vagy ág eltávolítása és új növény kifejlesztése.</p>
+            <p>2. <b>Metszés útján való elterjesztés:</b> Egy növényrész levágása és elhelyezése egy megfelelő környezetben, hogy gyökereket fejlesszen ki és új növényt hozzon létre.</p>
+            <p>3. <b>Tövünk elosztása:</b> Egy növény szétválasztása több részre annak érdekében, hogy több egyedi növényt hozzon létre, mindegyik saját gyökérrendszerrel.</p>
+            <p>4. <b>Hajtások útján való elterjesztés:</b> Fiatal hajtások darabjainak kivétele és elhelyezése nedves környezetben, hogy gyökereket fejlesszenek ki és új növényeket hozzanak létre.</p>
+            <p><b>A vegetatív szaporodás különösen fontos a kertészetben és mezőgazdaságban, a növények jellemzőinek javítására és a ritka vagy veszélyeztetett fajok megőrzésére.</b></p>
+            <p><b>Mind a spórázás, mind a vegetatív szaporodás alapvető folyamatok a növényfajok folytonosságában és genetikai sokféleségének megőrzésében. Ezeknek a folyamatoknak a megértése és alkalmazása kritikus fontosságú a természetes ökoszisztémák és mezőgazdasági kultúrák fenntartható kezelésében és megőrzésében.</b></p>
+        </div>
+        <div id="ukrainian" class="content">
+            <p><b>Розмноження рослин:</b></p>
+            <p>Розмноження рослин є важливим процесом у їх життєвому циклі та збереженні біорізноманіття. Рослини можуть розмножуватися двома основними способами: споруванням і вегетативним розмноженням.</p>
+            <p><b>Розмноження спорами:</b></p>
+            <p>Спорування - це специфічний процес для рослин, що розмножуються за допомогою спор. Спори - це одноклітинні або багатоклітинні стійкі репродуктивні структури, які дозволяють рослинам колонізувати нові середовища та ефективно поширюватися. Цей процес поширений серед грибів, мохів (включаючи мохи, червоні водорості та інші) та деяких груп судинних рослин, таких як папороті та лишайники.</b></p>
+            <p>Спори вивільняються рослинами в середовище через спеціалізовані структури, такі як спорангії або сори, або через відлущення частин рослин, таких як листя або стебла. Після попадання в підходяще середовище спори проростають і розвивають нових індивідів. Цей спосіб розмноження важливий для генетичного різноманіття і адаптації рослин до різних умов середовища.</b></p>
+            <p><b>Вегетативне розмноження:</b></p>
+            <p>Вегетативне розмноження передбачає створення нових рослин зі спеціалізованих рослинних структур, таких як фрагменти коренів, стебел чи листя. Цей процес використовується багатьма вирощувачами для створення рослин, ідентичних материнським, зберігаючи генетичні характеристики і бажані ознаки.</b></p>
+            <p>Існує кілька методів вегетативного розмноження, включаючи:</p>
+            <p>1. <b>Розсічення:</b> Видалення та пересадка частини рослини, такої як стебло або гілка, для вирощування нової рослини.</p>
+            <p>2. <b>Розмноження за допомогою відбитків:</b> Відлущення частини рослини та розміщення її в відповідному середовищі для росту коренів та утворення нової рослини.</p>
+            <p>3. <b>Ділення куща:</b> Розділення рослини на кілька частин для утворення декількох окремих рослин з власною кореневою системою.</p>
+            <p>4. <b>Розмноження через черенки:</b> Відбирання фрагментів молодих стебел і їх посадка в вологе середовище для розвитку коренів та формування нових рослин.</p>
+            <p><b>Вегетативне розмноження особливо важливе в садівництві та сільському господарстві для вирощування рослин з перевагами і збереження рідкісних або загрожених видів.</b></p>
+            <p><b>Як спорування, так і вегетативне розмноження є ключовими процесами у збереженні видів рослин і їх генетичного різноманіття. Розуміння і використання цих процесів є критично важливими для стійкого управління і збереження природних екосистем і сільськогосподарських культур.</b></p>
+        </div>
+    </div>
+
+    <script>
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

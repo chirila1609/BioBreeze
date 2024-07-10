@@ -72,4 +72,9 @@ public partial class ZoologieHun : ContentPage
     {
         Navigation.PushAsync(new EAnimale());
     }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
+    }
 }

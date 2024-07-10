@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure and Function of Lungs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .language-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .language-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .ukrainian-content,
+        .hungarian-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainianContent()">Українська</button>
+        <button onclick="showHungarianContent()">Magyar</button>
+    </div>
+
+    <div class="content ukrainian-content">
+        <p><strong>Структура легенів:</strong></p>
+        <p><strong>1. Бронхії та термінальні бронхіоли:</strong> Легені складаються зі складної системи трубок, що називаються бронхії та бронхіоли, які розгалужуються для досягнення всіх зон легенів.</p>
+        <p><strong>2. Альвеоли:</strong> Ці малі повітряні мішки розташовані в кінці бронхій та бронхіол, і є основним місцем обміну газів. Тут кисень забирається з повітря, а вуглекислий газ виводиться.</p>
+        <p><strong>3. Капіляри кровоносні:</strong> Альвеоли оточені густою мережею кровоносних капілярів, що сприяє швидкому обміну газів між вдиханим повітрям і кров'ю.</p>
+        <p><strong>Функція легенів:</strong></p>
+        <p><strong>1. Дихання:</strong> Легені дозволяють процес дихання, під час якого кисень забирається з повітря і вводиться в кров, а вуглекислий газ видаляється з крові і виділяється у видиханому повітрі.</p>
+        <p><strong>2. Регулювання рН:</strong> Легені грають важливу роль у підтримці кислотно-лужного балансу в організмі, видаляючи вуглекислий газ, що є продуктом виведення, який може впливати на кислотно-лужний баланс крові.</p>
+        <p><strong>3. Захист від інфекцій:</strong> Легені також обладнані захисними механізмами, такими як слизова оболонка і місцева імунна система, які захищають їх від патогенів та чужорідних частинок, що надходять разом з вдиханим повітрям.</p>
+    </div>
+
+    <div class="content hungarian-content">
+        <p><strong>A tüdők szerkezete:</strong></p>
+        <p><strong>1. Hörghurkok és terminális hörghurkok:</strong> A tüdők bonyolult csövekből álló rendszert alkotnak, amelyeket hörghurkoknak és hörghurkák neveznek, és elágaznak az összes tüdőterület eléréséhez.</p>
+        <p><strong>2. Alveolusok:</strong> Ezek a kis levegőzacskók a hörghurkok és hörghurkák végén helyezkednek el, és a gázcsere fő helyszínei. Itt az oxigén levegőből történő felvétele és a széndioxid eltávolítása történik.</p>
+        <p><strong>3. Véredények:</strong> Az alveolusokat sűrű vérerek hálózzák be, amelyek lehetővé teszik a gyors gázcsere lehetőségét a belélegzett levegő és a vér között.</p>
+        <p><strong>A tüdők funkciója:</strong></p>
+        <p><strong>1. Lélegzés:</strong> A tüdők lehetővé teszik a légzés folyamatát, amely során az oxigén a levegőből bekerül a vérbe, míg a széndioxid eltávolításra kerül a vérkeringésből és kiválasztódik a kilélegzett levegőben.</p>
+        <p><strong>2. pH szabályozás:</strong> A tüdők fontos szerepet játszanak a szervezet sav-bázis egyensúlyának fenntartásában a szén-dioxid eltávolításával, ami a kiválasztás terméke, és befolyásolhatja a vér pH-ját.</p>
+        <p><strong>3. Védettség fertőzésekkel szemben:</strong> A tüdők védelmi mechanizmusokkal vannak ellátva, mint például a nyálkahártya és a helyi immunrendszer, amelyek védelmet nyújtanak a belélegzett patogének és idegen részecskék ellen.</p>
+    </div>
+
+    <script>
+        function showUkrainianContent() {
+            document.querySelector('.ukrainian-content').style.display = 'block';
+            document.querySelector('.hungarian-content').style.display = 'none';
+        }
+
+        function showHungarianContent() {
+            document.querySelector('.ukrainian-content').style.display = 'none';
+            document.querySelector('.hungarian-content').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

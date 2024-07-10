@@ -3,7 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Despre"
              Title="Despre">
+    <ScrollView>
     <VerticalStackLayout>
+        <Button Text="Meniu principal" 
+Clicked="OnMenuButtonClicked" 
+ImageSource="flyoutb.png" 
+HorizontalOptions="Start" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+            <Button.IsVisible>
+                <OnPlatform x:TypeArguments="x:Boolean">
+                    <On Platform="Android,iOS" Value="True" />
+                    <On Platform="Windows,macOS" Value="False" />
+                </OnPlatform>
+            </Button.IsVisible>
+        </Button>
         <Label 
             Text="Proiect realizat de Chirilă Mihnea-Ștefan&#x0a;Clasa a IX-a A Colegiul Național Octav Onicescu&#x0a;Aplicație destinată elevilor de gimnaziu și pentru a învăța mai ușor și mai rapid noțiuni privind biologia.  Această aplicație este intuitivă și prietenoasă, pentru a o folosi mergeți pe clasa și categoria dorită și accesați informațiile colectate și selecționate cu mare grijă pentru a vă acorda suport în sedimentarea unor date despre biologie. Mult succes!"
             VerticalOptions="Center" 
@@ -12,5 +27,12 @@
                MaximumWidthRequest="800"
                MaximumHeightRequest="300"
               />
-    </VerticalStackLayout>
+        <Label 
+    Text="Manual de utilizare:"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" />
+        <Image Source="pc.png"/>
+        <Image Source="tel.png"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

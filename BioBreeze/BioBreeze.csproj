@@ -71,8 +71,7 @@
 	  <None Remove="Resources\Images\anatomie1.png" />
 	  <None Remove="Resources\Images\artropode.png" />
 	  <None Remove="Resources\Images\artropode1.png" />
-	  <None Remove="Resources\Images\bac.png" />
-	  <None Remove="Resources\Images\bacalaureat.png" />
+	  <None Remove="Resources\Images\back.png" />
 	  <None Remove="Resources\Images\botanica.png" />
 	  <None Remove="Resources\Images\botanica1.png" />
 	  <None Remove="Resources\Images\brat.png" />
@@ -90,11 +89,6 @@
 	  <None Remove="Resources\Images\csange.png" />
 	  <None Remove="Resources\Images\doicincinu.png" />
 	  <None Remove="Resources\Images\doicinciok.png" />
-	  <None Remove="Resources\Images\dpbd.png" />
-	  <None Remove="Resources\Images\dpbu.png" />
-	  <None Remove="Resources\Images\dpd.png" />
-	  <None Remove="Resources\Images\dpt.png" />
-	  <None Remove="Resources\Images\dpu.png" />
 	  <None Remove="Resources\Images\eplante.png" />
 	  <None Remove="Resources\Images\ficat.png" />
 	  <None Remove="Resources\Images\flyoutb.png" />
@@ -106,6 +100,7 @@
 	  <None Remove="Resources\Images\gim4.png" />
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\hungary.png" />
+	  <None Remove="Resources\Images\ia.png" />
 	  <None Remove="Resources\Images\info.png" />
 	  <None Remove="Resources\Images\inima.png" />
 	  <None Remove="Resources\Images\limba.png" />
@@ -117,6 +112,7 @@
 	  <None Remove="Resources\Images\mfata.png" />
 	  <None Remove="Resources\Images\mgat.png" />
 	  <None Remove="Resources\Images\mincheietura.png" />
+	  <None Remove="Resources\Images\model.png" />
 	  <None Remove="Resources\Images\moluste.png" />
 	  <None Remove="Resources\Images\moluste1.png" />
 	  <None Remove="Resources\Images\mpicior.png" />
@@ -131,6 +127,7 @@
 	  <None Remove="Resources\Images\ochi.jpg" />
 	  <None Remove="Resources\Images\ochi1.png" />
 	  <None Remove="Resources\Images\pasari.png" />
+	  <None Remove="Resources\Images\pc.png" />
 	  <None Remove="Resources\Images\peste.png" />
 	  <None Remove="Resources\Images\peste1.png" />
 	  <None Remove="Resources\Images\picioare.png" />
@@ -143,6 +140,8 @@
 	  <None Remove="Resources\Images\SC.jpg" />
 	  <None Remove="Resources\Images\schelete.png" />
 	  <None Remove="Resources\Images\sd.png" />
+	  <None Remove="Resources\Images\sim.png" />
+	  <None Remove="Resources\Images\simu.png" />
 	  <None Remove="Resources\Images\SistemulNervos.png" />
 	  <None Remove="Resources\Images\skull.gif" />
 	  <None Remove="Resources\Images\spori.png" />
@@ -151,6 +150,7 @@
 	  <None Remove="Resources\Images\srepm.png" />
 	  <None Remove="Resources\Images\stomacul.png" />
 	  <None Remove="Resources\Images\talpa.png" />
+	  <None Remove="Resources\Images\tel.png" />
 	  <None Remove="Resources\Images\tesutanimal.png" />
 	  <None Remove="Resources\Images\TVege.png" />
 	  <None Remove="Resources\Images\ukrain.png" />
@@ -165,52 +165,108 @@
 	  <None Remove="Resources\Images\zoologie1.png" />
 	  <None Remove="Resources\Images\zoov.png" />
 	  <None Remove="Resources\Raw\adn.mp3" />
+	  <None Remove="Resources\Raw\amfi.html" />
 	  <None Remove="Resources\Raw\amfibieni.mp3" />
+	  <None Remove="Resources\Raw\arto.html" />
 	  <None Remove="Resources\Raw\artropode.mp3" />
+	  <None Remove="Resources\Raw\ca.html" />
+	  <None Remove="Resources\Raw\cag.html" />
 	  <None Remove="Resources\Raw\canimale.mp3" />
+	  <None Remove="Resources\Raw\chromo.html" />
+	  <None Remove="Resources\Raw\creier.html" />
 	  <None Remove="Resources\Raw\creierul.mp3" />
 	  <None Remove="Resources\Raw\cromozomii.mp3" />
+	  <None Remove="Resources\Raw\cvege.html" />
 	  <None Remove="Resources\Raw\cvege.mp3" />
+	  <None Remove="Resources\Raw\cvg.html" />
+	  <None Remove="Resources\Raw\dmodelz.html" />
+	  <None Remove="Resources\Raw\dna.html" />
+	  <None Remove="Resources\Raw\ea.html" />
 	  <None Remove="Resources\Raw\eanimale.mp3" />
+	  <None Remove="Resources\Raw\erevar.html" />
 	  <None Remove="Resources\Raw\ev.mp3" />
+	  <None Remove="Resources\Raw\evege.html" />
 	  <None Remove="Resources\Raw\evege.mp3" />
+	  <None Remove="Resources\Raw\ficatul.html" />
 	  <None Remove="Resources\Raw\ficatul.mp3" />
+	  <None Remove="Resources\Raw\g.html" />
 	  <None Remove="Resources\Raw\g.mp3" />
 	  <None Remove="Resources\Raw\gameti.mp3" />
+	  <None Remove="Resources\Raw\gametii.html" />
+	  <None Remove="Resources\Raw\gene.html" />
+	  <None Remove="Resources\Raw\ha.html" />
 	  <None Remove="Resources\Raw\hanimale.mp3" />
 	  <None Remove="Resources\Raw\hpn.mp3" />
 	  <None Remove="Resources\Raw\hsn.mp3" />
+	  <None Remove="Resources\Raw\hvege.html" />
 	  <None Remove="Resources\Raw\hvege.mp3" />
+	  <None Remove="Resources\Raw\inima.html" />
 	  <None Remove="Resources\Raw\inima.mp3" />
+	  <None Remove="Resources\Raw\issv.html" />
 	  <None Remove="Resources\Raw\isvvege.mp3" />
+	  <None Remove="Resources\Raw\limba.html" />
 	  <None Remove="Resources\Raw\limba.mp3" />
+	  <None Remove="Resources\Raw\mam.html" />
 	  <None Remove="Resources\Raw\mamifere.mp3" />
+	  <None Remove="Resources\Raw\mcs.html" />
 	  <None Remove="Resources\Raw\mn.mp3" />
+	  <None Remove="Resources\Raw\mol.html" />
 	  <None Remove="Resources\Raw\moluste.mp3" />
 	  <None Remove="Resources\Raw\muschii.mp3" />
+	  <None Remove="Resources\Raw\muscle.html" />
+	  <None Remove="Resources\Raw\n.html" />
+	  <None Remove="Resources\Raw\nas.html" />
 	  <None Remove="Resources\Raw\nasul.mp3" />
+	  <None Remove="Resources\Raw\neverte.html" />
 	  <None Remove="Resources\Raw\nevertebrate.mp3" />
+	  <None Remove="Resources\Raw\nutrih.html" />
+	  <None Remove="Resources\Raw\nutrihs.html" />
+	  <None Remove="Resources\Raw\nutrim.html" />
+	  <None Remove="Resources\Raw\ochi.html" />
 	  <None Remove="Resources\Raw\ochiul.mp3" />
+	  <None Remove="Resources\Raw\pa.html" />
+	  <None Remove="Resources\Raw\pasa.html" />
 	  <None Remove="Resources\Raw\pasari.mp3" />
+	  <None Remove="Resources\Raw\peste.html" />
 	  <None Remove="Resources\Raw\peste.mp3" />
+	  <None Remove="Resources\Raw\piele.html" />
 	  <None Remove="Resources\Raw\piele.mp3" />
+	  <None Remove="Resources\Raw\plamani.html" />
 	  <None Remove="Resources\Raw\plamani.mp3" />
+	  <None Remove="Resources\Raw\ra.html" />
 	  <None Remove="Resources\Raw\ranimale.mp3" />
+	  <None Remove="Resources\Raw\rept.html" />
 	  <None Remove="Resources\Raw\reptile.mp3" />
+	  <None Remove="Resources\Raw\respv.html" />
+	  <None Remove="Resources\Raw\rfv.html" />
 	  <None Remove="Resources\Raw\rfvege.mp3" />
 	  <None Remove="Resources\Raw\rvege.mp3" />
+	  <None Remove="Resources\Raw\sc.html" />
+	  <None Remove="Resources\Raw\sd.html" />
 	  <None Remove="Resources\Raw\sistemulcirculator.mp3" />
 	  <None Remove="Resources\Raw\sistemuldigestiv.mp3" />
 	  <None Remove="Resources\Raw\sistemulnervos.mp3" />
 	  <None Remove="Resources\Raw\sistemulreproductiv.mp3" />
 	  <None Remove="Resources\Raw\sistemulrespirator.mp3" />
+	  <None Remove="Resources\Raw\ske.html" />
 	  <None Remove="Resources\Raw\skeleton.mp3" />
+	  <None Remove="Resources\Raw\sn.html" />
+	  <None Remove="Resources\Raw\sr.html" />
+	  <None Remove="Resources\Raw\sresp.html" />
+	  <None Remove="Resources\Raw\ssic.html" />
 	  <None Remove="Resources\Raw\ssic.mp3" />
+	  <None Remove="Resources\Raw\stom.html" />
 	  <None Remove="Resources\Raw\stomacul.mp3" />
+	  <None Remove="Resources\Raw\ta.html" />
 	  <None Remove="Resources\Raw\tanimale.mp3" />
+	  <None Remove="Resources\Raw\tveg.html" />
 	  <None Remove="Resources\Raw\tvege.mp3" />
+	  <None Remove="Resources\Raw\ure.html" />
 	  <None Remove="Resources\Raw\urechea.mp3" />
+	  <None Remove="Resources\Raw\v.html" />
+	  <None Remove="Resources\Raw\verte.html" />
 	  <None Remove="Resources\Raw\vertebrate.mp3" />
+	  <None Remove="Resources\Raw\viermi.html" />
 	  <None Remove="Resources\Raw\viermi.mp3" />
 	</ItemGroup>
 
@@ -223,6 +279,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Acasa.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="AI.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Anatomie.xaml">
@@ -277,9 +336,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="AnatomPages\Urechea.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Bacalaureat.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Botanica.xaml">
@@ -345,6 +401,9 @@
 	  <MauiXaml Update="hun\ZoologieHun.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="modeled.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="NutriPages\HPN.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -369,10 +428,28 @@
 	  <MauiXaml Update="Pages\gim4.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\Simulari.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Profil.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="TesteBac\2024.xaml">
+	  <MauiXaml Update="SimuPages\cag.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SimuPages\cvg.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SimuPages\gs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SimuPages\mcs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SimuPages\nsim.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SimuPages\vsim.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Teste\AnatomieBrain.xaml">

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Годування тварин:</b></p>
+            <p>Годування тварин - це ключовий аспект їхнього догляду, який безпосередньо впливає на їхнє здоров'я і благополуччя. З часом люди розробили різноманітні знання і техніки для забезпечення необхідного харчування домашніх і диких тварин.</p>
+            <p><b>Загальні принципи:</b></p>
+            <p>Годування тварин передбачає баланс між конкретними потребами кожної тварини та наявністю їжових ресурсів. Основні принципи включають забезпечення достатнього прийому білків, вуглеводів, жирів, вітамінів та мінералів у щоденному раціоні тварини. Ці потреби залежать від виду, віку, статі, стадії розвитку та рівня активності.</p>
+            <p><b>Типи годування:</b></p>
+            <p><b>1. Природне годування:</b> Деякі тварини, особливо домашні, харчуються їжею, яку вони знаходять у дикій природі або їжею, вирощеною людиною, такою як трава, насіння, овочі, фрукти, м'ясо та молочні продукти.</p>
+            <p><b>2. Годування обробленою їжею:</b> Багато домашніх тварин годують обробленою їжею, такою як суха їжа, консерви або волога їжа. Ці продукти складаються для задоволення конкретних харчових потреб кожного виду і є зручними для власників.</p>
+            <p><b>3. Харчові добавки:</b> У деяких випадках тварини можуть потребувати добавок для компенсації дефіциту поживних речовин у їхньому основному раціоні. Ці можуть включати вітаміни, мінерали або інші необхідні поживні речовини для здоров'я тварини.</p>
+            <p>Висновок, годування тварин - це складний процес, який потребує знань та уваги для забезпечення їхнього здоров'я і благополуччя. Розуміння індивідуальних потреб кожної тварини та надання збалансованого і відповідного харчування є ключовими для забезпечення здорового і щасливого життя.</p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Állateledel:</b></p>
+            <p>Az állateledel gondozásának fontos része, amely közvetlen hatással van az állatok egészségére és jólétére. Az emberek az idők során különféle ismereteket és technikákat fejlesztettek ki a házi és vadállatok táplálkozási igényeinek biztosítására.</p>
+            <p><b>Általános elvek:</b></p>
+            <p>Az állatok táplálása során fontos az egyensúly kialakítása az egyes állatok specifikus igényei és az élelemforrások elérhetősége között. Az alapvető elvek magukban foglalják a fehérje, szénhidrát, zsír, vitamin és ásványi anyag megfelelő bevitelének biztosítását az állat napi étrendjében. Ezek az igények fajtától, korától, nemétől, fejlődési szakaszától és aktivitási szintjétől függően változnak.</p>
+            <p><b>Táplálkozási típusok:</b></p>
+            <p><b>1. Természetes táplálkozás:</b> Néhány állat, különösen a háziállatok, vadon élő környezetben talált vagy ember által termesztett ételeket fogyasztanak, például füvet, magokat, zöldségeket, gyümölcsöket, húst és tejtermékeket.</p>
+            <p><b>2. Feldolgozott élelmiszer táplálkozás:</b> Sok háziállatot feldolgozott élelmiszerekkel táplálnak, például száraztáppal, konzervekkel vagy nedves táppal. Ezek az ételek az adott fajok specifikus táplálkozási igényeinek megfelelően vannak összeállítva, és kényelmesek a tulajdonosok számára.</p>
+            <p><b>3. Táplálékkiegészítők:</b> Bizonyos esetekben az állatoknak táplálékkiegészítőkre lehet szükségük a fő étrendjükben lévő tápanyaghiány kiegészítésére. Ezek vitaminokat, ásványi anyagokat vagy más, az állat egészsége szempontjából fontos tápanyagokat tartalmazhatnak.</p>
+            <p>Összegzésképpen az állateledel komplex folyamat, amely ismereteket és figyelmet igényel az állatok egészségének és jólétének biztosítása érdekében. Fontos megérteni minden állat egyedi igényeit és biztosítani egy kiegyensúlyozott és megfelelő táplálkozást annak érdekében, hogy egészséges és boldog életet élhessenek.</p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('ukrainian').classList.remove('active');
+            document.getElementById('hungarian').classList.add('active');
+        }
+    </script>
+</body>
+</html>

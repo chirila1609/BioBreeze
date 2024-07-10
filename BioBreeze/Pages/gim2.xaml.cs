@@ -46,4 +46,9 @@ public partial class gim2 : ContentPage
     {
         Navigation.PushAsync(new BioBreeze.BotanicPages.EVege());
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Міксотрофне живлення:</b></p>
+            <p>Міксотрофне живлення - це унікальний спосіб, за допомогою якого деякі організми, включаючи деякі рослини, отримують їжу з кількох джерел, поєднуючи риси фотосинтезу з захопленням та перетравленням інших організмів або органічних речовин.</p>
+            <p>М'ясоїдні рослини - це іконічний приклад міксотрофного живлення у рослинному світі. Більшість рослин отримують поживні речовини за допомогою фотосинтезу, але м'ясоїдні рослини розвинули адаптації для доповнення цього джерела їжі речовинами, отриманими від малих тварин, таких як комахи, безхребетні або інші малі організми.</p>
+            <p>Один з найвідоміших прикладів м'ясоїдних рослин - Непентес, відомий як рослина-пастка, яка приваблює свою здобич у свої келихи, наповнені травними соками. Інші приклади включають Дрозеру (росичка), яка має листя, покрите липкими щупальцями для захоплення комах, і Саррасенію (чашечкова рослина), яка має довгу трубчасту форму для приваблення та перетравлення здобичі.</p>
+            <p>Адаптації цих рослин до міксотрофного живлення включають спеціалізовані структури для захоплення та перетравлення здобичі, такі як травні залози, специфічні ферменти та механізми для уникнення самоперетравлення. Хоча м'ясоїдні рослини отримують поживні речовини від здобичі, фотосинтез залишається важливою складовою їхнього обміну речовин, забезпечуючи їм додатковий джерело енергії та поживних речовин.</p>
+            <p>У висновку, міксотрофне живлення, яке ілюструється м'ясоїдними рослинами, демонструє винахідливі адаптації організмів для виживання в умовах обмежених ресурсів і надає захоплюючий погляд на різноманіття та складність життя на Землі.</p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Kevert táplálkozás:</b></p>
+            <p>A kevert táplálkozás egyedi módszer, amellyel bizonyos szervezetek, beleértve néhány növényt is, táplálékukat több forrásból szerzik be, ötvözve a fotoszintézis jellemzőit a szervezetek vagy szerves anyagok elfogásával és emésztésével.</p>
+            <p>A húsevő növények az ikonikus példája a kevert táplálkozásnak a növényvilágban. Habár a legtöbb növény táplálékát a fotoszintézis útján szerezheti meg, a húsevő növények kifejlesztettek olyan alkalmazkodásokat, amelyek kiegészítik e táplálékszerzési forrást kis állatokból, például rovarokból, gerinctelenekből vagy más kis szervezetekből származó anyagokkal.</p>
+            <p>A húsevő növények legismertebb példája a Nepenthes, amelyet ragadozó növényként ismernek, és amely zsákszerű növényében emésztő folyadékkal teli poharakban vonzza a zsákmányát. Más példák a Drosera (napszamár), amelynek levélszövetén ragadós tapintású hajtások vannak a rovarok elkapására, és a Sarracenia (tölcsérnövény), amely hosszú, trombita alakú csövet használ zsákmányának csalogatására és emésztésére.</p>
+            <p>Ezen növények alkalmazkodásai a kevert táplálkozáshoz magukban foglalják a zsákmány elfogására és emésztésére szolgáló specializált szerkezeteket, mint például emésztőmirigyek, specifikus enzimek és mechanizmusok az önemésztés elkerülésére. Habár a húsevő növények táplálékot szereznek a zsákmányból, a fotoszintézis továbbra is fontos szerepet játszik anyagcseréjükben, biztosítva számukra a további energia- és tápanyagforrást.</p>
+            <p>Összefoglalva, a kevert táplálkozás, amely a húsevő növényekkel illusztrálódik, az organizmusok találékonyságát mutatja be a korlátozott erőforrásokkal rendelkező környezetben való túlélésre, és lenyűgöző betekintést nyújt a Földön tapasztalható élet sokféleségébe és bonyolultságába.</p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

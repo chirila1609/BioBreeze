@@ -2,9 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.BotanicPages.ISVVege"
-             Title="Inmulțirea prin spori și vegetativă la plante">
+             Title="Înmulțirea prin spori și vegetativă la plante">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Image Source="spori.png" MaximumWidthRequest="720"/>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -56,6 +70,7 @@
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_BotISVVege"/>
+            <WebView Source="issv.html" WidthRequest="400" HeightRequest="1200"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

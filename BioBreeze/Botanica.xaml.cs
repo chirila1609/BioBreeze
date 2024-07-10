@@ -36,4 +36,9 @@ public partial class Botanica : ContentPage
     {
         Navigation.PushAsync(new ISVVege());
     }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
+    }
 }

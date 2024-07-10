@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.AnatomieSD"
-             Title="AnatomieSD">
+             Title="Test sistemul digestiv">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Care este rolul principal al sistemului digestiv?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -22,7 +36,7 @@
                 <Label Text="c) De a produce hormoni pentru reglarea greutății." />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Unde începe procesul digestiv în corpul uman?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -37,7 +51,7 @@
                 <Label Text="c) În stomac" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Ce substanță din gură ajută la descompunerea carbohidraților?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -52,7 +66,7 @@
                 <Label Text="c) Salivă" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Ce rol are pancreasul în digestie?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -67,7 +81,7 @@
                 <Label Text="c) Absorbția apei și a electroliților" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Ce parte a sistemului digestiv este responsabilă pentru absorbția apei și a electroliților din alimente?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -82,10 +96,10 @@
                 <Label Text="c) Intestinul gros" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Submit" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

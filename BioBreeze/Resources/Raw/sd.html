@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemul Digestiv</title>
+</head>
+
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+    <div>
+        <button onclick="changeLanguage('uk')">Українська</button>
+        <button onclick="changeLanguage('hu')">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" style="display: none;">
+            <p>
+                Шлунково-кишкова система є однією з найбільш складних і важливих систем у людському організмі. Її
+                головною функцією є розщеплення споживаних продуктів на поживні речовини, які можуть бути засвоєні, та
+                видалення відходів.
+            </p>
+            <p>
+                Переварювальний процес починається у роті, де їжа розмелюється зубами та змішується з слиною, що містить
+                ферменти, які розпочинають розщеплення вуглеводів. Потім їжа проходить через стравохід у шлунок, де вона
+                розщеплюється та перетравлюється шлунковим соком та печінковими ферментами. Зі шлунка частково переварена
+                їжа потрапляє в тонкий кишечник, де більшість поживних речовин поглинаються у кров через стінки
+                кишечника та транспортуються до всього організму.
+            </p>
+            <p>
+                Тонкий кишечник складається з трьох частин: дванадцятипалої кишки, тощої кишки та ілеалу. У дванадцятипалій
+                кишці вивільнюються підшлункові та жовчні соки для розщеплення жирів і білків. Під час проходження їжі
+                через тощо та ілеал, поживні речовини поглинаються, перш ніж непереварені відходи потрапляють у товстий
+                кишечник.
+            </p>
+            <p>
+                Товстий кишечник відповідає за поглинання води та електролітів з їжі, перетворення відходів у кал та
+                підготовку їх до виведення. Вони подорожують до прямої кишки та виводяться через анус під час дефекації.
+            </p>
+            <p>
+                Шлунково-кишкова система координується рядом органів, включаючи печінку, жовчний міхур та підшлункову
+                залозу, які вивільняють життєво важливі хімічні речовини для перетравлення їжі. Збалансоване та здорове
+                харчування, багате на волокна, поживні речовини та воду, є ключовим для підтримки здоров'я шлунково-кишкової
+                системи. Будь-яке порушення цієї системи може призвести до проблем зі здоров'ям, такими як несправності
+                шлункового тракту, рефлюкс гастроезофагеальний, синдром подразненого кишечника або навіть більш серйозні
+                захворювання, такі як рак товстої кишки. Тому догляд за нашою шлунково-кишковою системою та увага до
+                харчування і здорового способу життя є надзвичайно важливими.
+            </p>
+        </div>
+
+        <div id="hungarian" style="display: none;">
+            <p>
+                Az emésztőrendszer az egyik legbonyolultabb és legfontosabb rendszer az emberi testben. Fő szerepe, hogy az
+                elfogyasztott ételeket emészthető tápanyagokká bontsa, és eltávolítsa a maradék hulladékot.
+            </p>
+            <p>
+                Az emésztő folyamat a szájban kezdődik, ahol az ételeket fogakkal darálják és nyálka keverik, amely
+                enzimeket tartalmaz, amelyek elkezdik a szénhidrátok lebontását. Ezután az étel áthalad a nyelőcsőn a
+                gyomorba, ahol gyomorsav és emésztőenzimek bontják le és emésztik meg. A gyomorból részben emésztett
+                étel jut a vékonybélbe, ahol a tápanyagok többsége felszívódik a vérbe az emésztőrendszer falain keresztül,
+                és szállítják a test többi részébe.
+            </p>
+            <p>
+                A vékonybél három részből áll: a patkóbélből, a sötétbélből és az ileumból. A patkóbélben hasnyálmirigy- és
+                epelelhalásokat szabadítanak fel a zsírok és fehérjék lebontására. Ahogy az étel halad át a sötétbél és
+                az ileumban, a tápanyagok felszívódnak, mielőtt emésztetlen hulladék kerülne a vastagbélbe.
+            </p>
+            <p>
+                A vastagbél felelős a víz és elektrolitok felszívásáért az ételekből, a hulladékok székletbe történő
+                átalakításáért és készítéséért. Ezek az utazások a végbélbe és az anuson keresztül történő elimináció
+                során történnek.
+            </p>
+            <p>
+                Az emésztőrendszer egy sor szerv által szervezett, beleértve a májat, az epehólyagot és a hasnyálmirigyet,
+                amelyek életfontosságú vegyi anyagokat bocsátanak fel az emésztési folyamatban. Egy kiegyensúlyozott és
+                egészséges táplálkozás, amely rostokban, tápanyagokban és vízben gazdag, kulcsfontosságú az emésztőrendszer
+                egészségének fenntartásában. Bármely rendellenesség ebben a rendszerben emésztési problémákhoz vezethet,
+                például a gastrooesophagealis reflux, az irritábilis bél szindróma vagy akár súlyosabb betegségek, mint például
+                a vastagbélrák. Ezért rendkívül fontos gondoskodni az emésztőrendszerünkről és figyelmet fordítani az
+                egészséges életmódra és táplálkozásra.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'uk') {
+                document.getElementById('ukrainian').style.display = 'block';
+                document.getElementById('hungarian').style.display = 'none';
+            } else if (lang === 'hu') {
+                document.getElementById('ukrainian').style.display = 'none';
+                document.getElementById('hungarian').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@ namespace BioBreeze.AnatomPages;
 public partial class Creierul : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Creierul() : this(AudioManager.Current)
     {
@@ -33,4 +33,10 @@ public partial class Creierul : ContentPage
     {
         Navigation.PushAsync(new AnatomieBrain());
     }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
+    }
+
 }

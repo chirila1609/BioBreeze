@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemul Circulator</title>
+</head>
+
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+    <div>
+        <button onclick="changeLanguage('uk')">Українська</button>
+        <button onclick="changeLanguage('hu')">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" style="display: none;">
+            <p>
+                Серцево-судинна система є однією з найважливіших систем у людському організмі, відповідальною за
+                транспортування поживних речовин, кисню та гормонів до всіх клітин і тканин, а також за видалення
+                метаболічних відходів і вуглекислого газу. Ця система складається з серця, кровоносних судин і крові.
+            </p>
+            <p>
+                Серце, як мотор серцево-судинної системи, є м'язовим органом, розташованим у верхній частині грудної
+                клітки. Діючи як насос, серце проганяє кров через кровоносні судини до всіх частин тіла. Серце має чотири
+                камери: два передсердя і два шлуночки, які згортаються і розслабляються у відповідному ритмі для того,
+                щоб проганяти кров.
+            </p>
+            <p>
+                Кровоносні судини схожі на транспортні шляхи, які переносять кров від серця до різних органів і тканин,
+                і назад до серця. Існує три основних типи кровоносних судин: артерії, вени і капіляри. Артерії переносять
+                оксигеновану кров від серця до тканин, вени привозять кров бідну на кисень назад до серця, а капіляри є
+                зв'язуючими вазами між артеріями і венами, де відбувається обмін речовин між кров'ю і тканинами.
+            </p>
+            <p>
+                Кров - це складна рідина, яка містить червоні кров'яні клітини (еритроцити), білі кров'яні клітини
+                (лейкоцити) і тромбоцити, що плавають у рідині, званій плазмою. Червоні кров'яні клітини переносять
+                кисень з легенів до тканин, білі кров'яні клітини борються з інфекціями, а тромбоцити допомагають в
+                згортанні крові для зупинки кровотечі при травмах.
+            </p>
+        </div>
+
+        <div id="hungarian" style="display: none;">
+            <p>
+                A keringési rendszer az egyik legvitalitásabb rendszer az emberi testben, felelős az tápanyagok,
+                oxigén és hormonok szállításáért az összes sejtbe és szövetbe, valamint az anyagcsere-végső
+                termékek és a szén-dioxid eltávolításáért. Ez a rendszer a szív, az érrendszer és a vér
+                összetevőiből áll.
+            </p>
+            <p>
+                A szív, mint a keringési rendszer motorja, egy izomzatú szerv, amely a mellkas felső részén
+                helyezkedik el. Mint egy szivattyú, a szív vérrel tolja az érrendszeren keresztül az egész
+                test különböző részei felé. A szívnek négy kamrája van: két pitvar és két kamra, amelyek
+                koordinált ritmusban összehúzódnak és lazítanak, hogy a vért pumpálják.
+            </p>
+            <p>
+                Az érrendszer olyan közlekedési útvonalak, amelyek a szívből szállítják a vért a különböző
+                szervekbe és szövetekbe, és vissza a szívbe. Három fő típusú érrendszer létezik: artériák,
+                vénák és hajszálerek. Az artériák oxigéndús vért szállítanak a szívből a szövetekbe, a vénák
+                pedig oxigénszegény vért szállítanak vissza a szívhez, míg a hajszálerek az artériák és a
+                vénák közötti kapcsolói, ahol a vér és a szövetek közötti anyagcsere zajlik.
+            </p>
+            <p>
+                A vér egy összetett folyadék, amely vörösvérsejteket (eritrociták), fehérvérsejteket (leukociták)
+                és vérlemezkéket tartalmaz, amelyek egy folyadékban úsznak, amelyet vérplazmának neveznek. A
+                vörösvérsejtek oxigént szállítanak a tüdőből a szövetekbe, a fehérvérsejtek harcolnak az
+                infekciók ellen, míg a vérlemezkék segítenek a vér koagulációjában, hogy megállítsák a
+                vérzést sérülések esetén.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'uk') {
+                document.getElementById('ukrainian').style.display = 'block';
+                document.getElementById('hungarian').style.display = 'none';
+            } else if (lang === 'hu') {
+                document.getElementById('ukrainian').style.display = 'none';
+                document.getElementById('hungarian').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

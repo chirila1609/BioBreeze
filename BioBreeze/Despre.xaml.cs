@@ -6,4 +6,9 @@ public partial class Despre : ContentPage
 	{
         InitializeComponent();
 	}
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

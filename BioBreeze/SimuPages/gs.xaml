@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.SimuPages.gs"
+             Title="Simulare gene">
+    <ScrollView>
+    <VerticalStackLayout>
+        <WebView Source="g.html" WidthRequest="400" HeightRequest="300"/>
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span FontSize="15" Text="În această simulare, poți explora pașii esențiali ai expresiei genetice și sintezei proteinelor. Iată ce poți face:" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="1. Generarea proteinelor: " FontAttributes="Bold"/>
+                    <Span FontSize="15" Text="Experimentează cu ADN-ul, ARN-ul și proteinele pentru a înțelege cum interacționează și cum afectează funcțiile celulare. Încearcă să generezi și să colectezi trei tipuri diferite de proteine." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="2. Factorii care afectează sinteza proteinelor: " FontAttributes="Bold"/>
+                    <Span FontSize="15" Text="Treci la explorarea factorilor care influențează sinteza proteinelor într-o celulă. Această parte a simulării te ajută să înțelegi mai bine procesele complexe din expresia genetică." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="Ebben a szimulációban felfedezheti a génexpresszió és a fehérjeszintézis alapvető lépéseit. A következőket teheti:" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="1. Fehérjegenerálás: " FontAttributes="Bold"/>
+                    <Span FontSize="15" Text="Kísérletezzen DNS-sel, RNS-sel és fehérjékkel, hogy megértse, hogyan hatnak egymásra, és hogyan befolyásolják a sejtfunkciókat. Próbáljon meg három különböző típusú fehérjét létrehozni és összegyűjteni." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="2. A fehérjeszintézist befolyásoló tényezők: " FontAttributes="Bold"/>
+                    <Span FontSize="15" Text="Folytassa a sejt fehérjeszintézisét befolyásoló tényezők feltárását. A szimuláció ezen része segít jobban megérteni a génexpresszió összetett folyamatait." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="У цій симуляції ви можете досліджувати основні етапи експресії генів і синтезу білка. Ось що ви можете зробити:" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="1. Генерація білка: " FontAttributes="Bold"/>
+                    <Span FontSize="15" Text="Експериментуйте з ДНК, РНК і білками, щоб зрозуміти, як вони взаємодіють і впливають на клітинні функції. Спробуйте створити та зібрати три різні типи білків." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="2. Фактори, що впливають на синтез білка: " FontAttributes="Bold"/>
+                    <Span FontSize="15" Text="Продовжте досліджувати фактори, які впливають на синтез білка в клітині. Ця частина симуляції допоможе вам краще зрозуміти складні процеси експресії генів." />
+                    <Span Text="&#x0a;" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

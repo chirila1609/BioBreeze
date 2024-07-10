@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.SimuPages.vsim"
+             Title="Simulare vedere">
+    <VerticalStackLayout>
+        <WebView Source="v.html" WidthRequest="400" HeightRequest="300"/>
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="1. Fasciculele de lumină și ochiul uman:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Lumina este alcătuită din fotoni, care sunt particule de lumină. Ochii noștri conțin celule speciale numite conuri și bastonașe." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Conurile sunt responsabile pentru vederea în culori și sunt sensibile la trei culori primare: roșu, verde și albastru." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Bastonașele sunt implicate în vederea în condiții de lumină scăzută și nu percep culorile." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="2. Amestecul culorilor:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Dacă proiectăm trei fascicule colorate în culorile primare (roșu, verde și albastru) pe un perete, obținem o pată albă." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Amestecul de două culori primare formează diferite nuanțe. De exemplu, amestecul de roșu și verde produce galben, iar amestecul de verde și albastru produce ciano." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Creierul nostru combină semnalele de la conuri pentru a percepe culorile intermediare și spectrul complet al culorilor." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="3. Culorile pe care le vedem:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Culorile pe care le vedem sunt pur și simplu diferite lungimi de undă ale luminii care se reflectă într-un obiect." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- De exemplu, atunci când vedem o floare roșie, înseamnă că petalele absorb toate celelalte culori și reflectă doar lumina roșie." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="1. Fénysugarak és az emberi szem:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- A fény fotonokból áll, amelyek a fény részecskéi. Szemünk speciális sejteket tartalmaz, úgynevezett kúpokat és rudakat." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- A kúpok felelősek a színlátásért, és három fő színre érzékenyek: pirosra, zöldre és kékre." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- A rudak a gyenge fényviszonyoknál vesznek részt, és nem érzékelik a színeket." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="2. Színkeverés:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Ha három, alapszínben (piros, zöld és kék) színes gerendát vetítünk a falra, fehér foltot kapunk." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Két alapszín keverése különböző árnyalatokat eredményez. Például a piros és a zöld keverése sárga, a zöld és a kék keverése pedig ciánt eredményez." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Agyunk a kúpokból érkező jeleket kombinálja a közbenső színek és a teljes színspektrum érzékelésére." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="3. A látott színek:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Az általunk látott színek egyszerűen egy tárgyról visszaverődő fény különböző hullámhosszúságai." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Ha például egy piros virágot látunk, az azt jelenti, hogy a szirmok elnyelik az összes többi színt, és csak a vörös fényt verik vissza." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="1. Світлові промені та людське око:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Світло складається з фотонів, які є частинками світла. Наші очі містять спеціальні клітини, які називаються колбочками та паличками." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Колбочки відповідають за колірний зір і чутливі до трьох основних кольорів: червоного, зеленого та синього." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Стрижні беруть участь у слабкому освітленні та не сприймають кольори." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="2. Змішування кольорів:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Якщо ми спроектуємо три кольорові промені основних кольорів (червоний, зелений і синій) на стіну, ми отримаємо білу пляму." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Змішування двох основних кольорів створює різні відтінки. Наприклад, змішування червоного та зеленого дає жовтий, а змішування зеленого та синього дає блакитний." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Наш мозок поєднує сигнали від колбочок, щоб сприймати проміжні кольори та повний колірний спектр." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                    <Span Text="3. Кольори, які ми бачимо:" FontAttributes="Bold" />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Кольори, які ми бачимо, - це просто різні довжини хвилі світла, що відбивається від об'єкта." />
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="- Наприклад, коли ми бачимо червону квітку, це означає, що пелюстки поглинають усі інші кольори та відбивають лише червоне світло." />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>

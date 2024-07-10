@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        #language-buttons {
+            margin-bottom: 20px;
+        }
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+        <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+	<div id="language-buttons">
+        <button onclick="showContent('ukrainian')">Українська</button>
+        <button onclick="showContent('hungarian')">Magyar</button>
+    </div>
+
+    <div id="ukrainian" class="content">
+        <p><strong>Ніс людини - це складний і важливий орган дихальної системи, який виконує кілька функцій, включаючи дихання, виявлення запахів та фільтрацію частинок з вдиханого повітря.</strong></p>
+        <p><strong>Структура носа складається з декількох компонентів, включаючи назальну порожнину, назальний септ, назальні раковини та параназальні синуси.</strong></p>
+        <p><strong>Однією з найважливіших функцій носа є виявлення запахів, а також фільтрація частинок з вдиханого повітря.</strong></p>
+        <p><strong>Висновок: ніс людини - це необхідний орган для дихання, відчуття запахів та захисту від іноземних частинок повітря.</strong></p>
+    </div>
+
+    <div id="hungarian" class="content">
+        <p><strong>Az emberi orr egy bonyolult és fontos légzőrendszeri szerv, amely több funkciót is ellát, beleértve a légzést, a szagok érzékelését és a belélegzett levegő részecskéinek szűrését.</strong></p>
+        <p><strong>Az orr szerkezete több összetevőből áll, ideértve az orrüreget, az orrsövényt, az orrjáratokat és a melléküregeket.</strong></p>
+        <p><strong>Az orr egyik legfontosabb funkciója a szagok érzékelése és a belélegzett levegő részecskéinek szűrése.</strong></p>
+        <p><strong>Összegzés: Az emberi orr lélegzési, szaglási és védelmi szervként szolgál a levegőbe belépő idegen részecskék ellen.</strong></p>
+    </div>
+
+    <script>
+        function showContent(language) {
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            document.getElementById(language).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

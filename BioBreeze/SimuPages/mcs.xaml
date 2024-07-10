@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.SimuPages.mcs"
+             Title="Simulare membrana celulară">
+    <ScrollView>
+    <VerticalStackLayout>
+        <WebView Source="mcs.html" WidthRequest="400" HeightRequest="300"/>
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="&#x0a;" />
+                    <Span FontSize="15" Text="În această simulare, poți insera canale într-o membrană și observa ce se întâmplă. Diferite tipuri de canale permit particulelor să se deplaseze prin membrană." />
+                    <Span Text="&#x0a;" />
+                    <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Ebben a szimulációban csatornákat helyezhet be a membránba, és figyelheti, mi történik. A különböző típusú csatornák lehetővé teszik a részecskék áthaladását a membránon." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="У цій симуляції ви можете вставити канали в мембрану та спостерігати, що відбувається. Різні типи каналів дозволяють частинкам рухатися через мембрану." />
+                    </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

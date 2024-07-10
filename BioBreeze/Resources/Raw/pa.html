@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #preview {
+            max-width: 300px;
+            max-height: 300px;
+            margin-top: 20px;
+        }
+
+        #loading {
+            display: none;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .language-btn {
+            margin-right: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="language-buttons">
+        <button class="language-btn" onclick="setLanguage('ro')">Română</button>
+        <button class="language-btn" onclick="setLanguage('hu')">Magyar</button>
+        <button class="language-btn" onclick="setLanguage('uk')">Українська</button>
+    </div>
+
+    <h1 id="title" style="color:#009910;">Identifică o plantă/un animal</h1>
+    <p id="warning" style="color:#009910;">!Informațiile sunt generate cu inteligență artificială, pot exista greșeli!</p>
+    <input type="file" id="fileInput" accept="image/*">
+    <br>
+    <img id="preview" src="" alt="Previzualizare imagine">
+    <p id="infoResult"></p>
+    <div id="loading">Se generează...</div>
+
+    <script>
+        let currentLanguage = 'ro';
+
+        const translations = {
+            ro: {
+                title: "Identifică o plantă/un animal",
+                warning: "!Informațiile sunt generate cu inteligență artificială, pot exista greșeli!",
+                loading: "Se generează...",
+                previewAlt: "Previzualizare imagine",
+                error: "Eroare: "
+            },
+            hu: {
+                title: "Növény/állat azonosítása",
+                warning: "!Az információkat mesterséges intelligencia generálja, hibák előfordulhatnak!",
+                loading: "Generálás folyamatban...",
+                previewAlt: "Kép előnézete",
+                error: "Hiba: "
+            },
+            uk: {
+                title: "Ідентифікуйте рослину/тварину",
+                warning: "!Інформація створюється за допомогою штучного інтелекту, можливі помилки!",
+                loading: "Генерується...",
+                previewAlt: "Попередній перегляд зображення",
+                error: "Помилка: "
+            }
+        };
+
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            document.getElementById('title').textContent = translations[lang].title;
+            document.getElementById('warning').textContent = translations[lang].warning;
+            document.getElementById('loading').textContent = translations[lang].loading;
+            document.getElementById('preview').alt = translations[lang].previewAlt;
+        }
+
+        async function query(data, lang) {
+            let model;
+            switch (lang) {
+                case 'ro':
+                    model = "Helsinki-NLP/opus-mt-tc-big-en-ro";
+                    break;
+                case 'hu':
+                    model = "Helsinki-NLP/opus-mt-en-hu";
+                    break;
+                case 'uk':
+                    model = "Helsinki-NLP/opus-mt-en-uk";
+                    break;
+                default:
+                    model = "Helsinki-NLP/opus-mt-tc-big-en-ro";
+            }
+
+            const response = await fetch(
+                `https://api-inference.huggingface.co/models/${model}`,
+                {
+                    headers: {
+                        Authorization: "Bearer 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",
+                        "Content-Type": "application/json",
+                    },
+                    method: "POST",
+                    body: JSON.stringify(data),
+                }
+            );
+            const result = await response.json();
+            return result;
+        }
+
+        document.getElementById('fileInput').addEventListener('change', async (event) => {
+            const file = event.target.files[0];
+            if (!file) {
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('preview').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+
+            const loadingElement = document.getElementById('loading');
+            loadingElement.style.display = 'block';
+
+            const arrayBufferReader = new FileReader();
+            arrayBufferReader.onload = async function (e) {
+                const data = e.target.result;
+                try {
+                    const hfResponse = await fetch("https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-large", {
+                        headers: {
+                            Authorization: "Bearer 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",
+                            "Content-Type": "application/octet-stream"
+                        },
+                        method: "POST",
+                        body: data
+                    });
+
+                    if (!hfResponse.ok) {
+                        throw new Error(`Eroare API Hugging Face: ${hfResponse.status} - ${hfResponse.statusText}`);
+                    }
+
+                    const hfResult = await hfResponse.json();
+                    const caption = hfResult[0]?.generated_text || 'Nu s-a găsit nicio descriere';
+
+                    const checkModelStatus = async () => {
+                        const flanResponse = await fetch("https://api-inference.huggingface.co/models/google/flan-t5-large", {
+                            headers: {
+                                Authorization: "Bearer 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",
+                                "Content-Type": "application/json"
+                            },
+                            method: "POST",
+                            body: JSON.stringify({
+                                inputs: `Provide detailed factual information about this plant or animal: ${caption}`
+                            })
+                        });
+
+                        if (flanResponse.status === 503) {
+                            const errorDetails = await flanResponse.json();
+                            if (errorDetails.error && errorDetails.error.includes('currently loading')) {
+                                console.log('Modelul se încarcă, se așteaptă...');
+                                await new Promise(resolve => setTimeout(resolve, 2000));
+                                return checkModelStatus();
+                            } else {
+                                throw new Error(`Eroare API Hugging Face FLAN-T5: ${flanResponse.status} - ${flanResponse.statusText} - ${JSON.stringify(errorDetails)}`);
+                            }
+                        } else if (!flanResponse.ok) {
+                            const errorDetails = await flanResponse.json();
+                            throw new Error(`Eroare API Hugging Face FLAN-T5: ${flanResponse.status} - ${flanResponse.statusText} - ${JSON.stringify(errorDetails)}`);
+                        }
+
+                        return flanResponse.json();
+                    };
+
+                    const flanResult = await checkModelStatus();
+                    const infoText = flanResult[0]?.generated_text || 'Nu s-au găsit informații';
+
+                    const infoTranslation = await query({ "inputs": infoText }, currentLanguage);
+                    document.getElementById('infoResult').textContent = infoTranslation[0]?.translation_text || 'Nu este disponibilă nicio traducere';
+
+                } catch (error) {
+                    document.getElementById('infoResult').textContent = translations[currentLanguage].error + error.message;
+                    console.error('Detalii eroare:', error);
+                } finally {
+                    loadingElement.style.display = 'none';
+                }
+            };
+
+            arrayBufferReader.readAsArrayBuffer(file);
+        });
+    </script>
+</body>
+</html>

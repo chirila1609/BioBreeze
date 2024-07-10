@@ -6,7 +6,7 @@ namespace BioBreeze.GeneticPages;
 public partial class EV : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public EV() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class EV : ContentPage
     private void GoTo_GenEV(object sender, EventArgs e)
     {
         Navigation.PushAsync(new GenEV());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

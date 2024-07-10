@@ -29,4 +29,9 @@ public partial class AcasaUkr : ContentPage
     {
         Navigation.PushAsync(new GeneticaUkr());
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

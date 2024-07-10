@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 720px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet / Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showHungarian()">Magyar</button>
+        <button onclick="showUkrainian()">Українська</button>
+    </div>
+
+    <div id="content">
+        <div id="hungarian" class="content">
+            <p><b>Dezoxiribonukleinsav:</b></p>
+            <p>A dezoxiribonukleinsav, azaz DNS, egy összetett és lenyűgöző molekula, amely genetikai anyagként szolgál a legtöbb élő szervezetben. Az 1869-ben Friedrich Miescher svájci kémikus által felfedezett DNS a molekuláris biológia és a modern genetika egyik alapvető pillére.</p>
+            <div class="image-container">
+                <img src="adn1.png" alt="DNA Structure">
+            </div>
+            <p>Az 1950-es években James Watson és Francis Crick által feltárt kettős spirál alakú szerkezete kulcsfontosságú eredmény a biológiai tudományban. A kettős spirál két nukleotidláncból áll, amelyek egymás köré csavarodnak, és spirális létrát alkotnak. A nukleotidok egy cukorból (dezoxiribóz), egy foszfátcsoportból és egy nitrogéntartalmú bázisból állnak. A nitrogéntartalmú bázisok az adenint (A), citozint (C), guanint (G) és timint (T) tartalmazzák. Ez a szerkezeti modell stabilitást és hatékony információtárolást biztosít a DNS számára.</p>
+            <p>A DNS fő funkciója az élő szervezetek fejlődéséhez, működéséhez és öröklődéséhez szükséges utasítások kódolása. Ezeket az utasításokat specifikus nitrogéntartalmú bázisszekvenciák formájában továbbítják, amelyek meghatározzák a szervezet fehérjéinek aminosavszekvenciáját. A fehérjék alapvető molekulák a sejtszerkezet és a funkció szempontjából, és számos biológiai folyamatban részt vesznek, például az anyagcserében, a sejtosztódásban és az immunválaszban.</p>
+            <p>A DNS különféle tudományos területeken, például a molekuláris biológiában, a genetikában, az orvostudományban és a biotechnológiában intenzív kutatások tárgya. Az orvostudományban a DNS és a különböző betegségekkel összefüggő mutációk megértése új lehetőségeket nyitott meg a diagnosztikában, a kezelésben és még a genetikai örökletes betegségek megelőzésében is.</p>
+            <p>Összegzésül, a DNS egy létfontosságú molekula, amely felelős az élő szervezetek tulajdonságainak sokféleségéért és öröklődéséért. Mélyreható ismerete és különböző tudományterületeken való alkalmazása forradalmasította az élet megértését, és új utakat nyitott meg az innováció és a biológiai fejlődés számára.</p>
+        </div>
+        <div id="ukrainian" class="content">
+            <p><b>Дезоксирибонуклеїнова кислота:</b></p>
+            <p>Дезоксирибонуклеїнова кислота, відома під абревіатурою ДНК, є складною та захоплюючою молекулою, яка служить генетичним матеріалом у більшості живих організмів. Відкрита в 1869 році швейцарським хіміком Фрідріхом Мішером, ДНК є одним із основних стовпів молекулярної біології та сучасної генетики.</p>
+            <div class="image-container">
+                <img src="adn1.png" alt="DNA Structure">
+            </div>
+            <p>Її подвійну спіральну структуру, з’ясовану в 1950-х роках Джеймсом Вотсоном і Френсісом Кріком, є ключовим досягненням у біологічній науці. Подвійна спіраль складається з двох ланцюгів нуклеотидів, які закручуються один навколо одного, утворюючи спіральну драбину. Нуклеотиди складаються з цукру (дезоксирибози), фосфатної групи та азотистої основи. Азотисті основи включають аденін (A), цитозин (C), гуанін (G) і тимін (T). Ця структурна модель забезпечує стабільність ДНК і здатність ефективно зберігати та передавати генетичну інформацію.</p>
+            <p>Основна функція ДНК полягає в кодуванні інструкцій, необхідних для розвитку, функціонування та успадкування характеристик живих організмів. Ці інструкції передаються у вигляді специфічних послідовностей азотистих основ, які визначають послідовність амінокислот у білках організму. Білки є основними молекулами для структури та функціонування клітин, вони беруть участь у різноманітних біологічних процесах, таких як метаболізм, клітинна реплікація та імунна відповідь.</p>
+            <p>ДНК є предметом інтенсивних досліджень у різних наукових галузях, таких як молекулярна біологія, генетика, медицина та біотехнологія. У медицині розуміння ДНК та її мутацій, пов’язаних із різними захворюваннями, відкрило нові можливості в діагностиці, лікуванні та навіть профілактиці деяких спадкових генетичних захворювань.</p>
+            <p>На закінчення, ДНК є основною молекулою для життя і відповідає за різноманітність і спадковість характеристик живих організмів. Глибоке знання і використання її в різних галузях науки революціонізували наше розуміння життя та відкрили нові шляхи для інновацій і прогресу в біологічній сфері.</p>
+        </div>
+    </div>
+
+    <script>
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@ namespace BioBreeze.AnatomPages;
 public partial class Limba : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Limba() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Limba : ContentPage
     private void GoTo_AnatomieLimba(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AnatomieLimba());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.BotISVVege"
-             Title="BotISVVege">
+             Title="Test înmulțirea prin spori și vegetativă la plante">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Care este principalul proces de reproducere în rândul plantelor fungice?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -26,7 +40,7 @@
                 <Label Text="d) Polenizarea" />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Ce reprezintă sporii în cadrul reproducției plantelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -45,7 +59,7 @@
                 <Label Text="d) Fructe" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Care dintre următoarele metode NU este o formă de înmulțire vegetativă?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -64,7 +78,7 @@
                 <Label Text="d) Polenizarea" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Ce este necesar pentru ca un spor să germină și să dezvolte o nouă plantă?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -83,7 +97,7 @@
                 <Label Text="d) Mediu adecvat și condiții favorabile" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Înmulțirea vegetativă este utilizată în principal în care dintre următoarele domenii?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -102,10 +116,10 @@
                 <Label Text="d) În domeniul medicinii" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

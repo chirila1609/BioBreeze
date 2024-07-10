@@ -29,4 +29,9 @@ public partial class AcasaHun : ContentPage
     {
         Navigation.PushAsync(new GeneticaHun());
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

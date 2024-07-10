@@ -6,7 +6,7 @@ namespace BioBreeze.AnatomPages;
 public partial class SistemulNervos : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public SistemulNervos() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class SistemulNervos : ContentPage
     private void GoTo_AnatomieSN(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AnatomieSN());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

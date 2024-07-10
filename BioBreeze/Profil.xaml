@@ -4,24 +4,38 @@
              Title="Profil">
     <ScrollView>
         <StackLayout>
+            <Button Text="Meniu principal" 
+Clicked="OnMenuButtonClicked" 
+ImageSource="flyoutb.png" 
+HorizontalOptions="Start" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label 
                 Text="Premii obținute:"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
             <StackLayout>
-                <!-- Badge for 1 test -->
+                
                 <Image x:Name="Badge1" WidthRequest="320" HeightRequest="320"/>
 
-                <!-- Badge for 5 tests -->
+                
                 <Image x:Name="Badge5" WidthRequest="320" HeightRequest="320"/>
 
-                <!-- Badge for 10 tests -->
+                
                 <Image x:Name="Badge10" WidthRequest="320" HeightRequest="320"/>
 
-                <!-- Badge for 25 tests -->
+                
                 <Image x:Name="Badge25" WidthRequest="320" HeightRequest="320"/>
 
-                <!-- Badge for 50 tests -->
+                
                 <Image x:Name="Badge50" WidthRequest="320" HeightRequest="320"/>
             </StackLayout>
         </StackLayout>

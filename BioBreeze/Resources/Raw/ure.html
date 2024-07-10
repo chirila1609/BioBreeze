@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showHungarian()">Magyar</button>
+        <button onclick="showUkrainian()">Українська</button>
+    </div>
+
+    <div id="content">
+        <div id="hungarian" class="content">
+            <p><b>Fül:</b></p>
+            <p>Az emberi fül egy bonyolult és lényeges szerv a hallórendszerben, amely felelős a környezetből érkező hangok érzékeléséért. Három különböző részből áll: külső fül, középső fül és belső fül.</p>
+            <p><b>A külső fül magában foglalja a füllebet és a külső hallójáratot. A fülleb összegyűjti és irányítja a hangokat a külső hallójárat felé, amely a dobhártyával végződik, egy vékony és rugalmas szerkezettel, amely rezgéseket hoz létre a hangok intenzitásától függően.</b></p>
+            <p><b>A középső fül a hallócsontok nevű kis csontok sorozatából áll: kalapács, üllő és kengyel. Ezek a csontok megnövelik és átadják a dobhártya rezgéseit a belső fül felé. Emellett a középső fül kapcsolódik az Eustach-kürtbe, amely segít a légnyomás kiegyenlítésében a középső fül és a külvilág között.</b></p>
+            <p><b>A belső fül, vagyis a labirintus, a halántéki csontban található, és felelős a hangrezgések átalakításáért olyan idegi jelekké, amelyeket az agy értelmezni tud. A labirintus egy sor csatornából és finom struktúrákból áll, beleértve a csigát és az egyensúlyozót. A csiga olyan speciális érzékszervi sejteket tartalmaz, amelyek elektromos jelekké alakítják át a rezgéseket, majd az auditív idegen keresztül továbbítják az agy felé. Az egyensúlyozó szabályozza az egyensúlyt és a test pozícióját.</b></p>
+            <p><b>Ezen három komponens együttesen harmonikusan működik az emberi fülben, lehetővé téve a környezetből érkező hangok észlelését és értelmezését, kulcsfontosságú szerepet játszva a kommunikációban és az orientációban a környező világban.</b></p>
+        </div>
+        <div id="ukrainian" class="content">
+            <p><b>Вухо:</b></p>
+            <p>Людське вухо є складним і важливим органом слухової системи, відповідальним за сприйняття звуків навколишнього середовища. Воно складається з трьох відмінних частин: зовнішнього вуха, середнього вуха та внутрішнього вуха.</p>
+            <p><b>Зовнішнє вухо включає вухові раковину та зовнішній слуховий канал. Вухова раковина збирає і направляє звуки в зовнішній слуховий канал, який закінчується барабанною перетинкою, тонкою і гнучкою структурою, що вібрує в залежності від інтенсивності звуків.</b></p>
+            <p><b>Середнє вухо складається з ряду малих кісточок, які називаються слуховими кісточками: молоточок, наковальня та кінцівка. Ці кісточки підсилюють і передають коливання барабанної перетинки внутрішньому вусі. Крім того, середнє вухо з'єднане з трубкою Євстахія, яка допомагає вирівняти тиск повітря між середнім вухом та зовнішнім середовищем.</b></p>
+            <p><b>Внутрішнє вухо, або лабіринт, розташоване в скроневій кістці і відповідає за перетворення звукових коливань в нервові сигнали, які мозок може інтерпретувати. Лабіринт складається з ряду каналів та витончених структур, включаючи оболонку та вестибул. Оболонка містить спеціалізовані вібросенсорні клітини, які перетворюють коливання в електричні сигнали, які потім направляються в мозок через слуховий нерв. Вестибул регулює рівновагу та положення тіла.</b></p>
+            <p><b>Разом ці три компоненти вуха працюють гармонійно для сприйняття та інтерпретації звуків навколишнього середовища, виконуючи важливу роль у комунікації та орієнтації у світі навколишнього середовища.</b></p>
+        </div>
+    </div>
+
+    <script>
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

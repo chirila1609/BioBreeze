@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.GenEV"
-             Title="GenEV">
+             Title="Test ereditate și variabilitate">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Ce este ereditatea în biologie?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -26,7 +40,7 @@
                 <Label Text="d) Schimbul de informații genetice între organisme" />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Care dintre următoarele nu este o trăsătură a variabilității?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -45,7 +59,7 @@
                 <Label Text="d) Adaptările la mediu" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Ce transportă materialul genetic de la o generație la alta?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -64,7 +78,7 @@
                 <Label Text="d) Carbohidrații" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Care dintre următoarele nu este un mecanism important al variabilității genetice?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -83,7 +97,7 @@
                 <Label Text="d) Selecția naturală" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Ce contribuie la adaptarea la mediu și la apariția de noi specii?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -102,10 +116,10 @@
                 <Label Text="d) Mutatiile genetice" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

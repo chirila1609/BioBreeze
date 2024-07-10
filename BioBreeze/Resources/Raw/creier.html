@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .question {
+            margin-top: 20px;
+        }
+
+        .options {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+    <button onclick="showUkrainian()">українська</button>
+    <button onclick="showHungarian()">magyar</button>
+
+    <div id="ukrainianContent" style="display: none;">
+        <h2>Урок</h2>
+        <p><strong>Мозок - це неймовірно складний орган, який служить центром управління людським тілом. Він відповідає за обробку сенсорної інформації, координацію рухів, регуляцію функцій організму та навіть управління емоціями та думками.</strong></p>
+        <p>Структурований на різних регіонах, кожен зі спеціалізованими функціями, мозок може бути розділений на три основні частини: передній мозок, середній мозок та задній мозок.</p>
+        <p><br></p>
+        <p><strong>1. Передній мозок:</strong></p>
+        <p>Найбільша і найскладніша частина мозку, передній мозок складається з кори головного мозку, таламусу та гіпоталамусу. Кора головного мозку поділена на дві півкулі і відповідає за вищі когнітивні функції, такі як мислення, сприйняття та прийняття рішень. Вона поділена на чотири ложі: лобову, тім'яну, потиличну та потилично-височинну, кожна з яких відіграє різні ролі у обробці різних типів інформації. Таламус діє як реле для сенсорної інформації, в той час як гіпоталамус регулює основні функції організму, такі як голод, спрага та температура тіла.</p>
+        <p><br></p>
+        <p><strong>2. Середній мозок:</strong></p>
+        <p>Розташований між переднім і заднім мозком, середній мозок відповідає за функції, такі як рухова активність, обробка аудитивної і візуальної інформації та регуляція циклів сну і бодрості.</p>
+        <p><br></p>
+        <p><strong>3. Задній мозок:</strong></p>
+        <p>Задній мозок включає мозочок, міст і спинний мозок. Мозочок відповідає переважно за координацію рухів, рівноваги та постави. Міст служить мостом, який з'єднує різні частини мозку, тоді як спинний мозок контролює життєво важливі функції, такі як серцебиття, дихання та травлення.</p>
+        <p>Мозок складається з мільярдів нервових клітин, які називаються нейронами, які взаємодіють один з одним за допомогою електричних імпульсів та хімічних сигналів. Ці нейрони формують складні мережі, які дозволяють обробляти та передавати інформацію по всьому мозку та тілу. Крім того, мозок підтримується гліальними клітинами, які забезпечують структурну підтримку, ізоляцію та харчування нейронів.</p>
+
+        <h2>Тест</h2>
+        <div class="question">
+            <p>1. Яка найбільша та найскладніша частина мозку, що відповідає за вищі когнітивні функції, такі як мислення та сприйняття?</p>
+            <div class="options">
+                <input type="radio" id="q1a" name="q1" value="a">
+                <label for="q1a">a) Середній мозок</label><br>
+                <input type="radio" id="q1b" name="q1" value="b">
+                <label for="q1b">b) Задній мозок</label><br>
+                <input type="radio" id="q1c" name="q1" value="c">
+                <label for="q1c">c) Передній мозок</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. Яка частина мозку служить мостом, що з'єднує різні частини мозку?</p>
+            <div class="options">
+                <input type="radio" id="q2a" name="q2" value="a">
+                <label for="q2a">a) Мозочок</label><br>
+                <input type="radio" id="q2b" name="q2" value="b">
+                <label for="q2b">b) Міст</label><br>
+                <input type="radio" id="q2c" name="q2" value="c">
+                <label for="q2c">c) Гіпоталамус</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Яка частина мозку відповідає за координацію рухів, рівноваги та постави?</p>
+            <div class="options">
+                <input type="radio" id="q3a" name="q3" value="a">
+                <label for="q3a">a) Таламус</label><br>
+                <input type="radio" id="q3b" name="q3" value="b">
+                <label for="q3b">b) Мозочок</label><br>
+                <input type="radio" id="q3c" name="q3" value="c">
+                <label for="q3c">c) Кора головного мозку</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. Які нервові клітини утворюють складні мережі, що дозволяють обробляти та передавати інформацію по всьому мозку та тілу?</p>
+            <div class="options">
+                <input type="radio" id="q4a" name="q4" value="a">
+                <label for="q4a">a) Нейрони</label><br>
+                <input type="radio" id="q4b" name="q4" value="b">
+                <label for="q4b">b) Гліальні клітини</label><br>
+                <input type="radio" id="q4c" name="q4" value="c">
+                <label for="q4c">c) Нервові волокна</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. Яка частина мозку контролює життєво важливі функції, такі як серцебиття та дихання?</p>
+            <div class="options">
+                <input type="radio" id="q5a" name="q5" value="a">
+                <label for="q5a">a) Гіпоталамус</label><br>
+                <input type="radio" id="q5b" name="q5" value="b">
+                <label for="q5b">b) Мозковий стовбур</label><br>
+                <input type="radio" id="q5c" name="q5" value="c">
+                <label for="q5c">c) Таламус</label>
+            </div>
+        </div>
+        <button onclick="checkAnswers('uk')">Завершити</button>
+        <p id="ukrainianScore"></p>
+    </div>
+
+    <div id="hungarianContent" style="display: none;">
+        <h2>Lecke</h2>
+        <p><strong>Az agy egy hihetetlenül összetett szerv, amely a test központi vezérlőközpontjaként szolgál. Felelős a szenzoros információk feldolgozásáért, a mozgások koordinálásáért, a testi funkciók szabályozásáért, sőt még az érzelmek és gondolatok irányításáért is.</strong></p>
+        <p>Különböző régiók szerint strukturált, amelyek mindegyike specializált funkciókkal rendelkezik, az agyat három fő részre lehet osztani: elülső agy, középső agy és hátsó agy.</p>
+        <p><br></p>
+        <p><strong>1. Elülső agy:</strong></p>
+        <p>A legnagyobb és legbonyolultabb része az agynak, amely az agykéregből, a talamból és a hipotalamból áll. Az agykéreg két féltekére oszlik, és felelős a gondolkodás, érzékelés és döntéshozatal magasabb kognitív funkcióiért. Négy kamrára oszlik: frontális, parietális, temporális és occipitális, mindegyik különböző szerepet játszik különböző típusú információk feldolgozásában. A talamusz szenzoros információk reléállomásként működik, míg a hipotalamusz alapvető testi funkciók szabályozásáért felelős, mint például az éhség, szomjúság és testhőmérséklet.</p>
+        <p><br></p>
+        <p><strong>2. Középső agy:</strong></p>
+        <p>Az elülső és hátsó agy között elhelyezkedő középső agy részt vesz olyan funkciókban, mint a mozgás, hangfeldolgozás és látás, valamint az alvás-ébrenlét ciklusok szabályozása.</p>
+        <p><br></p>
+        <p><strong>3. Hátsó agy:</strong></p>
+        <p>A hátsó agy magában foglalja a kisagyat, a híd és a gerincvelői dudorot. A kisagy elsősorban a mozgás, egyensúly és testtartás koordinálásáért felelős. A híd egy hidat képez, amely összeköti az agy különböző részeit, míg a gerincvelői dudor szabályozza az életfontosságú funkciókat, mint a szívverés, légzés és emésztés.</p>
+        <p>Az agy milliárd idegsejtből, úgynevezett neuronokból áll, amelyek elektromos impulzusok és vegyi jelek által kommunikálnak egymással. Ezek a neuronok bonyolult hálózatokat alkotnak, amelyek lehetővé teszik az információ feldolgozását és továbbítását az egész agyban és testben. Emellett az agyat támasztó gliasejtek biztosítják a szerkezeti támogatást, az izolációt és a neuronok táplálását.</p>
+
+        <h2>Vizsga</h2>
+        <div class="question">
+            <p>1. Melyik az agy legnagyobb és legbonyolultabb része, amely a gondolkodásért és érzékelésért felelős?</p>
+            <div class="options">
+                <input type="radio" id="q1a_hu" name="q1_hu" value="a">
+                <label for="q1a_hu">a) Középső agy</label><br>
+                <input type="radio" id="q1b_hu" name="q1_hu" value="b">
+                <label for="q1b_hu">b) Hátsó agy</label><br>
+                <input type="radio" id="q1c_hu" name="q1_hu" value="c">
+                <label for="q1c_hu">c) Elülső agy</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. Melyik agyi rész működik hídként az agy különböző részei között?</p>
+            <div class="options">
+                <input type="radio" id="q2a_hu" name="q2_hu" value="a">
+                <label for="q2a_hu">a) Kisagy</label><br>
+                <input type="radio" id="q2b_hu" name="q2_hu" value="b">
+                <label for="q2b_hu">b) Híd</label><br>
+                <input type="radio" id="q2c_hu" name="q2_hu" value="c">
+                <label for="q2c_hu">c) Hipotalamusz</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Melyik agyi rész felelős a mozgás, egyensúly és testtartás koordinálásáért?</p>
+            <div class="options">
+                <input type="radio" id="q3a_hu" name="q3_hu" value="a">
+                <label for="q3a_hu">a) Talamusz</label><br>
+                <input type="radio" id="q3b_hu" name="q3_hu" value="b">
+                <label for="q3b_hu">b) Kisagy</label><br>
+                <input type="radio" id="q3c_hu" name="q3_hu" value="c">
+                <label for="q3c_hu">c) Agykéreg</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. Mely idegsejtek alkotnak bonyolult hálózatokat, amelyek lehetővé teszik az információ feldolgozását és továbbítását az agyban és a testben?</p>
+            <div class="options">
+                <input type="radio" id="q4a_hu" name="q4_hu" value="a">
+                <label for="q4a_hu">a) Neuronok</label><br>
+                <input type="radio" id="q4b_hu" name="q4_hu" value="b">
+                <label for="q4b_hu">b) Gliasejtek</label><br>
+                <input type="radio" id="q4c_hu" name="q4_hu" value="c">
+                <label for="q4c_hu">c) Idegrostok</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. Melyik agyi rész szabályozza az életfontosságú funkciókat, mint a szívverés és a légzés?</p>
+            <div class="options">
+                <input type="radio" id="q5a_hu" name="q5_hu" value="a">
+                <label for="q5a_hu">a) Hipotalamusz</label><br>
+                <input type="radio" id="q5b_hu" name="q5_hu" value="b">
+                <label for="q5b_hu">b) Agytörzs</label><br>
+                <input type="radio" id="q5c_hu" name="q5_hu" value="c">
+                <label for="q5c_hu">c) Talamusz</label>
+            </div>
+        </div>
+        <button onclick="checkAnswers('hu')">Befejez</button>
+        <p id="hungarianScore"></p>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainianContent').style.display = 'block';
+            document.getElementById('hungarianContent').style.display = 'none';
+        }
+
+        function showHungarian() {
+            document.getElementById('ukrainianContent').style.display = 'none';
+            document.getElementById('hungarianContent').style.display = 'block';
+        }
+
+        function checkAnswers(language) {
+            var correctAnswers = {
+                'uk': ['c', 'b', 'b', 'a', 'b'],
+                'hu': ['c', 'b', 'b', 'a', 'b']
+            };
+            var userAnswers = [];
+            for (var i = 1; i <= 5; i++) {
+                var radios = document.getElementsByName('q' + i + (language === 'hu' ? '_hu' : ''));
+                for (var j = 0; j < radios.length; j++) {
+                    if (radios[j].checked) {
+                        userAnswers.push(radios[j].value);
+                        break;
+                    }
+                }
+            }
+            var score = 0;
+            for (var i = 0; i < correctAnswers[language].length; i++) {
+                if (userAnswers[i] === correctAnswers[language][i]) {
+                    score++;
+                }
+            }
+            document.getElementById(language === 'hu' ? 'hungarianScore' : 'ukrainianScore').innerText = "A pontod/Ваша оцінка: " + score + "/5";
+        }
+    </script>
+</body>
+</html>

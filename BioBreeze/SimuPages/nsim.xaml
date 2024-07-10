@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.SimuPages.nsim"
+             Title="Simulare neuroni">
+    <ScrollView>
+    <VerticalStackLayout>
+        <WebView Source="n.html" WidthRequest="400" HeightRequest="300"/>
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span FontSize="15" Text="Simularea neuronului de pe PhET Interactive Simulations îți permite să explorezi funcționarea unui neuron. Poți să stimulezi neuronul și să observi cum se deplasează ioni prin membrana acestuia. Simularea oferă opțiuni pentru a pune pauză, reveni în timp și avansa, astfel încât să poți examina procesele neuronale în detaliu. Este o modalitate excelentă de a înțelege mai bine cum funcționează celulele nervoase." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="A PhET Interactive Simulations neuronszimulációja lehetővé teszi egy neuron működésének feltárását. Stimulálhatja a neuront, és megfigyelheti, hogyan mozognak az ionok a membránján. A szimuláció lehetőséget kínál a szünetre, majd visszatérésre időt és előrehaladást, így részletesen megvizsgálhatja az idegi folyamatokat. Ez egy nagyszerű módja annak, hogy jobban megértse az idegsejtek működését." />
+                        <Span Text="&#x0a;" />
+                        <Span Text="&#x0a;" />
+                        <Span FontSize="15" Text="Моделювання нейронів у PhET Interactive Simulations дозволяє досліджувати роботу нейрона. Ви можете стимулювати нейрон і спостерігати, як іони рухаються через його мембрану. Симуляція пропонує варіанти призупинення, повернення до час і заздалегідь, щоб ви могли детально вивчити нервові процеси. Це чудовий спосіб краще зрозуміти, як працюють нервові клітини». "/>
+                    </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

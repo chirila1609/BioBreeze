@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válassza ki a nyelvet / Виберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Анатомія Молюсків:</b></p>
+            <p>Більшість молюсків мають характерну анатомію, включаючи м'яке тіло, покрите черепицею. Ця черепиця може варіюватися за формою і консистенцією, від твердих і міцних до тонких і крихких. Багато молюсків мають м'язовий орган, званий "нога", який допомагає їм рухатися, копати або прикріплюватися до поверхонь. Крім "ноги", більшість молюсків мають внутрішній орган, званий мантиєю, який виділяє черепицю і може мати різні функції, такі як дихання і виділення.</p>
+            <p><b>Різноманіття Молюсків:</b></p>
+            <p>Молюски виявляють надзвичайно широкий спектр форм і функцій. Від сухопутних равликів, що повільно пересуваються по вологих листяних лісах, до кальмарів і восьминогів, що живуть у глибинах океану, різноманіття цих істот вражає. Деякі молюски адаптовані до солонури, інші до прісноводних умов, а ще інші до морського життя. Є молюски, які живляться на дні моря рослинним мусором, інші є ефективними хижаками.</p>
+            <p><b>Екологічне та Економічне Значення:</b></p>
+            <p>Молюски відіграють важливу роль у морських і сухопутних екосистемах. Вони служать їжею для різноманітних інших тварин, сприяють переробці органічних речовин і можуть діяти як показники здоров'я екосистем. Також деякі молюски мають значну економічну важливість, їх виловлюють для споживання людиною або для збору черепиці для різних цілей, таких як ювелірні вироби або будівельні матеріали.</p>
+            <p><b>Висновок:</b></p>
+            <p>Молюски є видатною групою тварин з надзвичайною різноманітністю і значною екологічною та економічною важливістю. Вивчення та розуміння їх є важливими для захисту та збереження природного різноманіття нашої планети.</p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Molluszka Anatómia:</b></p>
+            <p>A legtöbb molluszka jellegzetes anatómiával rendelkezik, beleértve a lágy testet, amelyet kagyló borít. Ez a kagyló változhat formában és konzisztenciában, a szilárd és strapabíró kagylóktól a vékony és törékeny kagylókig. Sok molluszkának van egy izmos szervük, amit „lábnak” nevezünk, amely segít nekik mozogni, ásni vagy felkapaszkodni a felületekre. A „láb” mellett a legtöbb molluszk rendelkezik egy belső szervvel, amit köpenynevűnek hívnak, ami kagylót választ ki és különböző funkciókat lát el, mint például a légzés és a kiválasztás.</p>
+            <p><b>Molluszka Sokfélesége:</b></p>
+            <p>A molluszka különösen széles formák és funkciók spektrumával rendelkezik. A lassan mozgó szárazföldi csigáktól, a nedves erdőleveleken át a mély óceánokban élő tintahalakig és polipokig, ezeknek az élőlényeknek a sokfélesége lenyűgöző. Vannak olyan molluszkák, amelyek alkalmazkodtak a sós vizekhez, mások a édesvízi körülményekhez, és vannak, amelyek a tengeri élethez alkalmazkodtak. Vannak molluszkák, amelyek a tengerfenéken táplálkoznak, mások pedig hatékony ragadozók.</p>
+            <p><b>Ökológiai és Gazdasági Fontosság:</b></p>
+            <p>A molluszka kulcsszerepet játszanak a tengeri és szárazföldi ökoszisztémákban. Szolgálnak táplálékul más állatok számára, hozzájárulnak a szerves anyagok újrafelhasználásához és jelzőként szolgálhatnak az ökoszisztémák egészségére. Néhány molluszka jelentős gazdasági fontossággal bír, emberek fogyasztásra halászották őket, vagy kagylót gyűjtenek különféle célokra, például ékszerekhez vagy építőanyagokhoz.</p>
+            <p><b>Összegzés:</b></p>
+            <p>A molluszka a Földön található legkülönfélébb és legérdekesebb állatcsoportok egyike. Képességük, hogy alkalmazkodjanak különböző környezetekhez és feltételekhez, összekapcsolva társas viselkedésüket és hatásukat az ökoszisztémákra, izgalmas tanulmányi tárggyá és fontossá teszik őket a bolygónk biológiai sokféleségének megértése és megőrzése szempontjából.</p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

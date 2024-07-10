@@ -42,4 +42,9 @@ public partial class gim3 : ContentPage
     {
         Navigation.PushAsync(new BioBreeze.AnatomPages.SistemulReproductiv());
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

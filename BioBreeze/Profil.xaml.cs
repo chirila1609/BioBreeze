@@ -15,4 +15,9 @@ public partial class Profil : ContentPage
         Badge25.Source = GlobalVariables.TestsPassed >= 25 ? "doicinciok.png" : "doicincinu.png";
         Badge50.Source = GlobalVariables.TestsPassed >= 50 ? "cincizerook.png" : "cincizeronu.png";
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

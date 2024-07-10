@@ -6,7 +6,7 @@ namespace BioBreeze.AnatomPages;
 public partial class Stomacul : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Stomacul() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Stomacul : ContentPage
     private void GoTo_AnatomieStom(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AnatomieStomac());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

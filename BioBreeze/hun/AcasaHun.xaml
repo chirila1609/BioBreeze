@@ -5,6 +5,20 @@
              Title="Az otthon">
     <ScrollView>
         <VerticalStackLayout>
+            <Button Text="Meniu principal" 
+Clicked="OnMenuButtonClicked" 
+ImageSource="flyoutb.png" 
+HorizontalOptions="Start" 
+MaximumWidthRequest="50" 
+MaximumHeightRequest="50" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <CarouselView IndicatorView="indicatorView">
                 <CarouselView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
@@ -30,6 +44,13 @@
             <Button Text="NÖVÉNYTANI" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Botanica"/>
             <Button Text="Táplálás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Nutritie"/>
             <Button Text="GENETIKAI" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Genetica"/>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="20" Text="!Görgessen lejjebb a lecke magyar változatáért!" FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

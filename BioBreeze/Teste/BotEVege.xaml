@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.BotEVege"
-             Title="BotEVege">
+             Title="Test excreție plante">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Care este principalul mecanism de excreție la plante?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -26,7 +40,7 @@
                 <Label Text="d) Absorbția" />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Ce rol are transpirația în procesul de excreție la plante?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -45,7 +59,7 @@
                 <Label Text="d) Protejează plantele de dăunători" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Cum se numesc glandele speciale care permit anumitor plante să elimine excesul de sare din corpul lor în medii saline?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -64,7 +78,7 @@
                 <Label Text="d) Glande fotosintetice" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Ce tip de substanțe elimină rădăcinile plantelor în sol?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -83,7 +97,7 @@
                 <Label Text="d) Oxigen" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Care este rolul excreției în sol la plante?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -102,10 +116,10 @@
                 <Label Text="d) Menține un mediu propice pentru creșterea &#x0a;plantelor" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

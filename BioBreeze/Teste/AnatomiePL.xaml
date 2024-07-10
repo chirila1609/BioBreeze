@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.Teste.AnatomiePL"
-             Title="AnatomiePL">
+             Title="Test plămâni">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            <!-- Question 1 -->
+            
             <Label Text="1. Care este principalul organ responsabil pentru respirație în corpul uman?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
@@ -26,7 +40,7 @@
                 <Label Text="d) Stomacul" />
             </StackLayout>
 
-            <!-- Question 2 -->
+            
             <Label Text="2. Ce sunt alveolele?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
@@ -45,7 +59,7 @@
                 <Label Text="d) Țesuturi care protejează plămânii" />
             </StackLayout>
 
-            <!-- Question 3 -->
+            
             <Label Text="3. Care este funcția principală a plămânilor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
@@ -64,7 +78,7 @@
                 <Label Text="d) Transportul de nutrienți către celule" />
             </StackLayout>
 
-            <!-- Question 4 -->
+            
             <Label Text="4. Ce proces se desfășoară la nivelul alveolelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
@@ -83,7 +97,7 @@
                 <Label Text="d) Eliminarea deșeurilor din organism" />
             </StackLayout>
 
-            <!-- Question 5 -->
+            
             <Label Text="5. Ce factor de risc este asociat cu afecțiunile pulmonare precum cancerul pulmonar și BPOC?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
@@ -102,10 +116,10 @@
                 <Label Text="d) Renunțarea la alcool" />
             </StackLayout>
 
-            <!-- Submit Button -->
+            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            <!-- Score Label -->
+            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>

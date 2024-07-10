@@ -6,7 +6,7 @@ namespace BioBreeze.ZooPages;
 public partial class Peste : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Peste() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Peste : ContentPage
     private void GoTo_ZooPeste(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ZooPeste());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

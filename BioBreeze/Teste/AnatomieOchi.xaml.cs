@@ -11,7 +11,7 @@ public partial class AnatomieOchi : ContentPage
         int score = 0;
         string feedback = "";
 
-        // Check answers and update score
+        
         if (Question1OptionC.IsChecked)
             score++;
         else
@@ -65,8 +65,13 @@ public partial class AnatomieOchi : ContentPage
         if (score == 10)
             GlobalVariables.TestsPassed++;
 
-        // Display score
+        
         ScoreLabel.Text = $"Scorul tău este: {score} din 10\n" + feedback;
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 
 }

@@ -28,4 +28,9 @@ public partial class gim4 : ContentPage
     {
         Navigation.PushAsync(new Gameti());
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válassza ki a nyelvet / Виберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Птахи:</b></p>
+            <p>Птахи - одні з найбільш захоплюючих і різноманітних істот, які підкорюють небо і землю. З більш ніж 10,000 відомих видів вони займають майже кожний куточок земної кулі, від полярних льодів до розкішних тропічних лісів і засушливих пустель. Ці створіння живуть своїми життями з широким спектром поведінки і адаптацій, що робить їх предметом інтересу для вчених, природолюбів та простих спостерігачів.</p>
+            <p><b>Адаптації та особливості:</b></p>
+            <p>Птахи відомі своїми надзвичайними адаптаціями до свого середовища. Наприклад, їх дзьоби значно відрізняються за формою та розміром, адаптуючись для живлення різноманітною їжею, включаючи насіння, комах, рибу і навіть інших птахів. Їх крила ідеально пристосовані для польоту, з складними структурами, які надають їм силу і маневреність, необхідні для навігації повітряним простором.</p>
+            <p>Багато видів птахів відомі своїми мелодійними та різноманітними співами. Ці співи часто служать для залучення партнерів або встановлення територій. Крім того, їх яскраве оперення і характерні малюнки сприяють комунікації між видами та камуфляжуванню в різноманітних середовищах.</p>
+            <p><b>Поведінка та біологія:</b></p>
+            <p>Птахи часто відомі своєю складною соціальною поведінкою. Багато видів формують довгострокові пари та беруть участь у догляді за пташенятами протягом тривалого часу. Крім того, міграція є важливою частиною життя багатьох птахів, з складними маршрутами та місцями призначення, які простягаються на тисячі кілометрів.</p>
+            <p><b>Щодо біології, їхній дихальний апарат є одним з найефективніших в царстві тварин, що дозволяє їм літати на великі висоти і жити в умовах з низьким рівнем кисню. Крім того, птахи відомі своєю інтелектуальністю, з деякими видами, які демонструють складні навчальні та проблемні вміння.</b></p>
+            <p><b>Вплив на людей та середовище:</b></p>
+            <p>Птахи завжди мали значний вплив на життя людей і екосистеми, в яких вони живуть. Вони служать індикаторами здоров'я навколишнього середовища, відображаючи зміни в середовищі і забрудненні. Крім того, птахи є необхідними для екологічного балансу, сприяючи контролю популяцій комах і розповсюдженню насіння.</p>
+            <p>Крім цього, птахи вплинули на культуру людства протягом історії, були об'єктами мистецтва, міфології та літератури. Вони надихали людей на польоти і дослідження, стали символами свободи і пригодницького духу.</p>
+            <p><b>Загалом, птахи є видатними істотами, адаптованими до вражаючого різноманіття середовищ і способів життя. За їхньою різноманітністю, захоплюючим поведінком та впливом на світ вони продовжують захоплювати і надихати людей по всьому світу.</b></p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Madarak:</b></p>
+            <p>A madarak az egyik leginkább lenyűgöző és változatos teremtmények, amelyek az eget és a földet borítják. Több mint 10,000 ismert fajukkal majdnem mindenhol megtalálhatók a világon, a sarkvidéki jégtábláktól kezdve a buja trópusi erdőkön át a száraz sivatagokig. Ezek a teremtmények széles spektrumú viselkedéssel és alkalmazkodással élnek, amelyeket a tudósok, a természetkedvelők és az egyszerű megfigyelők érdeklődése is felkelt.</p>
+            <p><b>Alkalmazkodások és jellemzők:</b></p>
+            <p>A madarakat rendkívüli alkalmazkodóképességük miatt ismerik. Például csőrük jelentősen különbözik formájukban és méretben, alkalmazkodva a különböző élelemfajtákhoz, beleértve a magvakat, rovarokat, halakat és más madarakat is. Szárnyaik tökéletesen alkalmazkodtak a repüléshez, összetett szerkezetük segíti őket a levegő navigálásában szükséges erő és manőverezőképesség biztosításában.</p>
+            <p>Sok madárfaj ismert dallamos és változatos énekeikről. Ezek az énekek gyakran szolgálnak a partnerek vonzására vagy területük meghatározására. Színpompás tollazatuk és jellegzetes mintázataik is hozzájárulnak az fajok közötti kommunikációhoz és a különböző környezetekben való álcázáshoz.</p>
+            <p><b>Viselkedés és biológia:</b></p>
+            <p>A madarak gyakran összetett társas viselkedésük miatt ismertek. Sok faj hosszú távú párokat alkot és hosszú ideig gondoskodik utódaikról. Emellett a migráció sok madár életének fontos része, bonyolult útvonalakkal és több ezer kilométerre terjedő célpontokkal.</p>
+            <p><b>Biológiájuk szempontjából légzőrendszerük az állatok között az egyik legkifinomultabb, lehetővé téve számukra, hogy nagy magasságokba repüljenek és oxigénszegény környezetben éljenek. Emellett intelligenciájuk ismert, néhány faj komplex tanulási és problémamegoldó képességeket mutat.</b></p>
+            <p><b>Hatás az emberekre és a környezetre:</b></p>
+            <p>A madarak mindig is jelentős hatással voltak az emberek életére és azokra az ökoszisztémákra, amelyekben élnek. Ezek szolgálnak a környezet egészségének mutatójaként, tükrözve a környezetváltozásokat és a szennyezést. Emellett nélkülözhetetlenek az ökológiai egyensúly fenntartásához, hozzájárulva a rovarpopulációk szabályozásához és a magvak elterjesztéséhez.</p>
+            <p>Emellett a madarak jelentősen befolyásolták az emberi kultúrát az idők során, művészet, mitológia és irodalom tárgyai voltak. Inspirálták az embereket a repülésre és felfedezésre, szabadság és kaland szimbólumaivá váltak.</p>
+            <p><b>Összegzésül, a madarak lenyűgöző lények, alkalmazkodva a különféle környezetekhez és életmódokhoz. Sokszínűségükkel, lenyűgöző viselkedésükkel és világra gyakorolt hatásukkal folytatják az emberek világszerte való lenyűgözését és inspirálását.</b></p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

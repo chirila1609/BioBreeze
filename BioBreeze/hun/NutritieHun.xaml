@@ -5,6 +5,20 @@
              Title="Táplálás">
     <ScrollView>
         <StackLayout>
+            <Button Text="back" 
+Clicked="OnBackButtonClicked" 
+ImageSource="back.png" 
+HorizontalOptions="StartAndExpand" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Image Source="nutritie1.png" MaximumWidthRequest="720"/>
             <Label>
                 <Label.FormattedText>
@@ -17,6 +31,13 @@
             <Button Text="Szaprofita heterotróf táplálkozás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
             <Button Text="Heterotróf parazita táplálkozás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
             <Button Text="Mixotróf táplálkozás" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MNutri"/>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="20" Text="!Görgessen lejjebb a lecke magyar változatáért!" FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </StackLayout>
     </ScrollView>
 </ContentPage>

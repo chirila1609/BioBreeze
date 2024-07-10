@@ -6,7 +6,7 @@ namespace BioBreeze.GeneticPages;
 public partial class ADN : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public ADN() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class ADN : ContentPage
     private void GoTo_GenADN(object sender, EventArgs e)
     {
         Navigation.PushAsync(new GenADN());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

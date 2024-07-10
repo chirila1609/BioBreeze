@@ -6,7 +6,7 @@ namespace BioBreeze.GeneticPages;
 public partial class Cromozomii : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player;
 
     public Cromozomii() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Cromozomii : ContentPage
     private void GoTo_GenCromozomii(object sender, EventArgs e)
     {
         Navigation.PushAsync(new GenCromozomii());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

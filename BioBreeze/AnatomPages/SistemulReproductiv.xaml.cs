@@ -6,7 +6,7 @@ namespace BioBreeze.AnatomPages;
 public partial class SistemulReproductiv : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public SistemulReproductiv() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class SistemulReproductiv : ContentPage
     private void GoTo_AnatomieSRep(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AnatomieSRep());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet / Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showHungarian()">Magyar</button>
+        <button onclick="showUkrainian()">Українська</button>
+    </div>
+
+    <div id="content">
+        <div id="hungarian" class="content">
+            <p><b>Gaméták:</b></p>
+            <p>A gaméták specializált sejtek, amelyek a többsejtű szervezetek szexuális szaporodásában vesznek részt. Ezek a sejtek nélkülözhetetlenek a szaporodási folyamathoz, mivel a szervezet genetikai anyagának felét tartalmazzák és új egyedek kialakulásában vesznek részt.</p>
+            <p>Két fő típusa van a gamétáknak: a hímivarsejtek (spermiumok) a hímeknél és a petesejtek a nőknél. A spermiumok kicsi és mozgékony sejtek, amelyeket a hímek heréi termelnek. Ezek a sejtek specializálódtak a férfi genetikai anyag szállítására a női petesejthez. A petesejtek ezzel szemben a legnagyobb sejtek az emberi testben, és a női szervezetek petefészkeiben termelődnek. Ezek a sejtek női genetikai anyagot tartalmaznak és optimális környezetet biztosítanak az embrió fejlődéséhez.</p>
+            <p>A gaméták kialakulási folyamata a gametogenezis, amely számos komplex sejtosztódási és differenciálódási szakaszt foglal magában. Az embereknél a gametogenezis a pubertáskor kezdődik és az egyén termékeny életszakaszán keresztül folytatódik.</p>
+            <p>Amikor egy spermium egy petesejttel egyesül a megtermékenyítésnek nevezett folyamat során, a két gaméta egyesül, hogy egy egyedi zigótát alkosson, amely az új szervezet teljes genetikai anyagát tartalmazza. Ez a zigóta osztódni és fejlődni kezd, majd később embrióvá alakul, amely növekedni és fejlődni fog egy felnőtt szervezetté.</p>
+            <p>Összefoglalva, a gaméták nélkülözhetetlenek a többsejtű szervezetek szexuális szaporodásához, és létfontosságú szerepet játszanak a genetikai anyag generációról generációra történő átadásában.</p>
+        </div>
+        <div id="ukrainian" class="content">
+            <p><b>Гамети:</b></p>
+            <p>Гамети - це спеціалізовані клітини, які беруть участь у статевому розмноженні у багатоклітинних організмів. Ці клітини є важливими для процесу розмноження, оскільки містять половину генетичного матеріалу організму та беруть участь у формуванні нових особин.</p>
+            <p>Існує два основних типи гамет: сперматозоїди у чоловіків і яйцеклітини у жінок. Сперматозоїди - це дрібні та рухливі клітини, які виробляються яєчками чоловічих організмів. Вони спеціалізуються на перенесенні чоловічого генетичного матеріалу до жіночої яйцеклітини. Яйцеклітини, з іншого боку, є найбільшими клітинами в організмі людини та виробляються яєчниками жіночих організмів. Вони містять жіночий генетичний матеріал і забезпечують оптимальне середовище для розвитку ембріона.</p>
+            <p>Процес формування гамет відомий як гаметогенез і включає кілька складних етапів поділу клітин і диференціації. У людей гаметогенез починається в період статевого дозрівання і продовжується протягом репродуктивного віку індивіда.</p>
+            <p>При злитті сперматозоїда з яйцеклітиною в процесі, який називається заплідненням, дві гамети з'єднуються, утворюючи унікальну зиготу, що містить повний генетичний матеріал нового організму. Ця зигота починає ділитися і розвиватися, згодом формуючи ембріон, який росте і розвивається в дорослий організм.</p>
+            <p>Отже, гамети є необхідними для статевого розмноження у більшості багатоклітинних організмів і відіграють важливу роль у передачі генетичного матеріалу від одного покоління до іншого.</p>
+        </div>
+    </div>
+
+    <script>
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

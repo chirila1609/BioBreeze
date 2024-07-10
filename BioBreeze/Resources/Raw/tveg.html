@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válasszon nyelvet / Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showHungarian()">Magyar</button>
+        <button onclick="showUkrainian()">Українська</button>
+    </div>
+
+    <div id="content">
+        <div id="hungarian" class="content">
+            <p><b>Növényi szövetek:</b></p>
+            <p>A növények bonyolult szerkezetében a növényi szövetek alapvető részeket képviselnek, biztosítva a szerkezeti támogatást, az anyagok szállítását és a növekedést. Ezeket két fő kategóriába sorolják: merisztémás szövetek és állandó szövetek.</p>
+            <p><b>1. Merisztémás szövetek:</b></p>
+            <p>A merisztémás szövetek felelősek a növények elsődleges és másodlagos növekedéséért, valamint új sejtek előállításáért. Ezeket a következőkre osztják:</p>
+            <p><b>a. Elsődleges merisztéma:</b></p>
+            <p><b>-Apikális merisztéma:</b> A gyökér és a szár csúcsán található, és elősegíti a hosszanti növekedést.</p>
+            <p><b>-Interkaláris merisztéma:</b> A szár csomópontjain található, és biztosítja a növény interkaláris szegmenseinek hosszanti növekedését.</p>
+            <p><b>-Laterális merisztéma:</b> A szár és a gyökér kérge alatt található, és hozzájárul a növény vastagodásához.</p>
+            <p><b>b. Másodlagos merisztéma vagy kambium:</b></p>
+            <p><b>-Vaszkuláris kambium:</b> Másodlagos vaszkuláris szöveteket, xilémet és floémet állít elő, amelyek lehetővé teszik a növény vastagodását.</p>
+            <p><b>-Kortikális kambium:</b> Másodlagos kortikális szövetet állít elő, növelve a kéreg vastagságát.</p>
+            <p><b>2. Állandó szövetek:</b></p>
+            <p>Az állandó szövetek érett sejtekből állnak, és specializált funkciókat látnak el a növényen belül. Ezek a következők:</p>
+            <p><b>a. Védőszövetek:</b></p>
+            <p><b>-Epidermisz:</b> A növények külső rétege, amely sejtekből áll, amelyek megvédik a vízveszteségtől és a kórokozó szervezetek behatolásától.</p>
+            <p><b>-Peridermisz:</b> A peridermisz felváltja az epidermiszt az évelő növényekben, védelmet biztosítva a mechanikai stressz és a fertőzések ellen.</p>
+            <p><b>b. Vezetőszövetek:</b></p>
+            <p><b>-Xilémet:</b> Vizet és ásványi anyagokat szállít a gyökerektől a növény más részeibe.</p>
+            <p><b>-Floémet:</b> Szerves anyagokat, például cukrot szállít a levelektől és más fotoszintetikus szervektől a növény más részeibe.</p>
+            <p><b>c. Támogatószövetek:</b></p>
+            <p><b>-Kolenchim:</b> Biztosítja a növekedő szövetek támogatását és rugalmasságát.</p>
+            <p><b>-Szklérencim:</b> Merevséget és védelmet biztosít a mechanikai stressz ellen.</p>
+            <p><b>d. Tárolószövetek:</b></p>
+            <p><b>-Tároló parenchima:</b> Tápanyagokat, például keményítőt és olajokat tárol a gyökerekben, szárakban és magokban.</p>
+            <p>Ezek a bonyolult szövetek olyan funkcionális hálózatot alkotnak, amely támogatja a növények életképességét, biztosítva számukra az alkalmazkodóképességet és a túlélési képességet különböző környezetekben.</p>
+        </div>
+        <div id="ukrainian" class="content">
+            <p><b>Рослинні тканини:</b></p>
+            <p>У складній структурі рослин, рослинні тканини є важливою частиною, забезпечуючи структурну підтримку, транспорт речовин і ріст організму. Вони поділяються на дві основні категорії: меристематичні тканини і постійні тканини.</p>
+            <p><b>1. Меристематичні тканини:</b></p>
+            <p>Меристематичні тканини відповідають за первинний та вторинний ріст рослин, а також за виробництво нових клітин. Вони поділяються на:</p>
+            <p><b>a. Первинна меристема:</b></p>
+            <p><b>-Апікальна меристема:</b> Знаходиться на вершині кореня та стебла, сприяє поздовжньому росту.</p>
+            <p><b>-Інтеркалярна меристема:</b> Присутня на рівні вузлів у стеблі, забезпечує подовження міжвузлових сегментів рослини.</p>
+            <p><b>-Латеральна меристема:</b> Знаходиться під корою стебла та кореня, сприяє збільшенню товщини рослини.</p>
+            <p><b>б. Вторинна меристема або камбій:</b></p>
+            <p><b>-Судинний камбій:</b> Виробляє вторинні судинні тканини, ксилему та флоему, які дозволяють збільшення товщини рослини.</p>
+            <p><b>-Кірковий камбій:</b> Виробляє вторинну кіркову тканину, збільшуючи товщину кори.</p>
+            <p><b>2. Постійні тканини:</b></p>
+            <p>Постійні тканини складаються з зрілих клітин і виконують спеціалізовані функції в рослині. Вони включають:</p>
+            <p><b>a. Захисні тканини:</b></p>
+            <p><b>-Епідерміс:</b> Зовнішній шар рослин, що складається з клітин, які захищають від втрати води та проникнення патогенних організмів.</p>
+            <p><b>-Перидерма:</b> Замінює епідерміс у багаторічних рослин, забезпечуючи захист від механічного стресу та інфекцій.</p>
+            <p><b>б. Провідні тканини:</b></p>
+            <p><b>-Ксилема:</b> Транспортує воду та мінеральні речовини від коренів до інших частин рослини.</p>
+            <p><b>-Флоема:</b> Транспортує синтезовані органічні речовини, такі як цукор, від листя та інших фотосинтетичних органів до інших частин рослини.</p>
+            <p><b>в. Опорні тканини:</b></p>
+            <p><b>-Коленхіма:</b> Забезпечує підтримку та гнучкість зростаючих тканин.</p>
+            <p><b>-Склеренхіма:</b> Забезпечує жорсткість та захист від механічного стресу.</p>
+            <p><b>г. Тканини зберігання:</b></p>
+            <p><b>-Паренхіма зберігання:</b> Зберігає поживні речовини, такі як крохмаль і олії, у коренях, стеблах і насінні.</p>
+            <p>Ці складні тканини утворюють функціональну мережу, яка підтримує життєздатність рослин, забезпечуючи їм адаптивність і здатність виживати в різних середовищах.</p>
+        </div>
+    </div>
+
+    <script>
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

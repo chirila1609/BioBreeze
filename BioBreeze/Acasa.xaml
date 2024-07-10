@@ -9,8 +9,8 @@
         Clicked="OnMenuButtonClicked" 
         ImageSource="flyoutb.png" 
         HorizontalOptions="Start" 
-        MaximumWidthRequest="50" 
-        MaximumHeightRequest="50" 
+        MaximumWidthRequest="25" 
+        MaximumHeightRequest="25" 
         BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">

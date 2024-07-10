@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .language-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Válassza ki a nyelvet / Виберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainian()">Українська</button>
+        <button onclick="showHungarian()">Magyar</button>
+    </div>
+
+    <div id="content">
+        <div id="ukrainian" class="content">
+            <p><b>Спонжії та цнідарії:</b></p>
+            <p>Спонжії та цнідарії є двома захоплюючими групами водних організмів, які, хоча різні за багатьма аспектами, мають певні спільні риси і сприяють різноманітності морського життя.</p>
+            <p>Спонжії, відомі також як морські губки, є простими організмами, зазвичай закріпленими на твердих підстилках у солонуватій та прісній воді. Ці безхребетні мають унікальну структуру, що складається з внутрішнього скелета білкових волокон, званих спонгін, пропитаного мережею каналів, через які циркулює вода. Спонжії також відомі своєю здатністю фільтрувати воду і живитися мікроскопічними частинками з їхнього середовища.</p>
+            <p>З іншого боку, цнідарії є організмами з радіальною симетрією, до яких входять медузи, корали та морські анемони. Ці захоплюючі створіння мають тентаклі навколо рота, які використовуються для захоплення здобичі та захисту. Однією з відмінних рис цнідарій є наявність спеціалізованих клітин, які містять нематоцисти, структури в формі стрілок, що використовуються для паралізування здобичі або для захисту.</p>
+            <p>Хоча спонжії та цнідарії є морськими організмами, вони займають різні екологічні ніші та мають відмінні життєві стратегії. Спонжії часто зустрічаються на різних глибинах і є важливими для рифових екосистем, сприяючи циклу поживних речовин і надаючи притулок багатьом іншим морським організмам. З іншого боку, цнідарії, такі як медузи, можуть бути знайдені у всіх океанах світу, від поверхні води до глибоких бездонь морів.</p>
+            <p>Незважаючи на те, що спонжії та цнідарії в цілому є простими організмами за своєю структурою, вони відіграють ключову роль у рівновазі та різноманітності морських екосистем. Вивчення цих створінь допомагає нам краще зрозуміти еволюцію життя на Землі та вплив, який ми маємо на їхнє вразливе середовище.</p>
+        </div>
+        <div id="hungarian" class="content">
+            <p><b>Szivacsok és Cnidáriák:</b></p>
+            <p>A szivacsok és a cnidáriák két lenyűgöző vízi szervezet csoportja, amelyek bár sok szempontból különböznek egymástól, bizonyos jellemzőket megosztanak, és hozzájárulnak a tengeri élet sokféleségéhez.</p>
+            <p>A szivacsok, amelyeket tengeri szivacsokként is ismernek, egyszerű szervezetek, általában kemény aljzatokon rögzülve a sós és édesvizekben. Ezek az ízeltlábúak egyedi szerkezettel rendelkeznek, amely belső rostos fehérjevázat tartalmaz, amelyet szponginnak neveznek, és amelyet egy víz keringtető hálózat átitat. A szivacsok ismertek víz szűrő és mikroszkopikus részecskék táplálásának képességével.</p>
+            <p>A cnidáriák viszont sugárirányú szimmetriájú szervezetek, amelyek közé tartoznak a medúzák, korallák és tengeri anémonák. Ezek a lenyűgöző lények szájuk körül tentakulumokkal rendelkeznek, amelyeket zsákmány begyűjtésére és védekezésre használnak. A cnidáriák egyik jellegzetes tulajdonsága a csalánsejtek jelenléte, amelyek speciális sejtek, amelyek nesztoriszta szerkezeteket tartalmaznak, amelyeket a zsákmány bénítása vagy védelme érdekében használnak.</p>
+            <p>Bár a szivacsok és a cnidáriák tengeri szervezetek, különböző ökológiai niche-ket foglalnak el, és különböző életstratégiákkal rendelkeznek. A szivacsok gyakran megtalálhatók különböző mélységekben, és nélkülözhetetlenek a korallzátonyok ökoszisztémái számára, hozzájárulva a tápanyagciklushoz és számos más tengeri szervezet menedékéül szolgálva. Másrészről a cnidáriák, mint például a medúzák, megtalálhatók a világ összes óceánjában, a víz felszínétől a mély tengeri árkokig.</p>
+            <p>Bár a szivacsok és a cnidáriák általában egyszerű szervezetek szerkezetileg, kulcsszerepet játszanak a tengeri ökoszisztémák egyensúlyában és sokféleségében. Ezeknek a lényeknek a tanulmányozása segít jobban megérteni az élet evolúcióját a Földön, valamint azt a hatást, amelyet mi gyakorlunk sérülékeny környezetükre.</p>
+        </div>
+    </div>
+
+    <script>
+        function showUkrainian() {
+            document.getElementById('ukrainian').classList.add('active');
+            document.getElementById('hungarian').classList.remove('active');
+        }
+
+        function showHungarian() {
+            document.getElementById('hungarian').classList.add('active');
+            document.getElementById('ukrainian').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

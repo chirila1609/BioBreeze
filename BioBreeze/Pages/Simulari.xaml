@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioBreeze.Pages.Simulari"
+             Title="Simulări">
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Meniu principal" 
+Clicked="OnMenuButtonClicked" 
+ImageSource="flyoutb.png" 
+HorizontalOptions="Start" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
+            <Image Source="sim.png" MaximumWidthRequest="360" MaximumHeightRequest="225"/>
+            <Button Text="Simulare neuroni" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_nsim"/>
+            <Button Text="Simulare ochi" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_vsim"/>
+            <Button Text="Simulare membrană celulară" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_mcs"/>
+            <Button Text="Simulare gene" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_gs"/>
+            <Button Text="Joc celula vegetală" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_cvg"/>
+            <Button Text="Joc celula animală" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_cag"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -6,7 +6,7 @@ namespace BioBreeze.ZooPages;
 public partial class Viermi : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Viermi() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Viermi : ContentPage
     private void GoTo_ZooViermi(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ZooViermi());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

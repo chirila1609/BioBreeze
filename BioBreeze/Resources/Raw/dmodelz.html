@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .language-button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .sketchfab-embed-wrapper {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="language-buttons">
+        <button class="language-button" onclick="changeLanguage('ro')">Română</button>
+        <button class="language-button" onclick="changeLanguage('hu')">Magyar</button>
+        <button class="language-button" onclick="changeLanguage('uk')">Українська</button>
+    </div>
+
+    <h1 id="skeleton">Scheletul uman:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Human Skeleton Highresolution model" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/657a31ed9704423c8c4e752fb2506a74/embed?camera=0"> </iframe> </div>
+
+    <h1 id="skull">Craniul uman:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="The Anatomy of the Human Skull" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/baf6ac7b781a46218dca2b59dee58817/embed?camera=0"> </iframe> </div>
+
+    <h1 id="muscles">Mușchii corpului uman:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Ecorche - Anatomy Human Male Musculature" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/9bfa112a99844626ac2480fff6276f0e/embed?camera=0"> </iframe> </div>
+
+    <h1 id="lungs">Plămâni</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Healthy human lungs (animated)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/ad1a6c31b37547fabfc9fe37af69796b/embed?camera=0"> </iframe> </div>
+
+    <h1 id="kidneys">Rinichi</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Human Kidney Anatomy Cross Section" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/0215aaf9e9a243cdafca249a979680b0/embed?camera=0"> </iframe> </div>
+
+    <h1 id="liver">Ficatul:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Liver vasculature and bile ducts" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/71f7790caa5743b8b64c7669f1c3a79c/embed?camera=0"> </iframe> </div>
+
+    <h1 id="stomach">Stomacul:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Stomach Cross Section Anatomy" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4a126774bb084a5eabde64d68a99cfb1/embed?camera=0"> </iframe> </div>
+
+    <h1 id="heart">Inima:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="3d Animated Realistic Human Heart - V2.0" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/168b474fba564f688048212e99b4159d/embed?camera=0"> </iframe> </div>
+
+    <h1 id="brain">Creierul</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Brain" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/3022543bb7a54b88b892ff4907e50929/embed?camera=0"> </iframe> </div>
+
+    <h1 id="eye">Ochiul</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Human Eye (animated, photorealistic textures)" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/6adbd6538cd146d484c9ad950be69aa5/embed?camera=0"> </iframe> </div>
+
+    <h1 id="ear">Urechea:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Ear cross-section" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4f5438fc9337454587ec4a2c30c8c42f/embed?camera=0"> </iframe> </div>
+
+    <h1 id="nose">Nasul:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Nose Study" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/4d0361eccbff4ef5a66f79e508703c3a/embed?camera=0"> </iframe> </div>
+
+    <h1 id="gecko">Șopârlă gecko:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Fat Tailed Gecko" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/f494a15e59e64aec8889f937075effdb/embed?camera=0"> </iframe> </div>
+
+    <h1 id="worm">Vierme:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Worm" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/a3c6bc4cddd9449783d399a2a4c1dec2/embed?camera=0"> </iframe> </div>
+
+    <h1 id="goldfish">Pește auriu</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Gold Fish" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/2e582408fa3c49a1a47de3d68665be3b/embed?camera=0"> </iframe> </div>
+
+    <h1 id="bee">Albina (artropode):</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Bee Rigged PBR Low-poly" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/6cffc9963636493db31b3ba0efa03f60/embed?camera=0"> </iframe> </div>
+
+    <h1 id="pigeon">Porumbel:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="PIGEON ANIMATIONS" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/6d8b37485212480bbc58dc052d711d8c/embed?camera=0"> </iframe> </div>
+
+    <h1 id="rose">Trandafir:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Red rose" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/74520e87c3ed46898668c83356dd9cfa/embed?camera=0"> </iframe> </div>
+
+    <h1 id="sunflower">Floarea soarelui:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="Sunflower" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/eed0588360284db1bcd4af720c258c10/embed?camera=0"> </iframe> </div>
+
+    <h1 id="dna">ADN:</h1>
+    <div class="sketchfab-embed-wrapper"> <iframe title="DNA" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/6c223b3beea04cb69b5c531eef8ac88c/embed?camera=0"> </iframe> </div>
+
+
+
+    <script>const translations = {
+            ro: {
+                skeleton: "Scheletul uman:",
+                skull: "Craniul uman:",
+                muscles: "Mușchii corpului uman:",
+                lungs: "Plămâni",
+                kidneys: "Rinichi",
+                liver: "Ficatul:",
+                stomach: "Stomacul:",
+                heart: "Inima:",
+                brain: "Creierul",
+                eye: "Ochiul",
+                ear: "Urechea:",
+                nose: "Nasul:",
+                gecko: "Șopârlă gecko:",
+                worm: "Vierme:",
+                goldfish: "Pește auriu",
+                bee: "Albina (artropode):",
+                pigeon: "Porumbel:",
+                rose: "Trandafir:",
+                sunflower: "Floarea soarelui:",
+                dna: "ADN:"
+            },
+            hu: {
+                skeleton: "Emberi csontváz:",
+                skull: "Emberi koponya:",
+                muscles: "Az emberi test izmai:",
+                lungs: "Tüdő",
+                kidneys: "Vesék",
+                liver: "Máj:",
+                stomach: "Gyomor:",
+                heart: "Szív:",
+                brain: "Agy",
+                eye: "Szem",
+                ear: "Fül:",
+                nose: "Orr:",
+                gecko: "Gekkó gyík:",
+                worm: "Féreg:",
+                goldfish: "Aranyhal",
+                bee: "Méh (ízeltlábúak):",
+                pigeon: "Galamb:",
+                rose: "Rózsa:",
+                sunflower: "Napraforgó:",
+                dna: "DNS:"
+            },
+            uk: {
+                skeleton: "Людський скелет:",
+                skull: "Людський череп:",
+                muscles: "М'язи людського тіла:",
+                lungs: "Легені",
+                kidneys: "Нирки",
+                liver: "Печінка:",
+                stomach: "Шлунок:",
+                heart: "Серце:",
+                brain: "Мозок",
+                eye: "Око",
+                ear: "Вухо:",
+                nose: "Ніс:",
+                gecko: "Ящірка гекон:",
+                worm: "Черв'як:",
+                goldfish: "Золота рибка",
+                bee: "Бджола (членистоногі):",
+                pigeon: "Голуб:",
+                rose: "Троянда:",
+                sunflower: "Соняшник:",
+                dna: "ДНК:"
+            }
+        };
+
+        function changeLanguage(lang) {
+            for (const [key, value] of Object.entries(translations[lang])) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = value;
+                }
+            }
+        }</script>
+</body>
+</html>

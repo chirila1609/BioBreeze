@@ -6,7 +6,7 @@ namespace BioBreeze.BotanicPages;
 public partial class RVege : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public RVege() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class RVege : ContentPage
     private void GoTo_BotRVege(object sender, EventArgs e)
     {
         Navigation.PushAsync(new BotRVege());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

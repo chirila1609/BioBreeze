@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        #language-buttons {
+            margin-bottom: 20px;
+        }
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+	<h1>Válasszon nyelvet:/Оберіть мову:</h1>
+    <div id="language-buttons">
+        <button onclick="showContent('ukrainian')">Українська</button>
+        <button onclick="showContent('hungarian')">Magyar</button>
+    </div>
+
+    <div id="ukrainian" class="content">
+        <h2>Вступ:</h2>
+        <p><strong>М'язи є однією з найважливіших систем у нашому тілі. Вони допомагають нам рухатися і підтримувати правильну поставу. Без м'язів ми не могли б робити такі прості речі, як стояти або простягати руки.</strong></p>
+        <h2>М'язи шиї:</h2>
+        <p><strong>М'язи шиї відповідають за рухи голови. Ці м'язи дозволяють нам повертати голову в різні напрямки і підтримувати її прямою.</strong></p>
+        <h2>М'язи спини:</h2>
+        <p><strong>М'язи спини є важливими для підтримки правильної постави тіла і підтримки хребта. Вони дозволяють нам нахилятися, простягатися і підніматися без травм.</strong></p>
+        <h2>М'язи плеча:</h2>
+        <p><strong>М'язи плеча важливі для руху і стабілізації плеча. Ці м'язи беруть участь у підніманні і опусканні рук і в обертанні плеча.</strong></p>
+        <h2>М'язи руки:</h2>
+        <p><strong>М'язи руки відповідають за рух і контроль наших рук. Вони дозволяють нам піднімати руки, ухоплювати предмети і робити точні рухи.</strong></p>
+        <h2>М'язи зап'ястя:</h2>
+        <p><strong>М'язи зап'ястя важливі для контролю рухів рук. Ці м'язи дозволяють нам ухоплювати предмети, писати і робити точні жести.</strong></p>
+        <h2>М'язи ноги:</h2>
+        <p><strong>Наші ноги підтримуються складною мережею м'язів, які дозволяють нам рухатися і підтримувати рівновагу. М'язи стегна, найбільші і найсильніші м'язи у ногах, відповідальні за підйом і рух у різних напрямках. М'язи гомілки, розташовані в нижній частині ноги, беруть участь у згинанні і випрямленні ноги, а також у підтримці рівноваги. М'язи гомілки і м'язи гомілки, розташовані позаду гомілки, відповідальні за згинання і випрямлення щиколотки, а також за підтримку рівноваги на нерівному ґрунті. Нарешті, м'язи стопи, у нижній частині ноги, підтримують дугу стопи і дозволяють згинати і випрямляти пальці ніг. Усі ці м'язи працюють разом, щоб допомогти нам ходити, бігати і насолоджуватися нашими щоденними рухами.</strong></p>
+    </div>
+
+    <div id="hungarian" class="content">
+        <h2>Bevezetés:</h2>
+        <p><strong>Az izmok az egyik legfontosabb rendszerünk a testünkben. Segítenek nekünk mozogni és megőrizni a helyes testtartást. Izom nélkül nem tudnánk egyszerű dolgokat csinálni, mint például felállni vagy kinyújtani a karjainkat.</strong></p>
+        <h2>Nyakizmok:</h2>
+        <p><strong>A nyakizmok felelősek a fej mozgásaiért. Ezek az izmok lehetővé teszik, hogy különböző irányokba fordítsuk a fejünket, és tartsuk egyenesen.</strong></p>
+        <h2>Hátizmok:</h2>
+        <p><strong>A hátizmok nélkülözhetetlenek a helyes testtartás fenntartásához és a gerinc támasztásához. Lehetővé teszik számunkra, hogy hajoljunk, nyújtsunk és emeljünk anélkül, hogy sérülést okoznánk.</strong></p>
+        <h2>Vállizmok:</h2>
+        <p><strong>A vállizmok fontosak a váll mozgatásában és stabilizálásában. Ezek az izmok részt vesznek a karok emelésében és süllyesztésében, valamint a váll forgásában.</strong></p>
+        <h2>Karizmok:</h2>
+        <p><strong>A karizmok felelősek a karjaink mozgásáért és irányításáért. Lehetővé teszik számunkra, hogy emeljük a karjainkat, fogjunk tárgyakat és precíz mozdulatokat végezzünk.</strong></p>
+        <h2>Csuklóizmok:</h2>
+        <p><strong>A csuklóizmok fontosak a kéz és az ujjak mozgásainak irányításában. Ezek az izmok lehetővé teszik számunkra, hogy fogjunk tárgyakat, írjunk és precíz gesztusokat végezzünk.</strong></p>
+        <h2>Lábizmok:</h2>
+        <p><strong>A lábainkat egy bonyolult izomhálózat támogatja, amely lehetővé teszi a mozgást és az egyensúly fenntartását. Az alsó lábszárban található lábizmok részt vesznek a láb hajlításában és kiegyenesítésében, valamint az egyensúly megtartásában.</strong></p>
+    </div>
+
+    <script>
+        function showContent(language) {
+            // Hide all content blocks
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            // Show selected language content
+            document.getElementById(language).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .language-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .language-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .ukrainian-content {
+            display: none;
+        }
+
+        .hungarian-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Válasszon nyelvet:/Оберіть мову:</h1>
+
+    <div class="language-buttons">
+        <button onclick="showUkrainianContent()">Українська</button>
+        <button onclick="showHungarianContent()">Magyar</button>
+    </div>
+
+    <div class="content ukrainian-content">
+        <p><strong>Людська шкіра</strong>, відома також як тегмент, є найбільшим органом людського тіла і виконує кілька важливих функцій для здоров'я і благополуччя. Вона є зовнішнім захисним шаром, що покриває всі тіло і надає фізичний бар'єр проти патогенів, хімічних речовин і шкідливих випромінювань з навколишнього середовища.</p>
+        <p>Структура шкіри складна і складається з трьох основних шарів: епідермісу, дерми та гіподермісу. Епідерміс є зовнішнім шаром шкіри і складається в основному з кератиноцитів, які відповідають за формування захисного зовнішнього шару і постійну регенерацію шкіри. Цей шар також містить меланоцити, які виробляють пігмент меланін, відповідальний за колір шкіри і захист від ультрафіолетових променів. Дерма є середнім шаром шкіри і містить складну мережу колагенових і еластинових волокон, які забезпечують структуру, міцність і еластичність шкіри. Тут також знаходяться численні кровоносні судини, нерви та потові і сальні залози. Гіподерміс, або підшкірний шар, є найглибшим шаром шкіри і складається в основному з жирової тканини, яка служить термічною ізоляцією і запасом енергії, а також амортизатором для підлеглих тканин і органів.</p>
+        <p>Шкіра виконує кілька важливих функцій в організмі людини. Вона служить фізичним бар'єром, що захищає організм від інфекцій, травм і втрати води. Крім того, вона регулює температуру тіла за рахунок випаровування поту і розширення або стискання кровоносних судин дерми в залежності від теплових потреб організму. Шкіра також відіграє важливу роль у відчуттях дотику і у сприйнятті зовнішніх відчуттів завдяки наявності численних нервових рецепторів у дермі. Крім того, потові і сальні залози у шкірі сприяють підтримці водного балансу організму і видаленню відходів та токсинів через пот.</p>
+        <p>Висновок: людська шкіра є важливим і багатофункціональним органом з складною структурою та численними функціями для підтримки здоров'я і оптимального функціонування організму. Захист від зовнішніх впливів, регулювання температури, відчуття дотику та виділення продуктів є лише деякі з ключових функцій людської шкіри. З правильного догляду і захисту від шкідливих факторів можна забезпечити здоров'я та цілісність цього важливого органа.</p>
+    </div>
+
+    <div class="content hungarian-content">
+        <p><strong>Az emberi bőr</strong>, ismert más néven tegumentum, az emberi test legnagyobb szerve, és számos fontos funkciót lát el az egészség és jólét fenntartásában. Ez egy külső védelmi réteg, amely beborítja az egész testet, és fizikai gátat képez a kórokozók, vegyi anyagok és a környezet káros sugárzása ellen.</p>
+        <p>A bőr szerkezete bonyolult és három fő rétegből áll: az epidermiszből, a dermiszből és a hypodermiszből. Az epidermisz a bőr külső rétege, amely főként keratinocitákból áll, és felelős a külső védőréteg kialakításáért és a bőr állandó regenerációjáért. Ez a réteg tartalmaz melanocitákat is, amelyek melanint termelnek, ami a bőr színéért felelős, és védelmet nyújt az ultraibolya sugárzás ellen. A dermisz a bőr középső rétege, amely összetett hálót képez kollagén és elasztin rostokból, amelyek biztosítják a bőr szerkezetét, szilárdságát és rugalmasságát. Itt találhatók a véredények, idegek, valamint a verejték- és faggyúmirigyek is. A hypodermisz vagy a bőralatti réteg a bőr legmélyebb rétege, amely főként zsírszövetből áll, és hőszigetelésként, energiatárolóként, valamint a szövetek és a szervek alatti puha rugalmas párna funkcióját látja el.</p>
+        <p>A bőr számos fontos funkciót lát el az emberi szervezetben. Elsősorban fizikai gátként szolgál, amely védi a szervezetet a fertőzésektől, sérülésektől és a vízveszteségtől. Emellett szabályozza a test hőmérsékletét a verejték párologtatásával, és a dermiszben lévő vérerek tágulásával vagy összehúzódásával a szervezet hőigényeinek megfelelően. A bőr fontos szerepet játszik a tapintás érzetében és az külső érzékelés észlelésében a dermiszben található számos idegvégződés miatt. Emellett a bőrben lévő verejték- és faggyúmirigyek hozzájárulnak a test vízháztartásának fenntartásához, valamint a hulladékok és méreganyagok kiválasztásához a verejtéken keresztül.</p>
+        <p>Összefoglalva: az emberi bőr fontos és sokoldalú szerv, amely bonyolult szerkezettel és számos szereppel rendelkezik az egészség és az optimális szervezeti működés fenntartásában. Az idegen anyagok elleni védelem, a testhőmérséklet szabályozása, a tapintási érzet és a kiválasztás csak néhány az emberi bőr alapvető funkciói közül. Megfelelő gondozással és védelemmel biztosítható ennek fontos szervnek az egészsége és integritása a káros tényezőkkel szemben.</p>
+    </div>
+
+    <script>
+        function showUkrainianContent() {
+            document.querySelector('.ukrainian-content').style.display = 'block';
+            document.querySelector('.hungarian-content').style.display = 'none';
+        }
+
+        function showHungarianContent() {
+            document.querySelector('.ukrainian-content').style.display = 'none';
+            document.querySelector('.hungarian-content').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

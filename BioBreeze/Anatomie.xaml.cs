@@ -79,4 +79,9 @@ public partial class Anatomie : ContentPage
     {
         Navigation.PushAsync(new Piele());
     }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
+    }
 }

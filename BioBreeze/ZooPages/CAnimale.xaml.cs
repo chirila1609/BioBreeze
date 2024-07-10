@@ -6,7 +6,7 @@ namespace BioBreeze.ZooPages;
 public partial class CAnimale : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public CAnimale() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class CAnimale : ContentPage
     private void GoTo_ZooCAnimale(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ZooCAnimale());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

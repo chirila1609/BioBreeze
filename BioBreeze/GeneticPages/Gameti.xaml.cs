@@ -6,7 +6,7 @@ namespace BioBreeze.GeneticPages;
 public partial class Gameti : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Gameti() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Gameti : ContentPage
     private void GoTo_GenGameti(object sender, EventArgs e)
     {
         Navigation.PushAsync(new GenGameti());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

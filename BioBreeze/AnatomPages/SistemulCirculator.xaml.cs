@@ -6,7 +6,7 @@ namespace BioBreeze.AnatomPages;
 public partial class SistemulCirculator : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public SistemulCirculator() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class SistemulCirculator : ContentPage
     private void GoTo_AnatomieSC(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AnatomieSC());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

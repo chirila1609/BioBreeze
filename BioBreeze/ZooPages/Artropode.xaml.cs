@@ -6,7 +6,7 @@ namespace BioBreeze.ZooPages;
 public partial class Artropode : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public Artropode() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class Artropode : ContentPage
     private void GoTo_ZooArtropode(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ZooArtropode());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

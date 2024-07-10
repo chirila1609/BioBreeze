@@ -6,7 +6,7 @@ namespace BioBreeze.NutriPages;
 public partial class HSN : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public HSN() : this(AudioManager.Current)
     {
@@ -35,5 +35,9 @@ public partial class HSN : ContentPage
     private void GoTo_HSN(object sender, EventArgs e)
     {
         Navigation.PushAsync(new NutriHSN());
+    }
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

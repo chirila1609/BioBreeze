@@ -52,4 +52,9 @@ public partial class gim1 : ContentPage
     {
         Navigation.PushAsync(new Mamifere());
     }
+
+    private void OnMenuButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.FlyoutIsPresented = true;
+    }
 }

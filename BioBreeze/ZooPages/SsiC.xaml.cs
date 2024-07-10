@@ -6,7 +6,7 @@ namespace BioBreeze.ZooPages;
 public partial class SsiC : ContentPage
 {
     private IAudioManager audioManager;
-    private IAudioPlayer player; // Define player at the class level
+    private IAudioPlayer player; 
 
     public SsiC() : this(AudioManager.Current)
     {
@@ -35,5 +35,10 @@ public partial class SsiC : ContentPage
     private void GoTo_ZooSsiC(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ZooSsiC());
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopAsync();
     }
 }

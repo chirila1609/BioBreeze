@@ -5,6 +5,20 @@
              Title="Clasa a VI-a">
     <ScrollView>
         <StackLayout>
+            <Button Text="Meniu principal" 
+Clicked="OnMenuButtonClicked" 
+ImageSource="flyoutb.png" 
+HorizontalOptions="Start" 
+MaximumWidthRequest="25" 
+MaximumHeightRequest="25" 
+BackgroundColor="Transparent">
+                <Button.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="Android,iOS" Value="True" />
+                        <On Platform="Windows,macOS" Value="False" />
+                    </OnPlatform>
+                </Button.IsVisible>
+            </Button>
             <Image Source="clasavi.png" MaximumWidthRequest="720"/>
             <Label Text="Bine ați venit la clasa a VI-a!" HorizontalOptions="Center"/>
             <Button Text="Tesuturi animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TA"/>
