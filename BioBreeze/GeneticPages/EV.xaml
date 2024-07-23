@@ -28,7 +28,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Ereditatea și variabilitatea sunt două concepte fundamentale în biologie, care stau la baza evoluției și diversității vieții pe Pământ. Ereditatea se referă la transmiterea trăsăturilor genetice de la părinți la urmași prin intermediul materialului genetic, ADN-ul (acidul dezoxiribonucleic). ADN-ul poartă informația genetică într-un cod specific de nucleotide și este responsabil pentru moștenirea caracteristicilor biologice de la o generație la alta." />
@@ -46,7 +56,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenEV"/>
-            <WebView Source="erevar.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

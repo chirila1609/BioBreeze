@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,109 +19,108 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Care este unitatea fundamentală a eredității responsabilă pentru transmiterea trăsăturilor de la părinți la urmași?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care este unitatea fundamentală a eredității responsabilă pentru transmiterea trăsăturilor de la părinți la urmași?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Cromozomii" />
+                <Label x:Name="Question1OptionALabel" Text="a) Cromozomii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Genele" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Genele" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Celulele" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Celulele" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Proteinele" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Proteinele" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce sunt exoni și introni în structura genelor?" />
+            <Label x:Name="Question2Label" Text="2. Ce sunt exoni și introni în structura genelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Exoni sunt secvențe non-coding, iar intronii sunt &#x0a;secvențe de ADN care sunt transcrise în proteine." />
+                <Label x:Name="Question2OptionALabel" Text="a) Exoni sunt secvențe non-coding, iar intronii sunt secvențe de ADN care sunt transcrise în proteine." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Exoni sunt secvențe de ADN care sunt transcrise în &#x0a;proteine, iar intronii sunt secvențe non-coding." />
+                <Label x:Name="Question2OptionBLabel" Text="b) Exoni sunt secvențe de ADN care sunt transcrise în proteine, iar intronii sunt secvențe non-coding." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Exoni sunt secvențe de ARN care sunt transcrise în &#x0a;proteine, iar intronii sunt secvențe non-coding." />
+                <Label x:Name="Question2OptionCLabel" Text="c) Exoni sunt secvențe de ARN care sunt transcrise în proteine, iar intronii sunt secvențe non-coding." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Exoni și intronii sunt același lucru." />
+                <Label x:Name="Question2OptionDLabel" Text="d) Exoni și intronii sunt același lucru." />
             </StackLayout>
 
-            
-            <Label Text="3. Cum se realizează moștenirea genetică?" />
+            <Label x:Name="Question3Label" Text="3. Cum se realizează moștenirea genetică?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Prin transmiterea genelor de la un singur părinte &#x0a;către descendenți." />
+                <Label x:Name="Question3OptionALabel" Text="a) Prin transmiterea genelor de la un singur părinte către descendenți." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Prin transmiterea genelor de la părinți la &#x0a;descendenți prin intermediul gametelor în timpul &#x0a;reproducției sexuate." />
+                <Label x:Name="Question3OptionBLabel" Text="b) Prin transmiterea genelor de la părinți la descendenți prin intermediul gametelor în timpul reproducerii sexuate." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Prin transmiterea genelor de la descendenți către &#x0a;părinți." />
+                <Label x:Name="Question3OptionCLabel" Text="c) Prin transmiterea genelor de la descendenți către părinți." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Prin transmiterea genelor prin intermediul &#x0a;alimentației." />
+                <Label x:Name="Question3OptionDLabel" Text="d) Prin transmiterea genelor prin intermediul alimentației." />
             </StackLayout>
 
-            
-            <Label Text="4. Ce reprezintă mutațiile genetice?" />
+            <Label x:Name="Question4Label" Text="4. Ce reprezintă mutațiile genetice?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Modificări în secvența de ARN." />
+                <Label x:Name="Question4OptionALabel" Text="a) Modificări în secvența de ARN." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Modificări în structura proteinelor." />
+                <Label x:Name="Question4OptionBLabel" Text="b) Modificări în structura proteinelor." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Modificări în secvența de ADN care pot apărea &#x0a;spontan sau ca rezultat al factorilor externi." />
+                <Label x:Name="Question4OptionCLabel" Text="c) Modificări în secvența de ADN care pot apărea spontan sau ca rezultat al factorilor externi." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Modificări în metabolismul celular." />
+                <Label x:Name="Question4OptionDLabel" Text="d) Modificări în metabolismul celular." />
             </StackLayout>
 
-            
-            <Label Text="5. Care este impactul geneticii în medicină și biotehnologie?" />
+            <Label x:Name="Question5Label" Text="5. Care este impactul geneticii în medicină și biotehnologie?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Genetica nu are niciun impact în medicină sau &#x0a;biotehnologie." />
+                <Label x:Name="Question5OptionALabel" Text="a) Genetica nu are niciun impact în medicină sau biotehnologie." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Studiul geneticii este crucial pentru înțelegerea &#x0a;bolilor genetice și pentru dezvoltarea unor &#x0a;tratamente personalizate și terapii genice." />
+                <Label x:Name="Question5OptionBLabel" Text="b) Studiul geneticii este crucial pentru înțelegerea bolilor genetice și pentru dezvoltarea unor tratamente personalizate și terapii genice." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Genetica are impact doar în agricultură, dar nu în &#x0a;medicină." />
+                <Label x:Name="Question5OptionCLabel" Text="c) Genetica are impact doar în agricultură, dar nu în medicină." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Biotehnologia nu folosește cunoștințele din &#x0a;domeniul genetic." />
+                <Label x:Name="Question5OptionDLabel" Text="d) Biotehnologia nu folosește cunoștințele din domeniul genetic." />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

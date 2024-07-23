@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,89 +19,90 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Care dintre următoarele organisme sunt cunoscute și sub numele de bureți de mare?" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care dintre următoarele organisme sunt cunoscute și sub numele de bureți de mare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Meduzele" />
+                <Label x:Name="Question1OptionALabel" Text="a) Meduzele" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Spongierii" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Spongierii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Anemonele de mare" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Anemonele de mare" />
             </StackLayout>
 
-            
-            <Label Text="2. Care este una dintre caracteristicile distinctive ale spongierilor?" />
+            <Label x:Name="Question2Label" Text="2. Care este una dintre caracteristicile distinctive ale spongierilor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Tentacule pentru capturarea prăzii" />
+                <Label x:Name="Question2OptionALabel" Text="a) Tentacule pentru capturarea prăzii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Schelet intern de fibre proteice numite spongina" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Schelet intern de fibre proteice numite spongina" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Prezența cnidocitelor în jurul gurii" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Prezența cnidocitelor în jurul gurii" />
             </StackLayout>
 
-            
-            <Label Text="3. Ce tip de celulă specializată conțin celenteratele pentru capturarea prăzii sau pentru apărare?" />
+            <Label x:Name="Question3Label" Text="3. Ce tip de celulă specializată conțin celenteratele pentru capturarea prăzii sau pentru apărare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Cnidocite" />
+                <Label x:Name="Question3OptionALabel" Text="a) Cnidocite" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Nematozite" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Nematozite" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Spongocite" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Spongocite" />
             </StackLayout>
 
-            
-            <Label Text="4. Care dintre următoarele organisme sunt celenterate?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele organisme sunt celenterate?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Coraliile" />
+                <Label x:Name="Question4OptionALabel" Text="a) Coraliile" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Spongierii" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Spongierii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Melcii" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Melcii" />
             </StackLayout>
 
-            
-            <Label Text="5. Care dintre următoarele organisme marine sunt cunoscute pentru capacitatea lor de a filtra apa și de a se hrăni cu particule microscopice din mediul lor?" />
+            <Label x:Name="Question5Label" Text="5. Care dintre următoarele organisme marine sunt cunoscute pentru capacitatea lor de a filtra apa și de a se hrăni cu particule microscopice din mediul lor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Meduzele" />
+                <Label x:Name="Question5OptionALabel" Text="a) Meduzele" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Spongierii" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Spongierii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Crabii eremit" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Crabii eremit" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

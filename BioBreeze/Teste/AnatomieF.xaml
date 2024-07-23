@@ -5,13 +5,22 @@
              Title="Test ficat">
     <ScrollView>
         <StackLayout>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,75 +28,75 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
-            <Label Text="1. Care este principalul loc de amplasare a ficatului în corpul uman?" />
+            <Label x:Name="TitleLabel" Text="Test ficat" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="Question1Label" Text="1. Care este principalul loc de amplasare a ficatului în corpul uman?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) În partea stângă a abdomenului" />
+                <Label x:Name="Question1OptionALabel" Text="a) În partea stângă a abdomenului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) În partea dreaptă a abdomenului" />
+                <Label x:Name="Question1OptionBLabel" Text="b) În partea dreaptă a abdomenului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) În spatele stomacului" />
+                <Label x:Name="Question1OptionCLabel" Text="c) În spatele stomacului" />
             </StackLayout>
 
-            <Label Text="2. Ce funcție importantă îndeplinește ficatul în metabolismul uman?" />
+            <Label x:Name="Question2Label" Text="2. Ce funcție importantă îndeplinește ficatul în metabolismul uman?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Produce bila" />
+                <Label x:Name="Question2OptionALabel" Text="a) Produce bila" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Detoxifică corpul" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Detoxifică corpul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Produce sângele" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Produce sângele" />
             </StackLayout>
 
-            <Label Text="3. Ce substanță produsă de ficat ajută la digestia grăsimilor?" />
+            <Label x:Name="Question3Label" Text="3. Ce substanță produsă de ficat ajută la digestia grăsimilor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Insulina" />
+                <Label x:Name="Question3OptionALabel" Text="a) Insulina" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Bilirubina" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Bilirubina" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Bila" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Bila" />
             </StackLayout>
 
-            <Label Text="4. Care dintre următoarele afirmații este adevărată despre capacitatea de regenerare a ficatului?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele afirmații este adevărată despre capacitatea de regenerare a ficatului?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Ficatul nu se poate regenera niciodată" />
+                <Label x:Name="Question4OptionALabel" Text="a) Ficatul nu se poate regenera niciodată" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Ficatul are capacitatea de regenerare după leziuni &#x0a;sau boli" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Ficatul are capacitatea de regenerare după leziuni" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Ficatul se poate regenera doar în cazul copiilor" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Ficatul se poate regenera doar în cazul copiilor" />
             </StackLayout>
 
-            <Label Text="5. Ce rol important joacă ficatul în sistemul imunitar?" />
+            <Label x:Name="Question5Label" Text="5. Ce rol important joacă ficatul în sistemul imunitar?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Produce globulele roșii" />
+                <Label x:Name="Question5OptionALabel" Text="a) Produce globulele roșii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Neutralizează bacteriile și alte agenți patogeni" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Neutralizează bacteriile și alte agenți patogeni" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Menține echilibrul hormonal" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Menține echilibrul hormonal" />
             </StackLayout>
 
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />

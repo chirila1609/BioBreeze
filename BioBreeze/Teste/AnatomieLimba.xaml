@@ -5,13 +5,22 @@
              Title="Test limbă">
     <ScrollView>
         <StackLayout>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,106 +28,100 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test despre Limba Umană" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="TitleLabel" Text="Test limbă" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Care este una dintre funcțiile principale ale limbii umane?" />
+            <Label x:Name="Question1Label" Text="1. Care este una dintre funcțiile principale ale limbii umane?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Detectarea gusturilor diferite" />
+                <Label x:Name="Question1OptionALabel" Text="a) Detectarea gusturilor diferite" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Producerea și modularea sunetelor folosite în comunicare" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Producerea și modularea sunetelor folosite în comunicare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Perceperea texturii alimentelor" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Perceperea texturii alimentelor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Protecția împotriva infecțiilor în cavitatea orală" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Protecția împotriva infecțiilor în cavitatea orală" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce componentă a limbii umane permite mișcarea acesteia în interiorul cavitatei orale?" />
+            <Label x:Name="Question2Label" Text="2. Ce componentă a limbii umane permite mișcarea acesteia în interiorul cavității orale?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Papilele gustative" />
+                <Label x:Name="Question2OptionALabel" Text="a) Papilele gustative" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Papilele linguale" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Papilele linguale" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Mușchii limbii" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Mușchii limbii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Glandele salivare" />
+                <Label x:Name="Question2OptionDLabel" Text="d) Glandele salivare" />
             </StackLayout>
 
-            
-            <Label Text="3. Care este rolul papilelor gustative?" />
+            <Label x:Name="Question3Label" Text="3. Care este rolul papilelor gustative?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Detectarea gusturilor diferite" />
+                <Label x:Name="Question3OptionALabel" Text="a) Detectarea gusturilor diferite" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Producerea de salivă" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Producerea de salivă" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Facilitarea procesului de digestie" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Facilitarea procesului de digestie" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Protejarea mucoasei orale" />
+                <Label x:Name="Question3OptionDLabel" Text="d) Protejarea mucoasei orale" />
             </StackLayout>
 
-            
-            <Label Text="4. Care dintre următoarele este o funcție culturală și socială a limbii umane?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele este o funcție culturală și socială a limbii umane?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Detectarea gusturilor diferite" />
+                <Label x:Name="Question4OptionALabel" Text="a) Detectarea gusturilor diferite" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Vorbitul și comunicarea" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Vorbitul și comunicarea" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Masticarea alimentelor" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Masticarea alimentelor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Protejarea limbii împotriva leziunilor" />
+                <Label x:Name="Question4OptionDLabel" Text="d) Protejarea limbii împotriva leziunilor" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce rol joacă limba umană în procesul de înghițire?" />
+            <Label x:Name="Question5Label" Text="5. Ce rol joacă limba umană în procesul de înghițire?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Dirijarea alimentelor către faringe și esofag" />
+                <Label x:Name="Question5OptionALabel" Text="a) Dirijarea alimentelor către faringe și esofag" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Detectarea gusturilor diferite" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Detectarea gusturilor diferite" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Producerea de sunete pentru comunicare" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Producerea de sunete pentru comunicare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Protejarea cavității orale împotriva infecțiilor" />
+                <Label x:Name="Question5OptionDLabel" Text="d) Protejarea cavității orale împotriva infecțiilor" />
             </StackLayout>
 
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

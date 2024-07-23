@@ -1,4 +1,4 @@
-namespace BioBreeze.Pages;
+﻿namespace BioBreeze.Pages;
 
 public partial class gim2 : ContentPage
 {
@@ -50,5 +50,65 @@ public partial class gim2 : ContentPage
     private void OnMenuButtonClicked(object sender, EventArgs e)
     {
         Shell.Current.FlyoutIsPresented = true;
+    }
+
+    private void OnLanguageButtonClicked(object sender, EventArgs e)
+    {
+        var button = sender as Button;
+        var languageCode = button?.CommandParameter as string;
+        SetLanguage(languageCode);
+    }
+
+    private void SetLanguage(string languageCode)
+    {
+        switch (languageCode)
+        {
+            case "ro":
+                WelcomeLabel.Text = "Bine ați venit la clasa a VI-a!";
+                AnimalTissuesButton.Text = "Tesuturi animale";
+                AnimalFeedingButton.Text = "Hranirea la animale";
+                AnimalRespirationButton.Text = "Respiratia la animale";
+                AnimalCirculationButton.Text = "Circulatia la animale";
+                AnimalExcretionButton.Text = "Excretia la animale";
+                PlantTissuesButton.Text = "Tesuturi vegetale";
+                PlantFeedingButton.Text = "Hranirea la plante";
+                PlantRespirationButton.Text = "Respiratia la plante";
+                PlantCirculationButton.Text = "Circulatia la plante";
+                PlantExcretionButton.Text = "Excretia la plante";
+                break;
+
+            case "hu":
+                WelcomeLabel.Text = "Üdvözöljük a hatodik osztályban!";
+                AnimalTissuesButton.Text = "Állati szövetek";
+                AnimalFeedingButton.Text = "Állatok táplálása";
+                AnimalRespirationButton.Text = "Állatok légzése";
+                AnimalCirculationButton.Text = "Állatok keringése";
+                AnimalExcretionButton.Text = "Állatok kiválasztása";
+                PlantTissuesButton.Text = "Növényi szövetek";
+                PlantFeedingButton.Text = "Növények táplálása";
+                PlantRespirationButton.Text = "Növények légzése";
+                PlantCirculationButton.Text = "Növények keringése";
+                PlantExcretionButton.Text = "Növények kiválasztása";
+                break;
+
+            case "uk":
+                WelcomeLabel.Text = "Ласкаво просимо до шостого класу!";
+                AnimalTissuesButton.Text = "Тваринні тканини";
+                AnimalFeedingButton.Text = "Харчування тварин";
+                AnimalRespirationButton.Text = "Дихання тварин";
+                AnimalCirculationButton.Text = "Кровообіг тварин";
+                AnimalExcretionButton.Text = "Виділення у тварин";
+                PlantTissuesButton.Text = "Рослинні тканини";
+                PlantFeedingButton.Text = "Харчування рослин";
+                PlantRespirationButton.Text = "Дихання рослин";
+                PlantCirculationButton.Text = "Кровообіг у рослин";
+                PlantExcretionButton.Text = "Виділення у рослин";
+                break;
+
+            default:
+            
+                SetLanguage("ro");
+                break;
+        }
     }
 }

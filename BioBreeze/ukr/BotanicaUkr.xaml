@@ -35,13 +35,7 @@ BackgroundColor="Transparent">
             <Button Text="Виділення в рослинах" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EVege"/>
             <Button Text="Розмноження у квіткових рослин" MaximumWidthRequest="350" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RFVege"/>
             <Button Text="Розмноження рослин спорами і вегетативним шляхом" MaximumWidthRequest="450" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ISVVege"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Прокрутіть вниз, щоб переглянути угорську версію уроку!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

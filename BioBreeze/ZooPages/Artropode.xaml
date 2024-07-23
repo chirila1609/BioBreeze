@@ -29,7 +29,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel1">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Artropodele reprezintă unul dintre cele mai diverse și abundente grupuri de organisme de pe Pământ, cuprinzând aproximativ 80% din totalul speciilor cunoscute. Aceste creaturi sunt caracterizate de prezența unui exoschelet (schelet extern), corp segmentat și membre articulate. Termenul artropod derivă din grecescul arthron, care înseamnă articulație, și podos, care înseamnă picior." />
@@ -38,7 +48,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="artropode.png"/>
-            <Label>
+            <Label x:Name="ContentLabel2">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Morfologie și Anatomi:" FontAttributes="Bold" FontSize="20"/>
@@ -86,7 +96,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooArtropode"/>
-            <WebView Source="arto.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

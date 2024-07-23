@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,89 +19,89 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
             
-            <Label Text="1. Ce este circulația sângelui?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Ce este circulația sângelui?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Un proces de respirație" />
+                <Label x:Name="Question1OptionALabel" Text="a) Un proces de respirație" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Un proces vital care furnizează substanțe nutritive &#x0a;și oxigen în întregul corp" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Un proces vital care furnizează substanțe nutritive și oxigen în întregul corp" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Un proces de digestie" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Un proces de digestie" />
             </StackLayout>
 
-            
-            <Label Text="2. Care este principalul tip de sângele la vertebrate?" />
+            <Label x:Name="Question2Label" Text="2. Care este principalul tip de sângele la vertebrate?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Sângele albastru" />
+                <Label x:Name="Question2OptionALabel" Text="a) Sângele albastru" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Sângele roșu" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Sângele roșu" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Sângele verde" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Sângele verde" />
             </StackLayout>
 
-            
-            <Label Text="3. Ce este un sistem circulator deschis la animale?" />
+            <Label x:Name="Question3Label" Text="3. Ce este un sistem circulator deschis la animale?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Un sistem în care sângele este pompat în cavitățile &#x0a;corpului" />
+                <Label x:Name="Question3OptionALabel" Text="a) Un sistem în care sângele este pompat în cavitățile corpului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Un sistem în care sângele circulă printr-un circuit&#x0a; închis de vase de sânge" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Un sistem în care sângele circulă printr-un circuit închis de vase de sânge" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Un sistem în care inima are patru camere distincte" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Un sistem în care inima are patru camere distincte" />
             </StackLayout>
 
-            
-            <Label Text="4. Cum funcționează inima la vertebrate?" />
+            <Label x:Name="Question4Label" Text="4. Cum funcționează inima la vertebrate?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Ca un organ pasiv" />
+                <Label x:Name="Question4OptionALabel" Text="a) Ca un organ pasiv" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Ca o cameră unică de pompare" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Ca o cameră unică de pompare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Ca o pompă care contractă și pompează sângele în &#x0a;jurul corpului" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Ca o pompă care contractă și pompează sângele în jurul corpului" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce se întâmplă în sinusele sistemului circulator deschis la nevertebrate?" />
+            <Label x:Name="Question5Label" Text="5. Ce se întâmplă în sinusele sistemului circulator deschis la nevertebrate?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Sângele este filtrat și trimis înapoi în inimă pentru &#x0a;reciclare" />
+                <Label x:Name="Question5OptionALabel" Text="a) Sângele este filtrat și trimis înapoi în inimă pentru reciclare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Sângele este pompat în cavitățile corpului" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Sângele este pompat în cavitățile corpului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Sângele este transportat direct la țesuturi" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Sângele este transportat direct la țesuturi" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
-
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

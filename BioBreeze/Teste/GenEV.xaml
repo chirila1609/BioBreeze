@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,109 +19,107 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Ce este ereditatea în biologie?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Ce este ereditatea în biologie?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Transmiterea trăsăturilor genetice de la părinți la urmași" />
+                <Label x:Name="Question1OptionALabel" Text="a) Transmiterea trăsăturilor genetice de la părinți la urmași" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Variabilitatea individuală în cadrul unei populații" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Variabilitatea individuală în cadrul unei populații" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Procesul de adaptare la mediu" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Procesul de adaptare la mediu" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Schimbul de informații genetice între organisme" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Schimbul de informații genetice între organisme" />
             </StackLayout>
 
-            
-            <Label Text="2. Care dintre următoarele nu este o trăsătură a variabilității?" />
+            <Label x:Name="Question2Label" Text="2. Care dintre următoarele nu este o trăsătură a variabilității?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Aspectul fizic" />
+                <Label x:Name="Question2OptionALabel" Text="a) Aspectul fizic" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Comportamentul" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Comportamentul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Ereditatea" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Ereditatea" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Adaptările la mediu" />
+                <Label x:Name="Question2OptionDLabel" Text="d) Adaptările la mediu" />
             </StackLayout>
 
-            
-            <Label Text="3. Ce transportă materialul genetic de la o generație la alta?" />
+            <Label x:Name="Question3Label" Text="3. Ce transportă materialul genetic de la o generație la alta?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) ARN" />
+                <Label x:Name="Question3OptionALabel" Text="a) ARN" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Proteinele" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Proteinele" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) ADN" />
+                <Label x:Name="Question3OptionCLabel" Text="c) ADN" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Carbohidrații" />
+                <Label x:Name="Question3OptionDLabel" Text="d) Carbohidrații" />
             </StackLayout>
 
-            
-            <Label Text="4. Care dintre următoarele nu este un mecanism important al variabilității genetice?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele nu este un mecanism important al variabilității genetice?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Mutatiile genetice" />
+                <Label x:Name="Question4OptionALabel" Text="a) Mutatiile genetice" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Recombinarea genetică" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Recombinarea genetică" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Selecția artificială" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Selecția artificială" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Selecția naturală" />
+                <Label x:Name="Question4OptionDLabel" Text="d) Selecția naturală" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce contribuie la adaptarea la mediu și la apariția de noi specii?" />
+            <Label x:Name="Question5Label" Text="5. Ce contribuie la adaptarea la mediu și la apariția de noi specii?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Ereditatea și variabilitatea" />
+                <Label x:Name="Question5OptionALabel" Text="a) Ereditatea și variabilitatea" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Selecția artificială" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Selecția artificială" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Recombinarea genetică" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Recombinarea genetică" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Mutatiile genetice" />
+                <Label x:Name="Question5OptionDLabel" Text="d) Mutatiile genetice" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
-
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

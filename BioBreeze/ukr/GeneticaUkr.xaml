@@ -34,13 +34,7 @@ BackgroundColor="Transparent">
             <Button Text="гени" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_G"/>
             <Button Text="Хромосоми" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Cromo"/>
             <Button Text="Гамети" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Gameti"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Прокрутіть вниз, щоб переглянути угорську версію уроку!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

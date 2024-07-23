@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,109 +19,108 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test despre Urechea Umană" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
             
-            <Label Text="1. Ce parte a urechii umane colectează și direcționează sunetele către canalul auditiv extern?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            <Label x:Name="TitleLabel" Text="Test despre Urechea Umană" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Ce parte a urechii umane colectează și direcționează sunetele către canalul auditiv extern?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Membrana timpanului" />
+                <Label x:Name="Question1OptionALabel" Text="a) Membrana timpanului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Pavilionul urechii" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Pavilionul urechii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Trompa lui Eustachio" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Trompa lui Eustachio" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Osiculele auditive" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Osiculele auditive" />
             </StackLayout>
 
-            
-            <Label Text="2. Care dintre următoarele este o structură subțire și flexibilă care vibrează în funcție de intensitatea sunetelor?" />
+            <Label x:Name="Question2Label" Text="2. Care dintre următoarele este o structură subțire și flexibilă care vibrează în funcție de intensitatea sunetelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Trompa lui Eustachio" />
+                <Label x:Name="Question2OptionALabel" Text="a) Trompa lui Eustachio" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Cochilia" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Cochilia" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Membrana timpanului" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Membrana timpanului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Osiculele auditive" />
+                <Label x:Name="Question2OptionDLabel" Text="d) Osiculele auditive" />
             </StackLayout>
 
-            
-            <Label Text="3. Ce parte a urechii umane este responsabilă pentru convertirea vibrațiilor sonore în semnale nervoase pe care creierul le poate interpreta?" />
+            <Label x:Name="Question3Label" Text="3. Ce parte a urechii umane este responsabilă pentru convertirea vibrațiilor sonore în semnale nervoase pe care creierul le poate interpreta?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Cochilia" />
+                <Label x:Name="Question3OptionALabel" Text="a) Cochilia" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Pavilionul urechii" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Pavilionul urechii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Trompa lui Eustachio" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Trompa lui Eustachio" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Membrana timpanului" />
+                <Label x:Name="Question3OptionDLabel" Text="d) Membrana timpanului" />
             </StackLayout>
 
-            
-            <Label Text="4. Care dintre următoarele componente ale urechii umane reglează echilibrul și poziția corpului?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele componente ale urechii umane reglează echilibrul și poziția corpului?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Osiculele auditive" />
+                <Label x:Name="Question4OptionALabel" Text="a) Osiculele auditive" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Trompa lui Eustachio" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Trompa lui Eustachio" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Vestibulul" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Vestibulul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Cochilia" />
+                <Label x:Name="Question4OptionDLabel" Text="d) Cochilia" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce rol are urechea umană în sistemul nostru de comunicare și orientare în lumea înconjurătoare?" />
+            <Label x:Name="Question5Label" Text="5. Ce rol are urechea umană în sistemul nostru de comunicare și orientare în lumea înconjurătoare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Percepția și interpretarea sunetelor" />
+                <Label x:Name="Question5OptionALabel" Text="a) Percepția și interpretarea sunetelor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Reglarea temperaturii corpului" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Reglarea temperaturii corpului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Transmiterea semnalelor vizuale către creier" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Transmiterea semnalelor vizuale către creier" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Controlul respirației" />
+                <Label x:Name="Question5OptionDLabel" Text="d) Controlul respirației" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
-
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

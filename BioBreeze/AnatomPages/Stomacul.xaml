@@ -29,7 +29,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Stomacul este o parte esențială a sistemului digestiv uman, o cameră musculară în formă de sac situată în partea superioară a abdomenului. Funcționând ca un rezervor pentru alimente și un loc crucial pentru începerea procesului de digestie, stomacul are multiple roluri în transformarea alimentelor în substanțe nutritive absorbabile." />
@@ -53,7 +63,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieStom"/>
-            <WebView Source="stom.html" WidthRequest="400" HeightRequest="1200"/>
+
         </StackLayout>
     </ScrollView>
 </ContentPage>

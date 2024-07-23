@@ -29,7 +29,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel1">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Acidul dezoxiribonucleic, cunoscut sub acronimul ADN, este o moleculă complexă și fascinantă care servește drept material genetic în majoritatea organismelor vii. Descoperit în anul 1869 de către chimistul elvețian Friedrich Miescher, ADN-ul reprezintă unul dintre pilonii fundamentali ai biologiei moleculare și geneticii moderne." />
@@ -38,7 +48,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="adn1.png" MaximumWidthRequest="720"/>
-            <Label>
+            <Label x:Name="ContentLabel2">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Structura sa în formă de dublu helix, elucidată în anii 1950 de către James Watson și Francis Crick, este o realizare-cheie în știința biologică. Dubla helix constă din două lanțuri de nucleotide care se încolăcesc în jurul unuia altuia, formând o scară în spirală. Nucleotidele sunt compuse dintr-un zahăr (deoxiriboză), un grup fosfat și o bază azotată. Bazele azotate sunt adenina (A), citozina (C), guanina (G) și timina (T). Acest model structural oferă ADN-ului stabilitate și capacitatea de a stoca și transmite informații genetice într-un mod eficient." />
@@ -56,7 +66,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenADN"/>
-            <WebView Source="dna.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

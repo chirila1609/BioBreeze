@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,89 +19,86 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Ce este nutriția heterotrofă parazitară?" />
+            <Label x:Name="Question1Label" Text="1. Ce este nutriția heterotrofă parazitară?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Un mod de nutriție în care organisme consumă&#x0a; materie organică produsă de alte organisme vii." />
+                <Label x:Name="Question1OptionALabel" Text="a) Un mod de nutriție în care organisme consumă&#x0a; materie organică produsă de alte organisme vii." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Un mod de nutriție în care organisme produc &#x0a;propriile lor substanțe nutritive." />
+                <Label x:Name="Question1OptionBLabel" Text="b) Un mod de nutriție în care organisme produc &#x0a;propriile lor substanțe nutritive." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Un mod de nutriție în care organismele se hrănesc &#x0a;exclusiv cu plante." />
+                <Label x:Name="Question1OptionCLabel" Text="c) Un mod de nutriție în care organismele se hrănesc &#x0a;exclusiv cu plante." />
             </StackLayout>
 
-            
-            <Label Text="2. Cum se conectează unele plante parazite la gazdele lor?" />
+            <Label x:Name="Question2Label" Text="2. Cum se conectează unele plante parazite la gazdele lor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Prin utilizarea unor organe speciale de prindere." />
+                <Label x:Name="Question2OptionALabel" Text="a) Prin utilizarea unor organe speciale de prindere." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Prin atașarea de rădăcinile gazdelor lor." />
+                <Label x:Name="Question2OptionBLabel" Text="b) Prin atașarea de rădăcinile gazdelor lor." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Prin intermediul frunzelor." />
+                <Label x:Name="Question2OptionCLabel" Text="c) Prin intermediul frunzelor." />
             </StackLayout>
 
-            
-            <Label Text="3. Ce implică coevoluția în relația parazitară?" />
+            <Label x:Name="Question3Label" Text="3. Ce implică coevoluția în relația parazitară?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Dezvoltarea unei rezistențe reciproce între paraziți &#x0a;și gazdele lor." />
+                <Label x:Name="Question3OptionALabel" Text="a) Dezvoltarea unei rezistențe reciproce între paraziți &#x0a;și gazdele lor." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Îngrijirea reciprocă între paraziți și gazdele lor." />
+                <Label x:Name="Question3OptionBLabel" Text="b) Îngrijirea reciprocă între paraziți și gazdele lor." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) O relație pasivă între paraziți și gazdele lor." />
+                <Label x:Name="Question3OptionCLabel" Text="c) O relație pasivă între paraziți și gazdele lor." />
             </StackLayout>
 
-            
-            <Label Text="4. Care dintre următoarele nu este un exemplu de organism cu nutriție heterotrofă parazitară menționat în text?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele nu este un exemplu de organism cu nutriție heterotrofă parazitară menționat în text?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Protozoare." />
+                <Label x:Name="Question4OptionALabel" Text="a) Protozoare." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Plante parazite precum ciupercile din genul &#x0a;Orobanche." />
+                <Label x:Name="Question4OptionBLabel" Text="b) Plante parazite precum ciupercile din genul &#x0a;Orobanche." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Plante cu fotosinteză activă." />
+                <Label x:Name="Question4OptionCLabel" Text="c) Plante cu fotosinteză activă." />
             </StackLayout>
 
-            
-            <Label Text="5. Care este unul dintre aspectele importante ale nutriției heterotrofe parazitare?" />
+            <Label x:Name="Question5Label" Text="5. Care este unul dintre aspectele importante ale nutriției heterotrofe parazitare?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Capacitatea de a produce propriile substanțe &#x0a;nutritive." />
+                <Label x:Name="Question5OptionALabel" Text="a) Capacitatea de a produce propriile substanțe &#x0a;nutritive." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Capacitatea de a manipula gazdele pentru a-și &#x0a;maximiza succesul reproductiv." />
+                <Label x:Name="Question5OptionBLabel" Text="b) Capacitatea de a manipula gazdele pentru a-și &#x0a;maximiza succesul reproductiv." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Capacitatea de a se conecta la surse alternative de &#x0a;hrană." />
+                <Label x:Name="Question5OptionCLabel" Text="c) Capacitatea de a se conecta la surse alternative de &#x0a;hrană." />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

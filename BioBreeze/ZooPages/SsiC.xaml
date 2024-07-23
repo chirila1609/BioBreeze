@@ -28,7 +28,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel1">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Spongierii și celenteratele sunt două grupuri fascinante de organisme acvatice care, deși diferite în multe aspecte, împărtășesc anumite caracteristici și contribuie la diversitatea vieții marine." />
@@ -37,7 +47,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="msponge.png"/>
-            <Label>
+            <Label x:Name="ContentLabel2">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Spongierii, cunoscuți și sub numele de bureți de mare, sunt organisme simple, de obicei fixate pe substraturi dure în apele sărate și dulci. Acești invertebrați au o structură unică, alcătuită dintr-un schelet intern de fibre proteice numite spongina, îmbibat cu o rețea de canale prin care apa circulă. Spongierii sunt, de asemenea, cunoscuți pentru capacitatea lor de a filtra apa și de a se hrăni cu particule microscopice din mediul lor." />
@@ -46,7 +56,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="meduza.png"/>
-            <Label>
+            <Label x:Name="ContentLabel3">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Pe de altă parte, celenteratele sunt organisme cu simetrie radială, printre care se numără meduzele, coraliile și anemonele de mare. Aceste creaturi fascinante au tentacule în jurul gurii, folosite pentru a captura prada și pentru apărare. Unul dintre trăsăturile distinctive ale celenteratelor este prezența cnidocitelor, celule specializate care conțin nematociste, structuri în formă de arpagic folosite pentru paralizarea prăzii sau pentru apărare." />
@@ -62,7 +72,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooSsiC"/>
-            <WebView Source="ssic.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

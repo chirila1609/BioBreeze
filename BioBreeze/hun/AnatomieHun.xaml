@@ -36,7 +36,7 @@ Akár kíváncsi diák, akár tudósra törekvő, az Anatómia lapunk az Ön kap
                     </Label.FormattedText>
                 </Label>
             <Button Text="Emberi csontváz" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Skeleton"/>
-                <Button Text="Mușchi corpului" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Muscle"/>
+            <Button Text="Test izmait" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Muscle"/>
             <Button Text="Idegrendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SN"/>
             <Button Text="Keringési rendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SC"/>
             <Button Text="Légzőrendszer" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_SR"/>
@@ -52,13 +52,7 @@ Akár kíváncsi diák, akár tudósra törekvő, az Anatómia lapunk az Ön kap
             <Button Text="Orr" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_N"/>
             <Button Text="Nyelv" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_L"/>
             <Button Text="bőr" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_P"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Görgessen lejjebb a lecke magyar változatáért!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </StackLayout>
         </ScrollView>
 </ContentPage>

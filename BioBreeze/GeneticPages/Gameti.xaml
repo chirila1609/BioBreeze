@@ -28,7 +28,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Gametii sunt celule specializate implicate în reproducerea sexuală la organisme multicelulare. Aceste celule sunt esențiale pentru procesul de reproducere, deoarece conțin jumătate din materialul genetic al organismului și sunt implicate în formarea noilor indivizi." />
@@ -49,7 +59,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_GenGameti"/>
-            <WebView Source="gametii.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -29,7 +29,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel1">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Moluștele: Mici Creaturi Cu O Mare Diversitate" FontAttributes="Bold" FontSize="20"/>
@@ -40,7 +50,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="moluste1.png"/>
-            <Label>
+            <Label x:Name="ContentLabel2">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Anatomia Moluștelor" FontAttributes="Bold" FontSize="20" />
@@ -63,7 +73,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_ZooMoluste"/>
-            <WebView Source="mol.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

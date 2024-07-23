@@ -31,13 +31,7 @@ BackgroundColor="Transparent">
             <Button Text="Сапрофітне гетеротрофне живлення" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
             <Button Text="Гетеротрофне паразитарне живлення" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
             <Button Text="Міксотрофне живлення" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MNutri"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Прокрутіть вниз, щоб переглянути угорську версію уроку!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

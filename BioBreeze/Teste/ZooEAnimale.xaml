@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,89 +19,89 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Care este rolul excreției în organismele animale?" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care este rolul excreției în organismele animale?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Menținerea echilibrului intern și eliminarea deșeurilor" />
+                <Label x:Name="Question1OptionALabel" Text="a) Menținerea echilibrului intern și eliminarea deșeurilor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Producția de energie" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Producția de energie" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Reproducția" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Reproducția" />
             </StackLayout>
 
-            
-            <Label Text="2. Care este unul dintre organele principale de excreție la majoritatea vertebratelor?" />
+            <Label x:Name="Question2Label" Text="2. Care este unul dintre organele principale de excreție la majoritatea vertebratelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Ficatul" />
+                <Label x:Name="Question2OptionALabel" Text="a) Ficatul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Plămânii" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Plămânii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Rinichii" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Rinichii" />
             </StackLayout>
 
-            
-            <Label Text="3. Ce sistem de excreție este utilizat de insecte și moluște?" />
+            <Label x:Name="Question3Label" Text="3. Ce sistem de excreție este utilizat de insecte și moluște?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Rinichii" />
+                <Label x:Name="Question3OptionALabel" Text="a) Rinichii" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Intestinele" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Intestinele" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Tuburile Malpighi" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Tuburile Malpighi" />
             </StackLayout>
 
-            
-            <Label Text="4. Cum se adaptează animalele deșertice la mediul lor uscat în ceea ce privește excreția?" />
+            <Label x:Name="Question4Label" Text="4. Cum se adaptează animalele deșertice la mediul lor uscat în ceea ce privește excreția?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Prin eliminarea cantităților mari de urină" />
+                <Label x:Name="Question4OptionALabel" Text="a) Prin eliminarea cantităților mari de urină" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Prin dezvoltarea unui sistem de excreție concentrat" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Prin dezvoltarea unui sistem de excreție concentrat" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Prin eliminarea excesului de apă prin piele" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Prin eliminarea excesului de apă prin piele" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce organ specializat ajută peștii și rechinii să facă față excreției deșeurilor în mediul marin?" />
+            <Label x:Name="Question5Label" Text="5. Ce organ specializat ajută peștii și rechinii să facă față excreției deșeurilor în mediul marin?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Glandele sudoripare" />
+                <Label x:Name="Question5OptionALabel" Text="a) Glandele sudoripare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Glandele salivare" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Glandele salivare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Rinichii și glandele speciale de excreție" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Rinichii și glandele speciale de excreție" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
-
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

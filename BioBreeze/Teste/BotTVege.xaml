@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,109 +19,109 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
             
-            <Label Text="1. Care este funcția principală a meristemului apical?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care este funcția principală a meristemului apical?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Transportul apei și substanțelor minerale" />
+                <Label x:Name="Question1OptionALabel" Text="a) Transportul apei și substanțelor minerale" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Creșterea în lungime a plantei" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Creșterea în lungime a plantei" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Protecția împotriva pierderii de apă" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Protecția împotriva pierderii de apă" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Susținerea și flexibilitatea țesuturilor" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Susținerea și flexibilitatea țesuturilor" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce rol are cambiu vascular în creșterea plantelor?" />
+            <Label x:Name="Question2Label" Text="2. Ce rol are cambiu vascular în creșterea plantelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Produce țesut vascular secundar" />
+                <Label x:Name="Question2OptionALabel" Text="a) Produce țesut vascular secundar" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Produce țesut cortical secundar" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Produce țesut cortical secundar" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Protejează plantele împotriva stresului mecanic" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Protejează plantele împotriva stresului mecanic" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Transportă substanțele organice sintetizate" />
+                <Label x:Name="Question2OptionDLabel" Text="d) Transportă substanțele organice sintetizate" />
             </StackLayout>
 
-            
-            <Label Text="3. Unde se găsește țesutul epidermic într-o plantă?" />
+            <Label x:Name="Question3Label" Text="3. Unde se găsește țesutul epidermic într-o plantă?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) În interiorul frunzelor" />
+                <Label x:Name="Question3OptionALabel" Text="a) În interiorul frunzelor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) La nivelul rădăcinilor" />
+                <Label x:Name="Question3OptionBLabel" Text="b) La nivelul rădăcinilor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Ca strat exterior al plantei" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Ca strat exterior al plantei" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) În interiorul tulpinii" />
+                <Label x:Name="Question3OptionDLabel" Text="d) În interiorul tulpinii" />
             </StackLayout>
 
-            
-            <Label Text="4. Care dintre următoarele țesuturi vegetale furnizează rigiditate și protecție împotriva stresului mecanic?" />
+            <Label x:Name="Question4Label" Text="4. Care dintre următoarele țesuturi vegetale furnizează rigiditate și protecție împotriva stresului mecanic?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Colenchim" />
+                <Label x:Name="Question4OptionALabel" Text="a) Colenchim" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Floem" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Floem" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Parenchim" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Parenchim" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Meristem lateral" />
+                <Label x:Name="Question4OptionDLabel" Text="d) Meristem lateral" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce tip de țesut vegetal depozitează substanțe nutritive, precum amidonul și uleiurile?" />
+            <Label x:Name="Question5Label" Text="5. Ce tip de țesut vegetal depozitează substanțe nutritive, precum amidonul și uleiurile?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Cambiu vascular" />
+                <Label x:Name="Question5OptionALabel" Text="a) Cambiu vascular" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Sclerenchim" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Sclerenchim" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Peridermă" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Peridermă" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Parenchim de stocare" />
+                <Label x:Name="Question5OptionDLabel" Text="d) Parenchim de stocare" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

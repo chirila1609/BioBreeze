@@ -44,13 +44,7 @@ BackgroundColor="Transparent">
             <Button Text="Légzés állatokban" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RAnimal"/>
             <Button Text="Keringés állatokban" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CAnimal"/>
             <Button Text="Kiválasztás állatokban" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EAnimal"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Görgessen lejjebb a lecke magyar változatáért!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,109 +19,109 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
             
-            <Label Text="1. Care sunt cei trei macronutrienți principali necesari plantelor?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care sunt cei trei macronutrienți principali necesari plantelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Azot, potasiu, calciu" />
+                <Label x:Name="Question1OptionALabel" Text="a) Azot, potasiu, calciu" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Azot, fosfor, potasiu" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Azot, fosfor, potasiu" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Fier, fosfor, potasiu" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Fier, fosfor, potasiu" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Fosfor, calciu, magneziu" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Fosfor, calciu, magneziu" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce rol are azotul în dezvoltarea plantelor?" />
+            <Label x:Name="Question2Label" Text="2. Ce rol are azotul în dezvoltarea plantelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Stimulează creșterea radacinilor" />
+                <Label x:Name="Question2OptionALabel" Text="a) Stimulează creșterea radacinilor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Favorizează formarea florilor" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Favorizează formarea florilor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Contribuie la dezvoltarea frunzelor verzi și la &#x0a;producerea proteinelor" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Contribuie la dezvoltarea frunzelor verzi și la producerea proteinelor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Îmbunătățește rezistența la stres a plantelor" />
+                <Label x:Name="Question2OptionDLabel" Text="d) Îmbunătățește rezistența la stres a plantelor" />
             </StackLayout>
 
-            
-            <Label Text="3. Care este sursa principală de nutrienți pentru plante?" />
+            <Label x:Name="Question3Label" Text="3. Care este sursa principală de nutrienți pentru plante?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Aerul" />
+                <Label x:Name="Question3OptionALabel" Text="a) Aerul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Solul" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Solul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Apa" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Apa" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Lumina solară" />
+                <Label x:Name="Question3OptionDLabel" Text="d) Lumina solară" />
             </StackLayout>
 
-            
-            <Label Text="4. Ce se întâmplă dacă plantele primesc o supra-doza de nutrienți?" />
+            <Label x:Name="Question4Label" Text="4. Ce se întâmplă dacă plantele primesc o supra-doza de nutrienți?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Creșterea sănătoasă și accelerată" />
+                <Label x:Name="Question4OptionALabel" Text="a) Creșterea sănătoasă și accelerată" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Arsuri ale frunzelor și deficiențe nutriționale" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Arsuri ale frunzelor și deficiențe nutriționale" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Dezvoltarea sistemului radicular" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Dezvoltarea sistemului radicular" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Îmbunătățirea calității florilor" />
+                <Label x:Name="Question4OptionDLabel" Text="d) Îmbunătățirea calității florilor" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce trebuie să facă pentru a asigura o hrănire echilibrată a plantelor?" />
+            <Label x:Name="Question5Label" Text="5. Ce trebuie să facă pentru a asigura o hrănire echilibrată a plantelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Aplicarea de îngrășăminte doar o dată pe an" />
+                <Label x:Name="Question5OptionALabel" Text="a) Aplicarea de îngrășăminte doar o dată pe an" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Utilizarea îngrășămintelor fără a respecta doza &#x0a;recomandată" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Utilizarea îngrășămintelor fără a respecta doza recomandată" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Folosirea unor îngrășăminte specifice, adaptate &#x0a;nevoilor plantelor, și respectarea instrucțiunilor de &#x0a;dozare" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Folosirea unor îngrășăminte specifice, adaptate nevoilor plantelor, și respectarea instrucțiunilor de dozare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Udarea plantelor cu apă sărată" />
+                <Label x:Name="Question5OptionDLabel" Text="d) Udarea plantelor cu apă sărată" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

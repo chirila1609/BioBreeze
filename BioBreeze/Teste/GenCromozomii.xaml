@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,109 +19,109 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
             
-            <Label Text="1. Care este principala funcție a cromozomilor în cadrul celulelor?" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+            <Label x:Name="TitleLabel" Text="Test cromozomii" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care este principala funcție a cromozomilor în cadrul celulelor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Transmiterea ereditară a informației genetice" />
+                <Label x:Name="Question1OptionALabel" Text="a) Transmiterea ereditară a informației genetice" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Producerea energiei celulare" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Producerea energiei celulare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Controlul respirației celulare" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Controlul respirației celulare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Absorbția substanțelor nutritive" />
+                <Label x:Name="Question1OptionDLabel" Text="d) Absorbția substanțelor nutritive" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce sunt autosomii?" />
+            <Label x:Name="Question2Label" Text="2. Ce sunt autosomii?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Cromozomii care determină sexul organismului" />
+                <Label x:Name="Question2OptionALabel" Text="a) Cromozomii care determină sexul organismului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Cromozomii care nu determină sexul organismului" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Cromozomii care nu determină sexul organismului" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Cromozomii prezenți doar în celulele sexuale" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Cromozomii prezenți doar în celulele sexuale" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Cromozomii care nu conțin material genetic" />
+                <Label x:Name="Question2OptionDLabel" Text="d) Cromozomii care nu conțin material genetic" />
             </StackLayout>
 
-            
-            <Label Text="3. Care este diferența principală între mitoză și meioză?" />
+            <Label x:Name="Question3Label" Text="3. Care este diferența principală între mitoză și meioză?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Mitoza produce celule sexuale, iar meioza produce celule somatice." />
+                <Label x:Name="Question3OptionALabel" Text="a) Mitoza produce celule sexuale, iar meioza produce celule somatice." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Mitoza produce două celule fiice identice, iar &#x0a;meioza produce patru celule fiice cu jumătate din &#x0a;numărul de cromozomi." />
+                <Label x:Name="Question3OptionBLabel" Text="b) Mitoza produce două celule fiice identice, iar meioza produce patru celule fiice cu jumătate din numărul de cromozomi." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Mitoza produce celule fiice cu jumătate din &#x0a;numărul de cromozomi, iar meioza produce două &#x0a;celule fiice identice." />
+                <Label x:Name="Question3OptionCLabel" Text="c) Mitoza produce celule fiice cu jumătate din numărul de cromozomi, iar meioza produce două celule fiice identice." />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Mitoza produce două celule fiice cu dublul &#x0a;numărului de cromozomi, iar meioza produce două &#x0a;celule fiice identice." />
+                <Label x:Name="Question3OptionDLabel" Text="d) Mitoza produce două celule fiice cu dublul numărului de cromozomi, iar meioza produce două celule fiice identice." />
             </StackLayout>
 
-            
-            <Label Text="4. Ce este recombinarea genetică?" />
+            <Label x:Name="Question4Label" Text="4. Ce este recombinarea genetică?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Procesul de separare a cromozomilor omologi în &#x0a;timpul diviziunii celulare" />
+                <Label x:Name="Question4OptionALabel" Text="a) Procesul de separare a cromozomilor omologi în timpul diviziunii celulare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Procesul de schimb de segmente de ADN între &#x0a;cromozomi omologi" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Procesul de schimb de segmente de ADN între cromozomi omologi" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Procesul de duplicare a cromozomilor în timpul&#x0a; diviziunii celulare" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Procesul de duplicare a cromozomilor în timpul diviziunii celulare" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Procesul de împachetare a cromozomilor în jurul &#x0a;proteinelor histonice" />
+                <Label x:Name="Question4OptionDLabel" Text="d) Procesul de împachetare a cromozomilor în jurul proteinelor histonice" />
             </StackLayout>
 
-            
-            <Label Text="5. Care este una dintre tehniciile utilizate pentru analiza cromozomilor?" />
+            <Label x:Name="Question5Label" Text="5. Care este una dintre tehniciile utilizate pentru analiza cromozomilor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Electroforeza" />
+                <Label x:Name="Question5OptionALabel" Text="a) Electroforeza" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Citometria de flux" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Citometria de flux" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Hibridizarea in situ" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Hibridizarea in situ" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Cromatografia" />
+                <Label x:Name="Question5OptionDLabel" Text="d) Cromatografia" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

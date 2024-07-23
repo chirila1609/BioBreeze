@@ -5,13 +5,22 @@
              Title="Test creierul">
     <ScrollView>
         <StackLayout>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,71 +28,71 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
-            <Label Text="1. Care este cea mai mare și mai complexă parte a creierului, responsabilă pentru funcții cognitive superioare precum gândirea și percepția? " />
+            <Label x:Name="TitleLabel" Text="Test creierul" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="Question1Label" Text="1. Care este cea mai mare și mai complexă parte a creierului, responsabilă pentru funcții cognitive superioare precum gândirea și percepția?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Creierul mijlociu" />
+                <Label x:Name="Question1OptionALabel" Text="a) Creierul mijlociu" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Creierul posterior" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Creierul posterior" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Creierul anterior" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Creierul anterior" />
             </StackLayout>
-            <Label Text="2. Care parte a creierului servește ca un pod care leagă diferite părți ale creierului?" />
+            <Label x:Name="Question2Label" Text="2. Care parte a creierului servește ca un pod care leagă diferite părți ale creierului?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Cerebelul" />
+                <Label x:Name="Question2OptionALabel" Text="a) Cerebelul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Puntea" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Puntea" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Hipotalamusul" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Hipotalamusul" />
             </StackLayout>
-            <Label Text="3. Ce parte a creierului este responsabilă pentru coordonarea mișcării, echilibrului și posturii?" />
+            <Label x:Name="Question3Label" Text="3. Ce parte a creierului este responsabilă pentru coordonarea mișcării, echilibrului și posturii?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Thalamusul" />
+                <Label x:Name="Question3OptionALabel" Text="a) Thalamusul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Cerebelul" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Cerebelul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Cortexul cerebral" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Cortexul cerebral" />
             </StackLayout>
-            <Label Text="4. Ce celule nervoase formează rețele intricate care permit procesarea și transmiterea informațiilor în întregul creier și corp?" />
+            <Label x:Name="Question4Label" Text="4. Ce celule nervoase formează rețele intricate care permit procesarea și transmiterea informațiilor în întregul creier și corp?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Neuroni" />
+                <Label x:Name="Question4OptionALabel" Text="a) Neuroni" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Gliale" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Gliale" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Fibre nervoase" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Fibre nervoase" />
             </StackLayout>
-            <Label Text="5. Care parte a creierului controlează funcții vitale precum bătăile inimii și respirația?" />
+            <Label x:Name="Question5Label" Text="5. Care parte a creierului controlează funcții vitale precum bătăile inimii și respirația?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Hipotalamusul" />
+                <Label x:Name="Question5OptionALabel" Text="a) Hipotalamusul" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Bulbul rahidian" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Bulbul rahidian" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Talamusul" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Talamusul" />
             </StackLayout>
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
             <Label x:Name="ScoreLabel" />

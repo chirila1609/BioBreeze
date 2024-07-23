@@ -5,6 +5,15 @@
              Title="Simulări">
     <ScrollView>
         <StackLayout>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
             <Button Text="Meniu principal" 
 Clicked="OnMenuButtonClicked" 
 ImageSource="flyoutb.png" 
@@ -20,12 +29,12 @@ BackgroundColor="Transparent">
                 </Button.IsVisible>
             </Button>
             <Image Source="sim.png" MaximumWidthRequest="360" MaximumHeightRequest="225"/>
-            <Button Text="Simulare neuroni" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_nsim"/>
-            <Button Text="Simulare ochi" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_vsim"/>
-            <Button Text="Simulare membrană celulară" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_mcs"/>
-            <Button Text="Simulare gene" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_gs"/>
-            <Button Text="Joc celula vegetală" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_cvg"/>
-            <Button Text="Joc celula animală" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_cag"/>
+            <Button x:Name="NeuronSimulationButton" Text="Simulare neuroni" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_nsim"/>
+            <Button x:Name="EyeSimulationButton" Text="Simulare ochi" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_vsim"/>
+            <Button x:Name="CellMembraneSimulationButton" Text="Simulare membrană celulară" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_mcs"/>
+            <Button x:Name="GeneSimulationButton" Text="Simulare gene" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_gs"/>
+            <Button x:Name="PlantCellGameButton" Text="Joc celula vegetală" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_cvg"/>
+            <Button x:Name="AnimalCellGameButton" Text="Joc celula animală" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_cag"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

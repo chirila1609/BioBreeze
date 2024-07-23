@@ -6,12 +6,12 @@
     <ScrollView>
         <StackLayout>
             <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
+                    Clicked="OnBackButtonClicked" 
+                    ImageSource="back.png" 
+                    HorizontalOptions="StartAndExpand" 
+                    MaximumWidthRequest="25" 
+                    MaximumHeightRequest="25" 
+                    BackgroundColor="Transparent">
                 <Button.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android,iOS" Value="True" />
@@ -19,89 +19,89 @@ BackgroundColor="Transparent">
                     </OnPlatform>
                 </Button.IsVisible>
             </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
 
-            
-            <Label Text="1. Care este una dintre adaptările remarcabile ale păsărilor pentru a se hrăni?" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
+
+
+            <Label x:Name="TitleLabel" Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" Text="1. Care este una dintre adaptările remarcabile ale păsărilor pentru a se hrăni?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Gheare puternice" />
+                <Label x:Name="Question1OptionALabel" Text="a) Gheare puternice" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Ciocuri variate" />
+                <Label x:Name="Question1OptionBLabel" Text="b) Ciocuri variate" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Cozi lungi" />
+                <Label x:Name="Question1OptionCLabel" Text="c) Cozi lungi" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce servește adesea la atragerea partenerilor sau la stabilirea teritoriului în rândul păsărilor?" />
+            <Label x:Name="Question2Label" Text="2. Ce servește adesea la atragerea partenerilor sau la stabilirea teritoriului în rândul păsărilor?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Aripile colorate" />
+                <Label x:Name="Question2OptionALabel" Text="a) Aripile colorate" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Ciocurile lungi" />
+                <Label x:Name="Question2OptionBLabel" Text="b) Ciocurile lungi" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Cântecele melodioase" />
+                <Label x:Name="Question2OptionCLabel" Text="c) Cântecele melodioase" />
             </StackLayout>
 
-            
-            <Label Text="3. Care este un aspect crucial al vieții multor păsări?" />
+            <Label x:Name="Question3Label" Text="3. Care este un aspect crucial al vieții multor păsări?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Hibernarea" />
+                <Label x:Name="Question3OptionALabel" Text="a) Hibernarea" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Migrarea" />
+                <Label x:Name="Question3OptionBLabel" Text="b) Migrarea" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Hibernarea și migrarea" />
+                <Label x:Name="Question3OptionCLabel" Text="c) Hibernarea și migrarea" />
             </StackLayout>
 
-            
-            <Label Text="4. Ce sistem al păsărilor le permite să zboare la înălțimi extreme?" />
+            <Label x:Name="Question4Label" Text="4. Ce sistem al păsărilor le permite să zboare la înălțimi extreme?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Sistemul circulator" />
+                <Label x:Name="Question4OptionALabel" Text="a) Sistemul circulator" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Sistemul respirator" />
+                <Label x:Name="Question4OptionBLabel" Text="b) Sistemul respirator" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Sistemul digestiv" />
+                <Label x:Name="Question4OptionCLabel" Text="c) Sistemul digestiv" />
             </StackLayout>
 
-            
-            <Label Text="5. Ce rol important au păsările în ecosisteme?" />
+            <Label x:Name="Question5Label" Text="5. Ce rol important au păsările în ecosisteme?" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Controlul populațiilor de plante" />
+                <Label x:Name="Question5OptionALabel" Text="a) Controlul populațiilor de plante" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Controlul populațiilor de insecte și dispersia&#x0a; semințelor" />
+                <Label x:Name="Question5OptionBLabel" Text="b) Controlul populațiilor de insecte și dispersia&#x0a; semințelor" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Protecția altor specii de animale" />
+                <Label x:Name="Question5OptionCLabel" Text="c) Protecția altor specii de animale" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
-
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

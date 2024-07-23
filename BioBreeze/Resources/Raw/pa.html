@@ -21,13 +21,17 @@
             padding: 5px 10px;
             cursor: pointer;
         }
+
+        #fileInput {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div id="language-buttons">
-        <button class="language-btn" onclick="setLanguage('ro')">Română</button>
-        <button class="language-btn" onclick="setLanguage('hu')">Magyar</button>
-        <button class="language-btn" onclick="setLanguage('uk')">Українська</button>
+        <button class="language-btn" data-lang="ro">Română</button>
+        <button class="language-btn" data-lang="hu">Magyar</button>
+        <button class="language-btn" data-lang="uk">Українська</button>
     </div>
 
     <h1 id="title" style="color:#009910;">Identifică o plantă/un animal</h1>
@@ -104,7 +108,12 @@
             return result;
         }
 
-        document.getElementById('fileInput').addEventListener('change', async (event) => {
+        function initializeImageUpload() {
+            const fileInput = document.getElementById('fileInput');
+            fileInput.addEventListener('change', handleImageUpload);
+        }
+
+        async function handleImageUpload(event) {
             const file = event.target.files[0];
             if (!file) {
                 return;
@@ -183,7 +192,20 @@
             };
 
             arrayBufferReader.readAsArrayBuffer(file);
+        }
+
+        
+        const languageButtons = document.querySelectorAll('.language-btn');
+        languageButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                const lang = e.target.dataset.lang;
+                setLanguage(lang);
+                initializeImageUpload();
+            });
         });
+
+        
+        initializeImageUpload();
     </script>
 </body>
 </html>

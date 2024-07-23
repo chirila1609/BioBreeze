@@ -5,6 +5,15 @@
              Title="Clasa a VI-a">
     <ScrollView>
         <StackLayout>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
             <Button Text="Meniu principal" 
 Clicked="OnMenuButtonClicked" 
 ImageSource="flyoutb.png" 
@@ -20,17 +29,17 @@ BackgroundColor="Transparent">
                 </Button.IsVisible>
             </Button>
             <Image Source="clasavi.png" MaximumWidthRequest="720"/>
-            <Label Text="Bine ați venit la clasa a VI-a!" HorizontalOptions="Center"/>
-            <Button Text="Tesuturi animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TA"/>
-            <Button Text="Hranirea la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HA"/>
-            <Button Text="Respiratia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RA"/>
-            <Button Text="Circulatia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CA"/>
-            <Button Text="Excretia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EA"/>
-            <Button Text="Tesuturi vegetale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TV"/>
-            <Button Text="Hranirea la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HP"/>
-            <Button Text="Respiratia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RP"/>
-            <Button Text="Circulatia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CP"/>
-            <Button Text="Excretia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EP"/>
+            <Label x:Name="WelcomeLabel" Text="Bine ați venit la clasa a VI-a!" HorizontalOptions="Center"/>
+            <Button x:Name="AnimalTissuesButton" Text="Tesuturi animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TA"/>
+            <Button x:Name="AnimalFeedingButton" Text="Hranirea la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HA"/>
+            <Button x:Name="AnimalRespirationButton" Text="Respiratia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RA"/>
+            <Button x:Name="AnimalCirculationButton" Text="Circulatia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CA"/>
+            <Button x:Name="AnimalExcretionButton" Text="Excretia la animale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EA"/>
+            <Button x:Name="PlantTissuesButton" Text="Tesuturi vegetale" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_TV"/>
+            <Button x:Name="PlantFeedingButton" Text="Hranirea la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HP"/>
+            <Button x:Name="PlantRespirationButton" Text="Respiratia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_RP"/>
+            <Button x:Name="PlantCirculationButton" Text="Circulatia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_CP"/>
+            <Button x:Name="PlantExcretionButton" Text="Excretia la plante" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_EP"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

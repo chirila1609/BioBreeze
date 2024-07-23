@@ -34,13 +34,7 @@ A genetika a tudomány azon ága, amely az élőlények biológiai jellemzőinek
             <Button Text="gének" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_G"/>
             <Button Text="Kromoszómák" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Cromo"/>
             <Button Text="Gametes" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Gameti"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Görgessen lejjebb a lecke magyar változatáért!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

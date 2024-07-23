@@ -28,8 +28,8 @@ BackgroundColor="Transparent">
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-            <Button Text="Nutriția heterotrofă saprofită" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
-            <Button Text="Nutriția heterotrofă parazită" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
+            <Button Text="Nutriția heterotrofă saprofită" MaximumWidthRequest="400" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HSNutri"/>
+            <Button Text="Nutriția heterotrofă parazită" MaximumWidthRequest="400" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_HPNutri"/>
             <Button Text="Nutriția mixotrofă" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_MNutri"/>
         </StackLayout>
     </ScrollView>

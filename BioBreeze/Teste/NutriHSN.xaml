@@ -5,123 +5,109 @@
              Title="Test nutriția heterotrofă saprofită">
     <ScrollView>
         <StackLayout>
-            <Button Text="back" 
-Clicked="OnBackButtonClicked" 
-ImageSource="back.png" 
-HorizontalOptions="StartAndExpand" 
-MaximumWidthRequest="25" 
-MaximumHeightRequest="25" 
-BackgroundColor="Transparent">
-                <Button.IsVisible>
-                    <OnPlatform x:TypeArguments="x:Boolean">
-                        <On Platform="Android,iOS" Value="True" />
-                        <On Platform="Windows,macOS" Value="False" />
-                    </OnPlatform>
-                </Button.IsVisible>
-            </Button>
-            <Label Text="Test" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnLanguageButtonClicked" CommandParameter="ro" />
+                <Button Text="Magyar" Clicked="OnLanguageButtonClicked" CommandParameter="hu" />
+                <Button Text="Українська" Clicked="OnLanguageButtonClicked" CommandParameter="uk" />
+            </StackLayout>
 
             
-            <Label Text="1. Care este principala sursă de hrană pentru organismele care practică nutriția heterotrofă saprofită?" />
+            <Label x:Name="TitleLabel" FontSize="Large" HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="Question1Label" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionA" GroupName="Question1" />
-                <Label Text="a) Materiale organice în descompunere" />
+                <Label x:Name="Question1OptionALabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionB" GroupName="Question1" />
-                <Label Text="b) Soarele" />
+                <Label x:Name="Question1OptionBLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionC" GroupName="Question1" />
-                <Label Text="c) Apa curată" />
+                <Label x:Name="Question1OptionCLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question1OptionD" GroupName="Question1" />
-                <Label Text="d) Substanțe minerale din sol" />
+                <Label x:Name="Question1OptionDLabel" />
             </StackLayout>
 
-            
-            <Label Text="2. Ce rol joacă organismele saprofite în ecosistemele naturale?" />
+            <Label x:Name="Question2Label" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionA" GroupName="Question2" />
-                <Label Text="a) Ele produc oxigen" />
+                <Label x:Name="Question2OptionALabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionB" GroupName="Question2" />
-                <Label Text="b) Ele reciclează materialele organice moarte sau în &#x0a;descompunere" />
+                <Label x:Name="Question2OptionBLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionC" GroupName="Question2" />
-                <Label Text="c) Ele produc hrană pentru alte organisme" />
+                <Label x:Name="Question2OptionCLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question2OptionD" GroupName="Question2" />
-                <Label Text="d) Ele sunt prădătoare" />
+                <Label x:Name="Question2OptionDLabel" />
             </StackLayout>
 
-            
-            <Label Text="3. Care dintre următoarele grupuri de organisme sunt exemple de saprofite?" />
+            <Label x:Name="Question3Label" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionA" GroupName="Question3" />
-                <Label Text="a) Rechini și delfini" />
+                <Label x:Name="Question3OptionALabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionB" GroupName="Question3" />
-                <Label Text="b) Ciuperci și bacterii" />
+                <Label x:Name="Question3OptionBLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionC" GroupName="Question3" />
-                <Label Text="c) Alge marine și corali" />
+                <Label x:Name="Question3OptionCLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question3OptionD" GroupName="Question3" />
-                <Label Text="d) Lupi și vulpi" />
+                <Label x:Name="Question3OptionDLabel" />
             </StackLayout>
 
-            
-            <Label Text="4. Ce fac enzimele secretate de organismele saprofite în procesul de nutriție heterotrofă saprofită?" />
+            <Label x:Name="Question4Label" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionA" GroupName="Question4" />
-                <Label Text="a) Produc energie solară" />
+                <Label x:Name="Question4OptionALabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionB" GroupName="Question4" />
-                <Label Text="b) Descompun materialele organice în componente &#x0a;mai simple" />
+                <Label x:Name="Question4OptionBLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionC" GroupName="Question4" />
-                <Label Text="c) Protejează organismele împotriva prădătorilor" />
+                <Label x:Name="Question4OptionCLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question4OptionD" GroupName="Question4" />
-                <Label Text="d) Îndeplinesc funcții de reproducere" />
+                <Label x:Name="Question4OptionDLabel" />
             </StackLayout>
 
-            
-            <Label Text="5. De ce sunt esențiale organismele saprofite în ecosistemele naturale?" />
+            <Label x:Name="Question5Label" />
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionA" GroupName="Question5" />
-                <Label Text="a) Ele mențin echilibrul ecologic" />
+                <Label x:Name="Question5OptionALabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionB" GroupName="Question5" />
-                <Label Text="b) Ele sunt precursoare ale vieții" />
+                <Label x:Name="Question5OptionBLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionC" GroupName="Question5" />
-                <Label Text="c) Ele sunt prădătoare" />
+                <Label x:Name="Question5OptionCLabel" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <RadioButton x:Name="Question5OptionD" GroupName="Question5" />
-                <Label Text="d) Ele produc hrană pentru plante" />
+                <Label x:Name="Question5OptionDLabel" />
             </StackLayout>
 
-            
             <Button Text="Finalizează" Clicked="OnSubmitClicked" />
 
-            
             <Label x:Name="ScoreLabel" />
         </StackLayout>
     </ScrollView>
-
 </ContentPage>

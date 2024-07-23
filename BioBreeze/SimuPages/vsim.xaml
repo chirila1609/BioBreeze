@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioBreeze.SimuPages.vsim"
              Title="Simulare vedere">
+    <ScrollView>
     <VerticalStackLayout>
         <WebView Source="v.html" WidthRequest="400" HeightRequest="300"/>
         <Label>
@@ -87,4 +88,5 @@
             </Label.FormattedText>
         </Label>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

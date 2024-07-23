@@ -28,7 +28,17 @@ BackgroundColor="Transparent">
                 <Button Grid.Column="0" Text="Asculă lecția" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Asculta"/>
                 <Button Grid.Column="1" Text="Oprește" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="Opreste"/>
             </Grid>
-            <Label>
+            <Label Text="Limbă/Válasszon nyelvet/Оберіть мову:" 
+FontSize="20"
+HorizontalOptions="Center"
+VerticalOptions="Start"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Română" Clicked="OnRomanianClicked" />
+                <Button Text="Magyar" Clicked="OnHungarianClicked" Margin="10,0,0,0" />
+                <Button Text="українська" Clicked="OnUkrainianClicked" Margin="10,0,0,0" />
+            </StackLayout>
+            <Label x:Name="ContentLabel1">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="Sistemul reproductiv este unul dintre cele mai fundamentale și fascinante aspecte ale biologiei umane și a altor organisme vii. Acesta înglobează o serie complexă de organe, hormoni și procese care permit reproducerea și perpetuarea speciei." />
@@ -37,7 +47,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="srepfem.png" MaximumWidthRequest="720"/>
-            <Label>
+            <Label x:Name="ContentLabel2">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="La femei, sistemul reproductiv este format din organele interne și externe. Organele interne includ ovarele, care produc ovulele, tuburile uterine, care transportă ovulele către uter, uterul, unde are loc fertilizarea și dezvoltarea embrionului, și vaginul, care permite introducerea spermei în tractul reproductiv. Organele externe, cum ar fi vulva, sunt responsabile pentru protecție și plăcere sexuală." />
@@ -46,7 +56,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Image Source="srepm.png" MaximumWidthRequest="720"/>
-            <Label>
+            <Label x:Name="ContentLabel3">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span FontSize="15" Text="La bărbați, sistemul reproductiv constă în principal din testicule, care produc spermatozoizii și hormonul testosteron, și organele reproductive externe, cum ar fi penisul și scrotul. Sperma este transportată de la testicule prin intermediul unui sistem complex de canale și este ejaculată prin penis în timpul actului sexual." />
@@ -60,7 +70,7 @@ BackgroundColor="Transparent">
                 </Label.FormattedText>
             </Label>
             <Button Text="Testează-ți memoria" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_AnatomieSRep"/>
-            <WebView Source="sr.html" WidthRequest="400" HeightRequest="1200"/>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

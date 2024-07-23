@@ -44,13 +44,7 @@ BackgroundColor="Transparent">
             <Button Text="Ботаніка" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Botanica"/>
             <Button Text="Харчування" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Nutritie"/>
             <Button Text="ГЕНЕТИЧНИЙ" MaximumWidthRequest="200" MaximumHeightRequest="150" HorizontalOptions="Center" Margin="20" Clicked="GoTo_Genetica"/>
-            <Label HorizontalOptions="Center">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span FontSize="20" Text="!Прокрутіть вниз, щоб переглянути угорську версію уроку!" FontAttributes="Bold" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+            
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
